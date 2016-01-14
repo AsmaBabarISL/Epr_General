@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="skeleton.master.cs" Inherits="skeleton" %>
+
+<%--<%@ Register src="controls/registrationHeader.ascx" tagname="registrationHeader" tagprefix="uc1" %>--%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="Styles/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	font: 100%  Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	color: #000000;
+	background-image: url(/images/bg-web.png);
+	background-repeat: repeat;
+	font-size:12px;
+}
+-->
+</style>
+  
+    <script>
+        $(document).ready(function () {
+            $('input:text').blur(function () {
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+            $('textarea').blur(function () {
+                var textarea = $("#" + this.id)[0];
+                var refinTextAreaVal = $(textarea).val().replace(/[<>]+/g, "");
+                $($(textarea)[0]).val(refinTextAreaVal);
+            });
+            $('input:password').blur(function () {
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+        });
+    
+    </script>
+    
+</head>
+<body class="oneColFixCtrHdr">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <%--<uc1:registrationHeader ID="registrationHeader1" runat="server" />--%>
+    <div class="container">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+

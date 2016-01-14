@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="*Check mark all applicable boxes" xml:space="preserve">
+    <value>* Coche toutes les cases applicables</value>
+  </data>
+  <data name="Accept Auto-Fund Transfers:" xml:space="preserve">
+    <value>Accepter Auto-Fonds transferts:</value>
+  </data>
+  <data name="Accept Text Messages:" xml:space="preserve">
+    <value>Accepter messages texte:</value>
+  </data>
+  <data name="Accounting" xml:space="preserve">
+    <value>comptabilité</value>
+  </data>
+  <data name="Accounting Interface:" xml:space="preserve">
+    <value>Interface Comptabilité:</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>actes</value>
+  </data>
+  <data name="Add More" xml:space="preserve">
+    <value>Ajouter Plus</value>
+  </data>
+  <data name="Add New Stakeholder" xml:space="preserve">
+    <value>Ajouter intervenants New</value>
+  </data>
+  <data name="Add New Stewardship" xml:space="preserve">
+    <value>Ajouter Stewardship Nouveau</value>
+  </data>
+  <data name="Add PTE Setting" xml:space="preserve">
+    <value>Ajouter un paramètre PTE</value>
+  </data>
+  <data name="Add Supplier" xml:space="preserve">
+    <value>Ajouter Fournisseur</value>
+  </data>
+  <data name="Additional Locations" xml:space="preserve">
+    <value>Autres Emplacements</value>
+  </data>
+  <data name="Additional Locations are generally for Temporary Events or if the Stakeholder has no permanent management on premise. Please, file all managed facilities as a New and seperate location. There are no additional charges. The primary facility's stakeholder is provided with both individual and consolidated facilities management reports." xml:space="preserve">
+    <value>Des sites supplémentaires sont généralement temporaires pour des événements ou si la partie prenante n'a pas de gestion permanente sur les lieux. S'il vous plaît, soumettre toutes les installations gérées comme un nouvel emplacement et séparée. Il n'ya pas de frais supplémentaires. Des parties prenantes L'installation primaire est assuré à la fois individuels et consolidés installations rapports de gestion.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>montant</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>Tire Transports Permis #:</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Arrière</value>
+  </data>
+  <data name="Billing Cell Phone:" xml:space="preserve">
+    <value>Cell Phone facturation:</value>
+  </data>
+  <data name="Billing Contact Name:" xml:space="preserve">
+    <value>Nom Billing Contact:</value>
+  </data>
+  <data name="Billing Contact Same:" xml:space="preserve">
+    <value>Contact de facturation même:</value>
+  </data>
+  <data name="Billing Email:" xml:space="preserve">
+    <value>E-mail de facturation:</value>
+  </data>
+  <data name="Billing Phone:" xml:space="preserve">
+    <value>Téléphone de facturation:</value>
+  </data>
+  <data name="Business Name:" xml:space="preserve">
+    <value>Nom de l'entreprise:</value>
+  </data>
+  <data name="Business Phone:" xml:space="preserve">
+    <value>Téléphone au travail:</value>
+  </data>
+  <data name="Business Type" xml:space="preserve">
+    <value>Type d'entreprise</value>
+  </data>
+  <data name="Business Type:" xml:space="preserve">
+    <value>Type d'entreprise:</value>
+  </data>
+  <data name="C-Barcode" xml:space="preserve">
+    <value>C-barres</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Cell Phone:" xml:space="preserve">
+    <value>Téléphone portable:</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>Ville:</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="Clients – Non-Retail Client Trade References" xml:space="preserve">
+    <value>Clients - autres que de détail Commerce Références clients</value>
+  </data>
+  <data name="Company Name:" xml:space="preserve">
+    <value>Nom de la société:</value>
+  </data>
+  <data name="Component Type:" xml:space="preserve">
+    <value>Type de composant:</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contacter</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>Pays:</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>monnaie</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>date</value>
+  </data>
+  <data name="DBA Name:" xml:space="preserve">
+    <value>DBA Nom:</value>
+  </data>
+  <data name="Define" xml:space="preserve">
+    <value>Définir</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Supprimer Confirmation</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 non-retail client trade references are required." xml:space="preserve">
+    <value>S'il vous plaît, un minimum de 3 non-détail références commerciales du client sont nécessaires.</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 Supplier trade references are required." xml:space="preserve">
+    <value>S'il vous plaît, un minimum de 3 références commerciales des fournisseurs sont requis.</value>
+  </data>
+  <data name="Disclaimer: *You will be able to self-update your Temporary User Login ID or password once your application has been verified and your site is activated." xml:space="preserve">
+    <value>Vous pouvez modifier votre nom d'utilisateur temporaire et / ou votre mot de passe une fois que votre demande est vérifiée et site de votre entreprise est activée.</value>
+  </data>
+  <data name="Dollar Value" xml:space="preserve">
+    <value>Valeur en dollars</value>
+  </data>
+  <data name="Effective Date" xml:space="preserve">
+    <value>Entrée en vigueur</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>email</value>
+  </data>
+  <data name="Event Dates:" xml:space="preserve">
+    <value>Prochaines dates:</value>
+  </data>
+  <data name="Expiration Date" xml:space="preserve">
+    <value>date d'expiration</value>
+  </data>
+  <data name="Extension:" xml:space="preserve">
+    <value>Extension:</value>
+  </data>
+  <data name="Facility Street Address:" xml:space="preserve">
+    <value>Adresse installation:</value>
+  </data>
+  <data name="Facility ZIP Code:" xml:space="preserve">
+    <value>Code postal installation:</value>
+  </data>
+  <data name="Franchise Name" xml:space="preserve">
+    <value>Nom franchise</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>histoire</value>
+  </data>
+  <data name="I have reviewed the" xml:space="preserve">
+    <value>J'ai examiné la</value>
+  </data>
+  <data name="Import/Export" xml:space="preserve">
+    <value>Import/Export</value>
+  </data>
+  <data name="Internationally" xml:space="preserve">
+    <value>Internationalement</value>
+  </data>
+  <data name="Inventory Interface:" xml:space="preserve">
+    <value>Interface inventaire:</value>
+  </data>
+  <data name="Latest Stakeholder/User" xml:space="preserve">
+    <value>Dernière intervenants / utilisateur</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>Dénomination sociale</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>emplacement</value>
+  </data>
+  <data name="Location Contact Email:" xml:space="preserve">
+    <value>Email Contacter Localisation:</value>
+  </data>
+  <data name="Location Contact Person:" xml:space="preserve">
+    <value>Personne à contacter Localisation:</value>
+  </data>
+  <data name="Location Event:" xml:space="preserve">
+    <value>Lieu de l'événement:</value>
+  </data>
+  <data name="Location Name:" xml:space="preserve">
+    <value>Nom du lieu:</value>
+  </data>
+  <data name="Location Permit #:" xml:space="preserve">
+    <value>Lieu permis #:</value>
+  </data>
+  <data name="Location Status:" xml:space="preserve">
+    <value>Lieu Statut:</value>
+  </data>
+  <data name="Location Street Address:" xml:space="preserve">
+    <value>Localisation Adresse:</value>
+  </data>
+  <data name="Location Type:" xml:space="preserve">
+    <value>Type d'emplacement:</value>
+  </data>
+  <data name="Location ZIP Code:" xml:space="preserve">
+    <value>Code postal Localisation:</value>
+  </data>
+  <data name="Login Registration" xml:space="preserve">
+    <value>Confirmation Connexion</value>
+  </data>
+  <data name="Lookup Table:" xml:space="preserve">
+    <value>Tableau de conversion:</value>
+  </data>
+  <data name="Mailing Address Same:" xml:space="preserve">
+    <value>Nom Adresse postale:</value>
+  </data>
+  <data name="Mailing ZIP Code:" xml:space="preserve">
+    <value>Code postal postale:</value>
+  </data>
+  <data name="NAFTA" xml:space="preserve">
+    <value>NAFTA</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>Nom:</value>
+  </data>
+  <data name="Nationally" xml:space="preserve">
+    <value>Nationalement</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="No Record Exists" xml:space="preserve">
+    <value>Aucun enregistrement n'existe</value>
+  </data>
+  <data name="No record(s) found." xml:space="preserve">
+    <value>No record(s) found.</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Ordre</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>Nom de l'organisation</value>
+  </data>
+  <data name="Organization Type" xml:space="preserve">
+    <value>Type d'Organisation</value>
+  </data>
+  <data name="Organization:" xml:space="preserve">
+    <value>Organisation:</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>Mot de passe:</value>
+  </data>
+  <data name="Permanent" xml:space="preserve">
+    <value>Permanent</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="Please, review the Terms and Conditions of the Stewardship and EPRTS Privacy agreements before submitting your enrollment applications." xml:space="preserve">
+    <value>S'il vous plaît, acceptez les termes et conditions de l'intendance et des accords de confidentialité EPRTS avant de soumettre vos demandes d'inscription.</value>
+  </data>
+  <data name="Primary Contact Cell Phone:" xml:space="preserve">
+    <value>Primaire Cell Phone Contact:</value>
+  </data>
+  <data name="Primary Contact Email:" xml:space="preserve">
+    <value>Contact Email principal:</value>
+  </data>
+  <data name="Primary Contact Name:" xml:space="preserve">
+    <value>Personne-ressource principale:</value>
+  </data>
+  <data name="Primary Information" xml:space="preserve">
+    <value>Informations primaire</value>
+  </data>
+  <data name="Primary Registration" xml:space="preserve">
+    <value>Inscription primaire</value>
+  </data>
+  <data name="PTE" xml:space="preserve">
+    <value>PTE</value>
+  </data>
+  <data name="Re-Enter Password:" xml:space="preserve">
+    <value>Re-Enter Password:</value>
+  </data>
+  <data name="RecordExistence" xml:space="preserve">
+    <value>Existence d'enregistrement</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>Revenu</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rôle</value>
+  </data>
+  <data name="Same" xml:space="preserve">
+    <value>même</value>
+  </data>
+  <data name="School Type:" xml:space="preserve">
+    <value>Type d'école:</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="Search Filters" xml:space="preserve">
+    <value>Filtres de recherche</value>
+  </data>
+  <data name="Section Type:" xml:space="preserve">
+    <value>Type d'article:</value>
+  </data>
+  <data name="Select Value:" xml:space="preserve">
+    <value>Sélectionnez l'option Valeur:</value>
+  </data>
+  <data name="Stakeholder Certifications" xml:space="preserve">
+    <value>Certifications des parties prenantes</value>
+  </data>
+  <data name="Stakeholder Name" xml:space="preserve">
+    <value>Nom des parties prenantes</value>
+  </data>
+  <data name="Stakeholder Type" xml:space="preserve">
+    <value>Type d'Intervenants</value>
+  </data>
+  <data name="StakeHolder-ID" xml:space="preserve">
+    <value>Parties Prenantes-ID</value>
+  </data>
+  <data name="Stakeholders" xml:space="preserve">
+    <value>Intervenants</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>Etat:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="Step 1 of 8" xml:space="preserve">
+    <value>Étape 1 de 8</value>
+  </data>
+  <data name="Step 2 of 8" xml:space="preserve">
+    <value>Etape 2 de 8</value>
+  </data>
+  <data name="Step 3 of 8" xml:space="preserve">
+    <value>Étape 3 de 8</value>
+  </data>
+  <data name="Step 4 of 8" xml:space="preserve">
+    <value>Étape 4 de 8</value>
+  </data>
+  <data name="Step 5 of 8" xml:space="preserve">
+    <value>Étape 5 de 8</value>
+  </data>
+  <data name="Step 6 of 8" xml:space="preserve">
+    <value>Étape 6 de 8</value>
+  </data>
+  <data name="Step 7 of 8" xml:space="preserve">
+    <value>Étape 7 de 8</value>
+  </data>
+  <data name="Stewardship" xml:space="preserve">
+    <value>Intendance</value>
+  </data>
+  <data name="Stewardship Privacy Agreement" xml:space="preserve">
+    <value>Accord de confidentialité intendance</value>
+  </data>
+  <data name="Stewardships" xml:space="preserve">
+    <value>Intendances</value>
+  </data>
+  <data name="Street Address:" xml:space="preserve">
+    <value>Adresse:</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Soumettre</value>
+  </data>
+  <data name="Submit Application" xml:space="preserve">
+    <value>Soumettre une demande</value>
+  </data>
+  <data name="SubmitApplication" xml:space="preserve">
+    <value>Soumettre une demande</value>
+  </data>
+  <data name="Suit #:" xml:space="preserve">
+    <value>Suit #:</value>
+  </data>
+  <data name="Suite# or PO Box#:" xml:space="preserve">
+    <value>Suite # ou case postale:</value>
+  </data>
+  <data name="Suppliers" xml:space="preserve">
+    <value>Fournisseurs</value>
+  </data>
+  <data name="Suppliers – Trade References" xml:space="preserve">
+    <value>Fournisseurs - Références commerciales</value>
+  </data>
+  <data name="Temporary User Login ID:" xml:space="preserve">
+    <value>Temporaire ID de connexion utilisateur:</value>
+  </data>
+  <data name="Thank You" xml:space="preserve">
+    <value>Merci</value>
+  </data>
+  <data name="Thank you for submitting your application. Your application has been forwarded for approval. Once your application is approved we will let you know by email." xml:space="preserve">
+    <value>Merci de nous envoyer votre demande. Votre demande a été transmise pour approbation. Une fois que votre demande est approuvée, nous vous le ferons savoir par e-mail.</value>
+  </data>
+  <data name="This Login is not available" xml:space="preserve">
+    <value>Cette connecter n'est pas disponible</value>
+  </data>
+  <data name="Timeline" xml:space="preserve">
+    <value>Chronologie</value>
+  </data>
+  <data name="Tire Size" xml:space="preserve">
+    <value>Tire Size</value>
+  </data>
+  <data name="Tire Storage Permit #:" xml:space="preserve">
+    <value>Entreposage de pneus permis #:</value>
+  </data>
+  <data name="EPRTS Privacy Agreement" xml:space="preserve">
+    <value>EPRTS confidentialité Accord</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>Titre:</value>
+  </data>
+  <data name="Transporter Hauling Certifications" xml:space="preserve">
+    <value>Certifications Transporter Hauling</value>
+  </data>
+  <data name="TX-Barcode" xml:space="preserve">
+    <value>TX-barres</value>
+  </data>
+  <data name="TX-ID" xml:space="preserve">
+    <value>TX-ID</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>type</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Mettre à Jour</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>Site web:</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="ZIP Code:" xml:space="preserve">
+    <value>Code postal:</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continuer</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>Inscription</value>
+  </data>
+  <data name="Select Stewardship" xml:space="preserve">
+    <value>Sélectionnez l'intendance</value>
+  </data>
+  <data name="Step 8 of 8" xml:space="preserve">
+    <value>Étape 8 de 8</value>
+  </data>
+  <data name="Please check-mark all choices." xml:space="preserve">
+    <value>S'il vous plaît vérifiez-marquer tous les choix.</value>
+  </data>
+  <data name="Step 1 of 3" xml:space="preserve">
+    <value>Étape 1 de 3</value>
+  </data>
+  <data name="Step 1 of 4" xml:space="preserve">
+    <value>Étape 1 de 4</value>
+  </data>
+  <data name="Step 2 of 3" xml:space="preserve">
+    <value>Étape 2 de 3</value>
+  </data>
+  <data name="Step 2 of 4" xml:space="preserve">
+    <value>Étape 2 de 4</value>
+  </data>
+  <data name="Step 3 of 3" xml:space="preserve">
+    <value>Étape 3 de 3</value>
+  </data>
+  <data name="Step 3 of 4" xml:space="preserve">
+    <value>Étape 3 de 4</value>
+  </data>
+  <data name="Step 4 of 4" xml:space="preserve">
+    <value>Étape 4 de 4</value>
+  </data>
+  <data name="Step 1 of 7" xml:space="preserve">
+    <value>Étape 1 de 7</value>
+  </data>
+  <data name="Step 2 of 7" xml:space="preserve">
+    <value>Étape 2 de 7</value>
+  </data>
+  <data name="Step 3 of 7" xml:space="preserve">
+    <value>Étape 3 de 7</value>
+  </data>
+  <data name="Step 4 of 7" xml:space="preserve">
+    <value>Étape 4 de 7</value>
+  </data>
+  <data name="Step 5 of 7" xml:space="preserve">
+    <value>Étape 5 de 7</value>
+  </data>
+  <data name="Step 6 of 7" xml:space="preserve">
+    <value>Étape 6 de 7</value>
+  </data>
+  <data name="Step 7 of 7" xml:space="preserve">
+    <value>Étape 7 de 7</value>
+  </data>
+  <data name="Real World Solutions for Global Recycling" xml:space="preserve">
+    <value>Solutions Real World de recyclage global</value>
+  </data>
+  <data name="Location Business Phone:" xml:space="preserve">
+    <value>Téléphone au travail:</value>
+  </data>
+  <data name="Waste Hauling Permit #1:" xml:space="preserve">
+    <value>Transport des déchets permis # 1:</value>
+  </data>
+  <data name="Waste Storage Permit #1:" xml:space="preserve">
+    <value>Déchets permis stockage # 1:</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="Add this Location" xml:space="preserve">
+    <value>Ajouter ce Localisation</value>
+  </data>
+  <data name="&quot;Quick-Pay&quot; weekly compensation" xml:space="preserve">
+    <value>"Quick-Pay" indemnité hebdomadaire</value>
+  </data>
+  <data name="*Existing Stewardship Stakeholders are granted Pre-Approved status and Instant Access to their new EPRTS services by submitting an abreviated online information update application." xml:space="preserve">
+    <value>Les intervenants * intendance existants sont accordées préapprobation de statut et l'accès instantané à leurs nouveaux services EPRTS en soumettant une demande en ligne abreviated mise à jour des informations.</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling" xml:space="preserve">
+    <value>100% de recyclage des pneus usés vert</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling becomes a practical reality." xml:space="preserve">
+    <value>100% de recyclage des pneus usés vert devient une réalité pratique.</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>ajouter</value>
+  </data>
+  <data name="Add New Inventory" xml:space="preserve">
+    <value>Ajouter un nouvel inventaire</value>
+  </data>
+  <data name="Address:" xml:space="preserve">
+    <value>adresse:</value>
+  </data>
+  <data name="Admin Login" xml:space="preserve">
+    <value>admin Login</value>
+  </data>
+  <data name="Alerts Notifications" xml:space="preserve">
+    <value>Notifications Alertes</value>
+  </data>
+  <data name="Already a member" xml:space="preserve">
+    <value>Déjà un membre</value>
+  </data>
+  <data name="And much...much more!" xml:space="preserve">
+    <value>Et bien ... beaucoup plus!</value>
+  </data>
+  <data name="Application of Stakeholders" xml:space="preserve">
+    <value>Application des parties prenantes</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>date d'approbation</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>approuver</value>
+  </data>
+  <data name="Billing Contact:" xml:space="preserve">
+    <value>Billing Contact:</value>
+  </data>
+  <data name="Billing Mail Address:" xml:space="preserve">
+    <value>Adresse email de facturation:</value>
+  </data>
+  <data name="Business Phone Extension:" xml:space="preserve">
+    <value>Extension Téléphone au travail:</value>
+  </data>
+  <data name="Business Phone Number:" xml:space="preserve">
+    <value>Numéro de téléphone d'affaires:</value>
+  </data>
+  <data name="Business Phone Type:" xml:space="preserve">
+    <value>Type de téléphone au travail:</value>
+  </data>
+  <data name="Business Text Messages:" xml:space="preserve">
+    <value>Messages textes d'affaires:</value>
+  </data>
+  <data name="Business Waste Self-Survey and Solutions" xml:space="preserve">
+    <value>Déchets d'affaires libre-enquête et Solutions</value>
+  </data>
+  <data name="Cell Phone Extension:" xml:space="preserve">
+    <value>Extension de téléphone portable:</value>
+  </data>
+  <data name="Cell Phone Number:" xml:space="preserve">
+    <value>Numéro de téléphone cellulaire:</value>
+  </data>
+  <data name="Cell Phone Type:" xml:space="preserve">
+    <value>Numéro de téléphone cellulaire:</value>
+  </data>
+  <data name="Cell Text Message:" xml:space="preserve">
+    <value>Message texte Cellulaire:</value>
+  </data>
+  <data name="Certifications" xml:space="preserve">
+    <value>certifications</value>
+  </data>
+  <data name="Client Trade Refrences" xml:space="preserve">
+    <value>Références commerciales des clients</value>
+  </data>
+  <data name="Community Services" xml:space="preserve">
+    <value>services communautaires</value>
+  </data>
+  <data name="Compliance Trax" xml:space="preserve">
+    <value>conformité Trax</value>
+  </data>
+  <data name="Consumer" xml:space="preserve">
+    <value>consommateur</value>
+  </data>
+  <data name="Consumer Household Chemicals" xml:space="preserve">
+    <value>Les produits chimiques ménagers de consommation</value>
+  </data>
+  <data name="Consumer Paint Products" xml:space="preserve">
+    <value>Produits de peinture de consommation</value>
+  </data>
+  <data name="Contact Name" xml:space="preserve">
+    <value>Contact Nom</value>
+  </data>
+  <data name="Contact Title:" xml:space="preserve">
+    <value>Contactez Titre:</value>
+  </data>
+  <data name="Country Abbreviation:" xml:space="preserve">
+    <value>Abréviation Pays:</value>
+  </data>
+  <data name="Cradle-to-Reincarnation complete accountability for each individual Scrap Tire." xml:space="preserve">
+    <value>Cradle-to-Réincarnation responsabilité complète pour chaque individu pneus usés.</value>
+  </data>
+  <data name="TechSol Inc. copyrights 2014" xml:space="preserve">
+    <value>TechSol Inc. copyrights 2014</value>
+  </data>
+  <data name="Fax:" xml:space="preserve">
+    <value>Fax:</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>Prénom:</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>Mot de passe oublié?</value>
+  </data>
+  <data name="Global eCommerce Website" xml:space="preserve">
+    <value>Global Website eCommerce</value>
+  </data>
+  <data name="Goods" xml:space="preserve">
+    <value>biens</value>
+  </data>
+  <data name="Government Agencies" xml:space="preserve">
+    <value>organismes gouvernementaux</value>
+  </data>
+  <data name="Government Permits" xml:space="preserve">
+    <value>permis gouvernement</value>
+  </data>
+  <data name="Green Business Innovation" xml:space="preserve">
+    <value>L'innovation en entreprise verte</value>
+  </data>
+  <data name="Green Collar Jobs" xml:space="preserve">
+    <value>Emplois verts</value>
+  </data>
+  <data name="Green Equation" xml:space="preserve">
+    <value>Equation vert</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>maison</value>
+  </data>
+  <data name="Information:" xml:space="preserve">
+    <value>Information:</value>
+  </data>
+  <data name="Integrated Government Compliance" xml:space="preserve">
+    <value>Conformité gouvernement intégré</value>
+  </data>
+  <data name="Integrated Stewardship Compliance" xml:space="preserve">
+    <value>Conformité Gestion intégrée</value>
+  </data>
+  <data name="Inventory" xml:space="preserve">
+    <value>inventaire</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>Nom de famille:</value>
+  </data>
+  <data name="Law Enforcement Agencies" xml:space="preserve">
+    <value>Organismes d'application de la loi</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>login</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>déconnexion</value>
+  </data>
+  <data name="Lookup Management" xml:space="preserve">
+    <value>Lookup gestion</value>
+  </data>
+  <data name="Market-based and Self-sustaining Stewardship Funding and Earnings platform." xml:space="preserve">
+    <value>Axée sur le marché et de l'auto-entretenue financement intendance et de la plateforme résultats.</value>
+  </data>
+  <data name="Mobile access to Stakeholder Accounts" xml:space="preserve">
+    <value>L'accès mobile aux comptes des parties prenantes</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>Nom du module</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>nouveau</value>
+  </data>
+  <data name="Organization Information" xml:space="preserve">
+    <value>Renseignements sur l'organisme</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>mot de passe</value>
+  </data>
+  <data name="Please enter Primary Contact Business Phone" xml:space="preserve">
+    <value>S'il vous plaît entrer primaire Téléphone Business Contact</value>
+  </data>
+  <data name="Please enter Primary Contact Cell Phone" xml:space="preserve">
+    <value>S'il vous plaît entrer primaire Cell Phone Contacter</value>
+  </data>
+  <data name="Please select atleast one Stakeholder Certification" xml:space="preserve">
+    <value>S'il vous plaît sélectionner au moins un des intervenants de certification</value>
+  </data>
+  <data name="Primary Email:" xml:space="preserve">
+    <value>Courriel principal:</value>
+  </data>
+  <data name="Products or Materials" xml:space="preserve">
+    <value>Produits ou matériaux</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>Liens rapides</value>
+  </data>
+  <data name="Read More" xml:space="preserve">
+    <value>lire la suite</value>
+  </data>
+  <data name="Real World Solutions for Global Recycling1" xml:space="preserve">
+    <value>Solutions Real World de recyclage global</value>
+  </data>
+  <data name="Recently Added Stakeholders" xml:space="preserve">
+    <value>Les intervenants récemment ajoutés</value>
+  </data>
+  <data name="Recently Added Stewardships" xml:space="preserve">
+    <value>Intendances récemment ajoutés</value>
+  </data>
+  <data name="Register Now" xml:space="preserve">
+    <value>Inscrivez-vous</value>
+  </data>
+  <data name="Remeber me" xml:space="preserve">
+    <value>Se souvenir de moi</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>Se souvenir de moi</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Rapports</value>
+  </data>
+  <data name="Role Name" xml:space="preserve">
+    <value>rôle Nom</value>
+  </data>
+  <data name="Scrap Tire Related Products" xml:space="preserve">
+    <value>Scrap Tire Produits associés</value>
+  </data>
+  <data name="Scrap Tire Stewardships" xml:space="preserve">
+    <value>Scrap intendance Tire</value>
+  </data>
+  <data name="Scrap Tires" xml:space="preserve">
+    <value>pneus usés</value>
+  </data>
+  <data name="Search Inventory" xml:space="preserve">
+    <value>Rechercher dans l'inventaire</value>
+  </data>
+  <data name="Security Roles" xml:space="preserve">
+    <value>Rôles de sécurité</value>
+  </data>
+  <data name="Security/Roles" xml:space="preserve">
+    <value>Sécurité / Rôles</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>réglages</value>
+  </data>
+  <data name="Stakeholder Carbon Credit Management" xml:space="preserve">
+    <value>Gestion des parties prenantes de crédits carbone</value>
+  </data>
+  <data name="State Name" xml:space="preserve">
+    <value>Nom de l'État</value>
+  </data>
+  <data name="Stewardship Certifications" xml:space="preserve">
+    <value>Certifications intendance</value>
+  </data>
+  <data name="Stewardship Modules" xml:space="preserve">
+    <value>Modules d'intendance</value>
+  </data>
+  <data name="Stewardship Services" xml:space="preserve">
+    <value>Les services d'intendance</value>
+  </data>
+  <data name="Supplier Trade References" xml:space="preserve">
+    <value>Références commerciales des fournisseurs</value>
+  </data>
+  <data name="Temporary" xml:space="preserve">
+    <value>temporaire</value>
+  </data>
+  <data name="The EPRTS Cradle-to-Reincarnation identification and tracking capabilities coupled with its complete systemic accoutability provide the initial framework necessary to insure the successful transition from existing scrap tire diversion projects to 100% Green product utilization." xml:space="preserve">
+    <value>Les EPRTS Cradle-to-Reincarnation les capacités d'identification et de suivi couplé avec son accoutability systémique complète fournissent le cadre initial nécessaire pour assurer la transition réussie de projets existants détournement de pneus usés à l'utilisation des produits 100% vert.</value>
+  </data>
+  <data name="The EPRTS Stewardship platform offers a market based concept that fully utilizes the existing tire industry's infrastuctures." xml:space="preserve">
+    <value>La plate-forme EPRTS intendance propose un concept axé sur le marché qui utilise pleinement les infrastructures de l'industrie pneus actuels.</value>
+  </data>
+  <data name="Tire Transportation Permit #:" xml:space="preserve">
+    <value>Tire Transports Permis #:</value>
+  </data>
+  <data name="Tire Trax" xml:space="preserve">
+    <value>EPRTS</value>
+  </data>
+  <data name="EPRTS Benefit Includes" xml:space="preserve">
+    <value>Prestation EPRTS Comprend</value>
+  </data>
+  <data name="EPRTS provides the unified and incentivised operations and management solutions for businesses and governments to welcome the incorporation of a 100% Green Recycling initiative." xml:space="preserve">
+    <value>EPRTS fournit les opérations unifiées et récompensés et les solutions de gestion pour les entreprises et les gouvernements pour accueillir l'incorporation d'une initiative de recyclage vert 100%.</value>
+  </data>
+  <data name="EPRTS Updates" xml:space="preserve">
+    <value>Mises à jour EPRTS</value>
+  </data>
+  <data name="EPRTS, by EPR Dynamics, is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>EPRTS, par la dynamique EPR, est la solution complète pour les opérations de recyclage d'un produit sur ​​la responsabilité élargie des pneus usés intendance et les défis de gestion.</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>à</value>
+  </data>
+  <data name="Trax Exchange" xml:space="preserve">
+    <value>Trax Bourse</value>
+  </data>
+  <data name="Tronic Trax" xml:space="preserve">
+    <value>Tronic Trax</value>
+  </data>
+  <data name="Troxic Trax" xml:space="preserve">
+    <value>Troxic Trax</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="User or Scrap" xml:space="preserve">
+    <value>Utilisateur ou Scrap</value>
+  </data>
+  <data name="User Type" xml:space="preserve">
+    <value>type d'utilisateur</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="view details" xml:space="preserve">
+    <value>afficher les détails</value>
+  </data>
+  <data name="Waste Hauling Permit #2:" xml:space="preserve">
+    <value>Transport des déchets Permis n ° 2:</value>
+  </data>
+  <data name="Waste Storage Permit #2:" xml:space="preserve">
+    <value>Déchets de permis de stockage n ° 2:</value>
+  </data>
+  <data name="Waste Trax" xml:space="preserve">
+    <value>déchets Trax</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>site Web</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>accueil</value>
+  </data>
+  <data name="You are" xml:space="preserve">
+    <value>vous êtes</value>
+  </data>
+  <data name="Bin/Space" xml:space="preserve">
+    <value>Bin / Espace</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>marque</value>
+  </data>
+  <data name="Brand 2" xml:space="preserve">
+    <value>marque 2</value>
+  </data>
+  <data name="C Barcode" xml:space="preserve">
+    <value>Barcode C</value>
+  </data>
+  <data name="DOT Number" xml:space="preserve">
+    <value>Numéro DOT</value>
+  </data>
+  <data name="Lot Number" xml:space="preserve">
+    <value>Numéro de lot</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>mois</value>
+  </data>
+  <data name="Plant" xml:space="preserve">
+    <value>usine</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>taille</value>
+  </data>
+  <data name="Thankyou for your Registrtion at EPRTS. You will be notify by Email. Please check your Email for your Login Information." xml:space="preserve">
+    <value>Merci de votre inscription à EPRTS. Vous serez informer par e-mail. S'il vous plaît vérifier votre e-mail pour vos informations de connexion.</value>
+  </data>
+  <data name="Welcome to EPRTS" xml:space="preserve">
+    <value>Bienvenue sur EPRTS</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>année</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>rejeter</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>Alertes</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>Les demandes</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>adresse e-mail</value>
+  </data>
+  <data name="Forgot Password" xml:space="preserve">
+    <value>Mot de passe oublié</value>
+  </data>
+  <data name="Error 404 - Page Not Found" xml:space="preserve">
+    <value>Erreur 404 - Page introuvable</value>
+  </data>
+  <data name="Go back to Home Page" xml:space="preserve">
+    <value>Retour à la page d'accueil</value>
+  </data>
+  <data name="Sorry, but the page you are looking for might have been removed,had its name changed, or is temporarily unavailable." xml:space="preserve">
+    <value>Désolé, mais la page que vous recherchez ait été supprimée, que son nom ait changé, ou est temporairement indisponible.</value>
+  </data>
+  <data name="Business Phone" xml:space="preserve">
+    <value>téléphone au bureau</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>ville</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>Nom de la société</value>
+  </data>
+  <data name="Permit #" xml:space="preserve">
+    <value>Permis #</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>état</value>
+  </data>
+  <data name="WHP #1:" xml:space="preserve">
+    <value>WHP #1:</value>
+  </data>
+  <data name="WHP #2:" xml:space="preserve">
+    <value>WHP #2:</value>
+  </data>
+  <data name="WSP #1:" xml:space="preserve">
+    <value>WSP #1:</value>
+  </data>
+  <data name="WSP #2:" xml:space="preserve">
+    <value>WSP #2:</value>
+  </data>
+  <data name="Pending Goverment Agency" xml:space="preserve">
+    <value>Agence Goverment attente</value>
+  </data>
+  <data name="Pending Law Enforcement Agency" xml:space="preserve">
+    <value>En attendant Law Enforcement Agency</value>
+  </data>
+  <data name="Pending Organization" xml:space="preserve">
+    <value>Dans l'attente de l'Organisation</value>
+  </data>
+  <data name="Pending Stakeholders" xml:space="preserve">
+    <value>Les intervenants en attente</value>
+  </data>
+  <data name="Pending Stewards" xml:space="preserve">
+    <value>Commissaires attente</value>
+  </data>
+  <data name="Pending Stewardships" xml:space="preserve">
+    <value>intendances en attente</value>
+  </data>
+  <data name="EPR User Name" xml:space="preserve">
+    <value>Nom d'utilisateur EPR</value>
+  </data>
+  <data name="Stewardship Type" xml:space="preserve">
+    <value>type d'intendance</value>
+  </data>
+  <data name="Agency Type" xml:space="preserve">
+    <value>type d'organisme</value>
+  </data>
+  <data name="Steward Type" xml:space="preserve">
+    <value>Steward type d'</value>
+  </data>
+  <data name="Stewardship Type(s)" xml:space="preserve">
+    <value>Stewardship Type (s)</value>
+  </data>
+  <data name="Action Date" xml:space="preserve">
+    <value>action Date</value>
+  </data>
+  <data name="Received Date" xml:space="preserve">
+    <value>date de réception</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>remettre</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>--Sélectionner--</value>
+  </data>
+  <data name="Go To Home" xml:space="preserve">
+    <value>Aller à l'accueil</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>Région Nom</value>
+  </data>
+  <data name="Primary Contact:" xml:space="preserve">
+    <value>Personne-ressource:</value>
+  </data>
+  <data name="Registration Form" xml:space="preserve">
+    <value>Formulaire d'inscription</value>
+  </data>
+  <data name="Business Legal Name" xml:space="preserve">
+    <value>Raison sociale</value>
+  </data>
+  <data name="Enter ZIP Code" xml:space="preserve">
+    <value>Entrez le code postal</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="If applicable" xml:space="preserve">
+    <value>le cas échéant</value>
+  </data>
+  <data name="Primary physical location Street # - Street name" xml:space="preserve">
+    <value>Physique primaire emplacement de la rue # - Nom de la rue</value>
+  </data>
+  <data name="Suite # or Unit #" xml:space="preserve">
+    <value>Suite # Unit # ou</value>
+  </data>
+  <data name="Email:" xml:space="preserve">
+    <value>email:</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>Connexion:</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>Prénom:</value>
+  </data>
+  <data name="Phone Number:" xml:space="preserve">
+    <value>Numéro de téléphone:</value>
+  </data>
+  <data name="Re Enter Password:" xml:space="preserve">
+    <value>Re Entrer Mot de passe:</value>
+  </data>
+  <data name="Update Password:" xml:space="preserve">
+    <value>Mise à jour Mot de passe:</value>
+  </data>
+  <data name="User Role:" xml:space="preserve">
+    <value>Rôle de l'utilisateur:</value>
+  </data>
+  <data name="Scrap Category Type:" xml:space="preserve">
+    <value>Scrap Type Catégorie:</value>
+  </data>
+  <data name="Scrap Category:" xml:space="preserve">
+    <value>Scrap Catégorie:</value>
+  </data>
+  <data name="Tire Types:" xml:space="preserve">
+    <value>Types de pneus:</value>
+  </data>
+  <data name="Inventory Revenue" xml:space="preserve">
+    <value>revenu d'inventaire</value>
+  </data>
+  <data name="Size to PET" xml:space="preserve">
+    <value>Taille de PET</value>
+  </data>
+  <data name="--Select--" xml:space="preserve">
+    <value>- Sélectionnez -</value>
+  </data>
+  <data name="Account Information" xml:space="preserve">
+    <value>Informations sur le compte</value>
+  </data>
+  <data name="Account Number" xml:space="preserve">
+    <value>Numéro de compte</value>
+  </data>
+  <data name="Account Title" xml:space="preserve">
+    <value>Titre compte</value>
+  </data>
+  <data name="Account Title :" xml:space="preserve">
+    <value>Titre du compte:</value>
+  </data>
+  <data name="Account Type" xml:space="preserve">
+    <value>type de compte</value>
+  </data>
+  <data name="Account Type :" xml:space="preserve">
+    <value>Type de compte:</value>
+  </data>
+  <data name="Account# :" xml:space="preserve">
+    <value>Compte:</value>
+  </data>
+  <data name="Add New Credit Information" xml:space="preserve">
+    <value>Ajout d'informations de New Credit</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>adresse</value>
+  </data>
+  <data name="Admin Permission" xml:space="preserve">
+    <value>Permission admin</value>
+  </data>
+  <data name="Bank Account Information" xml:space="preserve">
+    <value>Informations sur le compte bancaire</value>
+  </data>
+  <data name="Bank Address Information" xml:space="preserve">
+    <value>Adresse de la banque d'information</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>Nom de la banque</value>
+  </data>
+  <data name="Bank Name :" xml:space="preserve">
+    <value>Nom de la banque:</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>branche</value>
+  </data>
+  <data name="Branch :" xml:space="preserve">
+    <value>Direction générale:</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>entreprise</value>
+  </data>
+  <data name="Card Name" xml:space="preserve">
+    <value>Nom de la carte</value>
+  </data>
+  <data name="Card Number" xml:space="preserve">
+    <value>Numéro de la carte</value>
+  </data>
+  <data name="Card#:" xml:space="preserve">
+    <value>N ° de carte:</value>
+  </data>
+  <data name="City :" xml:space="preserve">
+    <value>ville:</value>
+  </data>
+  <data name="Credit Card Information" xml:space="preserve">
+    <value>Carte de crédit</value>
+  </data>
+  <data name="Credit Card Type" xml:space="preserve">
+    <value>Type de carte de crédit</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>courant</value>
+  </data>
+  <data name="Default Permission" xml:space="preserve">
+    <value>L'autorisation par défaut</value>
+  </data>
+  <data name="Default URL:" xml:space="preserve">
+    <value>URL par défaut:</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>date d'expiration</value>
+  </data>
+  <data name="Group:" xml:space="preserve">
+    <value>Groupe:</value>
+  </data>
+  <data name="IBAN# :" xml:space="preserve">
+    <value>IBAN# :</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>latitude</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>longitude</value>
+  </data>
+  <data name="LookUp Name" xml:space="preserve">
+    <value>recherche de nom</value>
+  </data>
+  <data name="Navigate on main screen:" xml:space="preserve">
+    <value>Naviguez sur l'écran principal:</value>
+  </data>
+  <data name="Order By" xml:space="preserve">
+    <value>Trier par</value>
+  </data>
+  <data name="Page Name" xml:space="preserve">
+    <value>Nom de la page</value>
+  </data>
+  <data name="Page Path" xml:space="preserve">
+    <value>chemin de la page</value>
+  </data>
+  <data name="Path:" xml:space="preserve">
+    <value>chemin d'accès:</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>autorisation</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>autorisations</value>
+  </data>
+  <data name="Phone# :" xml:space="preserve">
+    <value>N ° de téléphone:</value>
+  </data>
+  <data name="Primary Account" xml:space="preserve">
+    <value>compte primaire</value>
+  </data>
+  <data name="Primary Card" xml:space="preserve">
+    <value>carte principale</value>
+  </data>
+  <data name="Primary Phone" xml:space="preserve">
+    <value>Numéro de téléphone principal</value>
+  </data>
+  <data name="Roles:" xml:space="preserve">
+    <value>rôles:</value>
+  </data>
+  <data name="Routing# :" xml:space="preserve">
+    <value># Routage:</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>économie</value>
+  </data>
+  <data name="Serial Number" xml:space="preserve">
+    <value>numéro de série</value>
+  </data>
+  <data name="State :" xml:space="preserve">
+    <value>Etat:</value>
+  </data>
+  <data name="Street Name" xml:space="preserve">
+    <value>Nom de la rue</value>
+  </data>
+  <data name="Street Name :" xml:space="preserve">
+    <value>Nom de la rue:</value>
+  </data>
+  <data name="Street Number" xml:space="preserve">
+    <value>Numéro de rue</value>
+  </data>
+  <data name="Street Number :" xml:space="preserve">
+    <value>Numéro civique:</value>
+  </data>
+  <data name="Swift Code :" xml:space="preserve">
+    <value>Swift Code :</value>
+  </data>
+  <data name="Type:" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="VC2 Code" xml:space="preserve">
+    <value>code de VC2</value>
+  </data>
+  <data name="View Permission" xml:space="preserve">
+    <value>Permission du</value>
+  </data>
+  <data name="Zip Code :" xml:space="preserve">
+    <value>Code postal:</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>compte bancaire</value>
+  </data>
+  <data name="Credit Card" xml:space="preserve">
+    <value>carte de crédit</value>
+  </data>
+  <data name="Select Country and Stewardship to continue" xml:space="preserve">
+    <value>Sélectionnez Pays et intendance de continuer</value>
+  </data>
+  <data name="Welcome to EPR" xml:space="preserve">
+    <value>Bienvenue à EPR</value>
+  </data>
+  <data name="EPR Technology Solutions Benefit Includes" xml:space="preserve">
+    <value>EPR Benefit Technology Solutions Comprend</value>
+  </data>
+  <data name="EPR Technology Solutions is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>EPR Technology Solutions est la solution complète pour les opérations de recyclage de la ferraille une étendue de la responsabilité de produit d'intendance des pneus et les défis de gestion.</value>
+  </data>
+  <data name="*Existing Stewardship Stakeholders are granted Pre-Approved status and Instant Access to their new EPR Technology Solutions services by submitting an abbreviated online information update application." xml:space="preserve">
+    <value>* Les parties prenantes d'intendance existants sont vu accorder le statut de pré-approuvé et un accès instantané à leurs nouveaux services EPR Technology Solutions en présentant une information en ligne l'application de mise à jour abrégée.</value>
+  </data>
+  <data name="Real World Solutions for Global Resource Recycling" xml:space="preserve">
+    <value>Real Solutions mondiales pour le recyclage des ressources mondiales</value>
+  </data>
+  <data name="Auto-Fund Transfers:" xml:space="preserve">
+    <value>Transferts Auto-Fonds:</value>
+  </data>
+  <data name="Facility Postal Code:" xml:space="preserve">
+    <value>Facilité Code postal:</value>
+  </data>
+  <data name="Organization Type:" xml:space="preserve">
+    <value>Type d'organisation:</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>près</value>
+  </data>
+  <data name="EPR Technology Solutions provides the unified and incentivised operations and management solutions for businesses and governments to welcome the incorporation of a 100% Green Recycling initiative." xml:space="preserve">
+    <value>EPR Technology Solutions fournit les opérations unifiés et incitatifs et des solutions de gestion pour les entreprises et les gouvernements à accueillir l'incorporation d'une initiative 100% vert recyclage.</value>
+  </data>
+  <data name="The EPR Technology Solutions Cradle-to-Reincarnation identification and tracking capabilities coupled with its complete systemic accountability provide the initial framework necessary to insure the successful transition from existing scrap tire diversion projects to 100% Green product utilization." xml:space="preserve">
+    <value>Les identification et de suivi des capacités EPR Technology Solutions Cradle-to-Réincarnation couplés avec sa responsabilité systémique complète fournissent le cadre initial nécessaire pour assurer la transition réussie de détournement projets existants de pneus usés à 100% l'utilisation de produits verts.</value>
+  </data>
+  <data name="The EPR Technology Solutions Stewardship platform offers a market based concept that fully utilizes the existing tire industry's infrastructures." xml:space="preserve">
+    <value>La plate-forme EPR Technology Solutions Stewardship propose un concept basé sur le marché qui utilise pleinement les infrastructures de l'industrie du pneu existant.</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Business Energy/Water Self-Survey and Solutions" xml:space="preserve">
+    <value>Energy Business / Eau Auto-Évaluation et solutions</value>
+  </data>
+  <data name="Carpets and Rugs" xml:space="preserve">
+    <value>Moquettes et tapis</value>
+  </data>
+  <data name="Center Trax" xml:space="preserve">
+    <value>centre Trax</value>
+  </data>
+  <data name="Consumer Trax" xml:space="preserve">
+    <value>Consumer Trax</value>
+  </data>
+  <data name="E-Waste" xml:space="preserve">
+    <value>E-déchets</value>
+  </data>
+  <data name="Global Market Values and Futures Exchange" xml:space="preserve">
+    <value>Les valeurs de marché mondial et Futures Exchange</value>
+  </data>
+  <data name="Global Producer and Product Registry" xml:space="preserve">
+    <value>Producteur mondial et d'enregistrement des produits</value>
+  </data>
+  <data name="Global Waste Resource e-Commerce Site" xml:space="preserve">
+    <value>Ressources de Global Waste site e-commerce</value>
+  </data>
+  <data name="Home Appliances" xml:space="preserve">
+    <value>Appareils Électroménagers</value>
+  </data>
+  <data name="Home Energy/Water Self-Survey and Solutions" xml:space="preserve">
+    <value>Accueil Energie / Eau Auto-Évaluation et solutions</value>
+  </data>
+  <data name="Home Waste Self-Survey and Solutions" xml:space="preserve">
+    <value>Accueil déchets auto-sondage et Solutions</value>
+  </data>
+  <data name="Household Chemicals" xml:space="preserve">
+    <value>Les produits chimiques ménagers</value>
+  </data>
+  <data name="ISO 14064-III Carbon Credit Management" xml:space="preserve">
+    <value>ISO 14064-III de gestion de crédit de carbone</value>
+  </data>
+  <data name="Mattresses" xml:space="preserve">
+    <value>matelas</value>
+  </data>
+  <data name="New Products or Materials" xml:space="preserve">
+    <value>Nouveaux produits ou matériaux</value>
+  </data>
+  <data name="Paint and Paint Products" xml:space="preserve">
+    <value>Peinture et des produits</value>
+  </data>
+  <data name="Recycling Centers" xml:space="preserve">
+    <value>Centres de recyclage</value>
+  </data>
+  <data name="Redemption Centers" xml:space="preserve">
+    <value>Centres de rachat</value>
+  </data>
+  <data name="Resource Trax" xml:space="preserve">
+    <value>Trax ressources</value>
+  </data>
+  <data name="Scrap Tubes and Flaps" xml:space="preserve">
+    <value>Tubes de la ferraille et de lambeaux</value>
+  </data>
+  <data name="Social Media NPO Recycling/Fund-Raising Program" xml:space="preserve">
+    <value>/ Collecte de fonds Programme Social Media NPO recyclage</value>
+  </data>
+  <data name="Toxic Trax" xml:space="preserve">
+    <value>toxique Trax</value>
+  </data>
+  <data name="Trash Trax" xml:space="preserve">
+    <value>Trash Trax</value>
+  </data>
+  <data name="Trash Tweets" xml:space="preserve">
+    <value>Tweets Trash</value>
+  </data>
+  <data name="Used Products or Materials" xml:space="preserve">
+    <value>Produits ou matériaux utilisés</value>
+  </data>
+  <data name="I accept the terms of" xml:space="preserve">
+    <value>Je accepte les termes de</value>
+  </data>
+  <data name="Please, review the Terms and Conditions of the Stewardship and EPRTS Privacy agreements before submitting your enrollment application." xml:space="preserve">
+    <value>S'il vous plaît, examiner les modalités et conditions de l'intendance et de EPRTS accords de confidentialité avant de soumettre votre demande d'inscription.</value>
+  </data>
+  <data name="Please select at least one Stewardship Module" xml:space="preserve">
+    <value>S'il vous plaît sélectionner au moins un module Stewardship</value>
+  </data>
+  <data name="Product Type:" xml:space="preserve">
+    <value>Type de produit:</value>
+  </data>
+</root>

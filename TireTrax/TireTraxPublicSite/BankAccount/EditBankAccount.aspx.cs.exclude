@@ -1,0 +1,151 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using TireTraxLib;
+using System.Data;
+
+public partial class BankAccount_EditBankAccount : BasePage
+{
+    public int _GlobalCountryID = 235; // USA CountryId
+    private int StewardshipCertifications = 0;
+    private int StakeholderCertifications = 0;
+    public int GlobalCountryID
+    {
+        get
+        {
+            string Culture = Convert.ToString(HttpContext.Current.Request.Cookies["CultureCookie"]["UICulture"]);
+            switch (Culture.ToLower())
+            {
+                case "en-us":
+                    _GlobalCountryID = 235;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsEnglish);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsEnglish);
+                    break;
+                case "es-mx":
+                    _GlobalCountryID = 159;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsSpanish);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsSpanish);
+                    break;
+                case "fr-fr":
+                    _GlobalCountryID = 39;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsFrench);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsFrench);
+                    break;
+                case "fr-ca":
+                    _GlobalCountryID = 39;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsCanadian);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsCanadian);
+                    break;
+                case "en-ca":
+                    _GlobalCountryID = 39;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsCanadian);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsCanadian);
+                    break;
+                case "ja-jp":
+                    _GlobalCountryID = 116;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsJapanese);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsJapanese);
+                    break;
+                case "ko-kr":
+                    _GlobalCountryID = 124;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsKorean);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsKorean);
+                    break;
+                case "en-au":
+                    _GlobalCountryID = 14;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsAustralia);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsAustralia);
+                    break;
+                case "zh-cn":
+                    _GlobalCountryID = 49;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsChinese);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsChinese);
+                    break;
+                default:
+                    _GlobalCountryID = 235;
+                    StewardshipCertifications = Convert.ToInt32(OrganizationCertificationTypes.StewardshipCertificationsEnglish);
+                    StakeholderCertifications = Convert.ToInt32(OrganizationCertificationTypes.StakeholderCertificationsEnglish);
+                    break;
+            }
+
+
+            return _GlobalCountryID;
+        }
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        ClientScript.RegisterStartupScript(GetType(), "SetHeaderMenu", String.Format("SetHeaderMenu('liBA','{0}');", ResourceMgr.GetMessage("Bank Account")), true);
+        if (!IsPostBack)
+        {
+
+            Utils.GetLookUpData<DropDownList>(ref ddlState, LookUps.StateIdAndName);
+            Utils.GetLookUpData<DropDownList>(ref ddlIAcountType, LookUps.BankAccountType);
+            int accountid = Convert.ToInt32(Request.QueryString["BankAccountId"]);
+            BankAccounts bankaccountObj = new BankAccounts(accountid);
+            ddlIAcountType.SelectedValue = (bankaccountObj.Bankaccounttypeid).ToString();
+            txtAccountTitle.Text = bankaccountObj.AccountTitle;
+            txtAccountNum.Text = bankaccountObj.AccountNumber;
+            txtRoutingNum.Text = bankaccountObj.RoutingNumber;
+            txtBankName.Text = bankaccountObj.BankName;
+            txtBranch.Text = bankaccountObj.BranchName;
+            txtIBANNum.Text = bankaccountObj.IBANNumber;
+            txtSwiftCode.Text = bankaccountObj.SwiftCode;
+            chkboxetf.Checked = bankaccountObj.IsETF;
+            txtStreetNum.Text = bankaccountObj.StreetNumber;
+            txtStreetName.Text = bankaccountObj.StreetName;
+            txtZipCode.Text = bankaccountObj.ZipCode;
+            txtCity.Text = bankaccountObj.City;
+            ddlState.SelectedValue = (bankaccountObj.StateId).ToString();
+            txtPhoneNum.Text = bankaccountObj.PrimaryPhone;
+
+
+        }
+
+
+    }
+
+    protected void lnkbtnAddBankAccount_Click(object sender, EventArgs e)
+    {
+        DataTable dt;
+        dt = OrganizationInfo.GetCityStateAndCountryByZipCode(txtZipCode.Text.Trim(), GlobalCountryID);
+
+        if (dt.Rows.Count > 0)
+        {
+            int accountid = Convert.ToInt32(Request.QueryString["BankAccountId"]);
+            BankAccounts.editBankAccountInfo(accountid, Convert.ToInt32(ddlIAcountType.SelectedValue), txtBankName.Text.Trim(), txtBranch.Text.Trim(), txtAccountTitle.Text.Trim(), txtAccountNum.Text.Trim(), txtRoutingNum.Text.Trim(), txtIBANNum.Text.Trim(), txtSwiftCode.Text.Trim(), txtStreetName.Text.Trim(), txtStreetNum.Text.Trim(), txtCity.Text.Trim(), txtZipCode.Text.Trim(), txtPhoneNum.Text.Trim(), Convert.ToInt32(ddlState.SelectedValue), Convert.ToBoolean(chkboxetf.Checked), LoginMemberId);
+            Response.Redirect("bankaccount");
+            lblBusinessZipCode.Text = "";
+        }
+        else
+        {
+            lblBusinessZipCode.Text = "* Zipcode does not exist.";
+        }
+     
+    }
+    protected void txtBusinessZipCode_TextChanged(object sender, EventArgs e)
+    {
+        DataTable dt;
+        dt = OrganizationInfo.GetCityStateAndCountryByZipCode(txtZipCode.Text.Trim(), GlobalCountryID);
+
+        if (dt.Rows.Count > 0)
+        {
+
+
+            txtCity.Text = Convert.ToString(dt.Rows[0]["CityName"]);
+            if (ddlState.Items.FindByValue(Convert.ToString(dt.Rows[0]["StateId"])) != null)
+                ddlState.SelectedValue = Convert.ToString(dt.Rows[0]["StateId"]);
+            lblBusinessZipCode.Text = "";
+        }
+        else
+        {
+            lblBusinessZipCode.Text = "* Zipcode does not exist.";
+        }
+    }
+    protected void lnkbtnCancelBankAccount_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("bankaccount");
+    }
+}

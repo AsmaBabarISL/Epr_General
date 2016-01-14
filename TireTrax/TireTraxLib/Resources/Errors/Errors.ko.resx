@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Business Legal Name" xml:space="preserve">
+    <value>사업 법률 명</value>
+  </data>
+  <data name="&quot;Suite # or Unit #" xml:space="preserve">
+    <value>"스위트 룸 # 또는 단위 #</value>
+  </data>
+  <data name="Add Supplier" xml:space="preserve">
+    <value>이 참조를 추가</value>
+  </data>
+  <data name="Business Legal Name1" xml:space="preserve">
+    <value>법률 회사 명</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Enter ZIP Code" xml:space="preserve">
+    <value>우편 번호를 입력</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>이름</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>부터</value>
+  </data>
+  <data name="If applicable" xml:space="preserve">
+    <value>해당되는 경우</value>
+  </data>
+  <data name="If Mailing Address different" xml:space="preserve">
+    <value>우편 주소와 다를 경우</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>성</value>
+  </data>
+  <data name="Location Legal Name" xml:space="preserve">
+    <value>위치 법적 이름</value>
+  </data>
+  <data name="Mailing Street# - Street name" xml:space="preserve">
+    <value>스트리트 # - 이름</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="Password does not match" xml:space="preserve">
+    <value>비밀번호가 일치하지 않습니다</value>
+  </data>
+  <data name="Please add atleast three clients" xml:space="preserve">
+    <value>적어도 세 클라이언트를 추가하십시오</value>
+  </data>
+  <data name="Please add atleast three Suppliers" xml:space="preserve">
+    <value>적어도 세 업체를 추가하세요 적어도 세 클라이언트를 추가하십시오</value>
+  </data>
+  <data name="Please check mark Permanent or Temporary box" xml:space="preserve">
+    <value>마르크 영구 또는 임시 확인란을 선택하십시오</value>
+  </data>
+  <data name="Please check mark the Steward Privacy Agreement box" xml:space="preserve">
+    <value>스튜 워드 개인 정보 보호 계약 상자를 표시 확인하시기 바랍니다</value>
+  </data>
+  <data name="Please check mark the EPRTS Privacy Agreement box" xml:space="preserve">
+    <value>EPRTS 개인 정보 보호 계약 상자를 표시 확인하시기 바랍니다</value>
+  </data>
+  <data name="Please enter  Mailing Suite# or PO Box#" xml:space="preserve">
+    <value>메일 링 스위트 룸 # 또는 사서함 #를 입력하세요</value>
+  </data>
+  <data name="Please enter Address" xml:space="preserve">
+    <value>주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Business Name1" xml:space="preserve">
+    <value>법률 회사 명을 입력하세요</value>
+  </data>
+  <data name="Please enter Business Phone" xml:space="preserve">
+    <value>회사 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter City" xml:space="preserve">
+    <value>도시를 입력하세요</value>
+  </data>
+  <data name="Please enter Company Name" xml:space="preserve">
+    <value>회사 명을 입력하세요</value>
+  </data>
+  <data name="Please enter Contact Name" xml:space="preserve">
+    <value>연락처 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Location Contact Email" xml:space="preserve">
+    <value>위치 이메일 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Location Name" xml:space="preserve">
+    <value>위치 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Location Permit #" xml:space="preserve">
+    <value>위치 허가를 # 입력하세요</value>
+  </data>
+  <data name="Please enter Mailing Address" xml:space="preserve">
+    <value>우편 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Mailing Address City" xml:space="preserve">
+    <value>우편 주소 도시를 입력하세요</value>
+  </data>
+  <data name="Please enter Mailing Address ZIP Code" xml:space="preserve">
+    <value>우편 주소의 우편 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Owner Email" xml:space="preserve">
+    <value>소유자 이메일을 입력하십시오</value>
+  </data>
+  <data name="Please enter Password" xml:space="preserve">
+    <value>비밀번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Primary Contact Cell Phone" xml:space="preserve">
+    <value>기본 연락처 휴대 전화를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Primary Contact Email" xml:space="preserve">
+    <value>기본 이메일 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Suit #" xml:space="preserve">
+    <value>소송을 입력하십시오 #</value>
+  </data>
+  <data name="Please enter Tire Storage Permit Number" xml:space="preserve">
+    <value>타이어 스토리지 허가 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Tire Transportation Permit Number" xml:space="preserve">
+    <value>타이어 교통 허가 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Business Phone" xml:space="preserve">
+    <value>유효한 회사 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Email Address" xml:space="preserve">
+    <value>유효한 이메일 주소를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Primary Contact Business Phone" xml:space="preserve">
+    <value>유효한 기본 연락처 회사 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Primary Contact Cell Phone" xml:space="preserve">
+    <value>유효한 기본 연락처 휴대 전화를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter valid Primary Contact Email" xml:space="preserve">
+    <value>유효한 기본 이메일 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter valid ZIP Code e.g; 06514, M3C 0C1" xml:space="preserve">
+    <value>06514, M3C 0C1, 유효한 우편 번호 e.g를 입력하세요</value>
+  </data>
+  <data name="Please enter ZIP Code" xml:space="preserve">
+    <value>우편 번호를 입력하세요</value>
+  </data>
+  <data name="Please Re-Enter Password" xml:space="preserve">
+    <value>암호를 또 입력하십시오</value>
+  </data>
+  <data name="Please select Accounting Interface" xml:space="preserve">
+    <value>회계 인터페이스를 선택하십시오</value>
+  </data>
+  <data name="Please select atleast one Stakeholder Certification" xml:space="preserve">
+    <value>적어도 하나의 이해 관계자 인증을 선택하십시오</value>
+  </data>
+  <data name="Please select atleast one Transporter Hauling Certification" xml:space="preserve">
+    <value>하나 이상의 전송 운반 인증을 선택하십시오</value>
+  </data>
+  <data name="Please select City" xml:space="preserve">
+    <value>도시를 선택하세요</value>
+  </data>
+  <data name="Please select Country" xml:space="preserve">
+    <value>국가를 선택하세요</value>
+  </data>
+  <data name="Please select Date Range" xml:space="preserve">
+    <value>날짜 범위를 선택하십시오</value>
+  </data>
+  <data name="Please select Inventory Interface" xml:space="preserve">
+    <value>인벤토리 인터페이스를 선택하십시오</value>
+  </data>
+  <data name="Please select Mailing Address Country" xml:space="preserve">
+    <value>우편 주소 국가를 선택하세요</value>
+  </data>
+  <data name="Please select Mailing Address State" xml:space="preserve">
+    <value>우편 주소 상태를 선택하십시오</value>
+  </data>
+  <data name="Please select Organization Type" xml:space="preserve">
+    <value>조직 유형을 선택하세요</value>
+  </data>
+  <data name="Please select Province" xml:space="preserve">
+    <value>주를 선택하세요</value>
+  </data>
+  <data name="Please select State" xml:space="preserve">
+    <value>주를 선택하세요</value>
+  </data>
+  <data name="Please select Temporary Event Type" xml:space="preserve">
+    <value>임시 이벤트 유형을 선택하십시오</value>
+  </data>
+  <data name="Primary Contact Name" xml:space="preserve">
+    <value>기본 연락처 이름</value>
+  </data>
+  <data name="Primary physical location Street # - Street name" xml:space="preserve">
+    <value>물리적 위치 스트리트 # - 이름</value>
+  </data>
+  <data name="Temporary User Login ID" xml:space="preserve">
+    <value>임시 사용자 로그인 ID</value>
+  </data>
+  <data name="Please enter Business Name" xml:space="preserve">
+    <value>사업 법적 이름을 입력하십시오</value>
+  </data>
+  <data name="Please enter Cell Phone" xml:space="preserve">
+    <value>휴대 전화를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Location Contact Name" xml:space="preserve">
+    <value>위치 연락처 이름을 입력하세요</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>에</value>
+  </data>
+  <data name="Please check mark S-Trax Stewardship Services" xml:space="preserve">
+    <value>마르크 S-트랙스 청지기 서비스를 확인하십시오</value>
+  </data>
+  <data name="Please enter Billing Contact Cell Phone" xml:space="preserve">
+    <value>결제 연락처 휴대 전화를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Billing Contact Email" xml:space="preserve">
+    <value>청구 이메일 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Billing Contact Name" xml:space="preserve">
+    <value>결제 연락처 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Billing Contact Phone" xml:space="preserve">
+    <value>결제 연락처 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Client Contact Name" xml:space="preserve">
+    <value>고객 연락처 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Facility City" xml:space="preserve">
+    <value>시설 도시를 입력하세요</value>
+  </data>
+  <data name="Please enter Facility Street Address" xml:space="preserve">
+    <value>시설 주소를 입력 해주십시오</value>
+  </data>
+  <data name="Please enter Facility ZIP Code" xml:space="preserve">
+    <value>시설 ZIP 코드를 입력하세요</value>
+  </data>
+  <data name="Please enter Mailing City" xml:space="preserve">
+    <value>메일 링시를 입력하세요</value>
+  </data>
+  <data name="Please enter Mailing ZIP Code" xml:space="preserve">
+    <value>메일 링 우편 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Primary Contact Name" xml:space="preserve">
+    <value>기본 연락처 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Primary Contact Phone" xml:space="preserve">
+    <value>기본 연락처 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter Supplier Contact Name" xml:space="preserve">
+    <value>공급 업체 연락처 이름을 입력하세요</value>
+  </data>
+  <data name="Please enter Temporary User Login ID" xml:space="preserve">
+    <value>임시 사용자 로그인 ID를 입력하세요</value>
+  </data>
+  <data name="Please select atleast one Stewardship Module" xml:space="preserve">
+    <value>적어도 하나의 청지기 모듈을 선택하십시오</value>
+  </data>
+  <data name="Please select Facility State" xml:space="preserve">
+    <value>시설 상태를 선택하십시오</value>
+  </data>
+  <data name="Please select Mailing State" xml:space="preserve">
+    <value>메일 링 상태를 선택하십시오</value>
+  </data>
+  <data name="Enter Bin/Space" xml:space="preserve">
+    <value>빈 / 공간을 입력합니다</value>
+  </data>
+  <data name="Enter Brand" xml:space="preserve">
+    <value>브랜드를 입력</value>
+  </data>
+  <data name="Enter Brand 2" xml:space="preserve">
+    <value>브랜드 2를 입력</value>
+  </data>
+  <data name="Enter Lot Number" xml:space="preserve">
+    <value>로트 번호를 입력</value>
+  </data>
+  <data name="Enter Month" xml:space="preserve">
+    <value>월을 입력</value>
+  </data>
+  <data name="Enter Month e.g 02" xml:space="preserve">
+    <value>달 02 e.g 입력</value>
+  </data>
+  <data name="Enter Only Numbers" xml:space="preserve">
+    <value>숫자 만 입력</value>
+  </data>
+  <data name="Enter Plant" xml:space="preserve">
+    <value>공장을 입력</value>
+  </data>
+  <data name="Enter Size" xml:space="preserve">
+    <value>크기를 입력</value>
+  </data>
+  <data name="Enter TX-Barcode" xml:space="preserve">
+    <value>TX-바코드를 입력</value>
+  </data>
+  <data name="Enter Year" xml:space="preserve">
+    <value>년을 입력</value>
+  </data>
+  <data name="Enter Year e.g 2012" xml:space="preserve">
+    <value>연도 2012 e.g 입력</value>
+  </data>
+  <data name="Enter Numeric Only." xml:space="preserve">
+    <value>만 숫자 입력합니다.</value>
+  </data>
+  <data name="Select Value" xml:space="preserve">
+    <value>값을 선택</value>
+  </data>
+  <data name="Enter Dollar Value" xml:space="preserve">
+    <value>달러 값을 입력</value>
+  </data>
+  <data name="Enter Effective Date" xml:space="preserve">
+    <value>유효 날짜를 입력</value>
+  </data>
+  <data name="Enter Expiration Date" xml:space="preserve">
+    <value>유효 기간을 입력</value>
+  </data>
+  <data name="Enter Email" xml:space="preserve">
+    <value>이메일 주소를 입력</value>
+  </data>
+  <data name="Enter First Name" xml:space="preserve">
+    <value>이름을 입력</value>
+  </data>
+  <data name="Enter Last Name" xml:space="preserve">
+    <value>마지막 이름을 입력</value>
+  </data>
+  <data name="Enter Password" xml:space="preserve">
+    <value>비밀번호를 입력</value>
+  </data>
+  <data name="Enter Valid Email" xml:space="preserve">
+    <value>유효한 이메일 주소를 입력</value>
+  </data>
+  <data name="Please enter a valid Phone Number. e.g; 000-000-0000" xml:space="preserve">
+    <value>유효한 전화 번호를 입력하세요. e.g, 000-000-0000</value>
+  </data>
+  <data name="Please enter Phone" xml:space="preserve">
+    <value>전화 번호를 입력하세요</value>
+  </data>
+  <data name="Re Enter Password" xml:space="preserve">
+    <value>비밀번호를 입력 다시</value>
+  </data>
+  <data name="Please select Role" xml:space="preserve">
+    <value>역할을 선택하십시오</value>
+  </data>
+  <data name="Enter Login" xml:space="preserve">
+    <value> L로그인을 입력합니다</value>
+  </data>
+  <data name="Enter Repeat Password" xml:space="preserve">
+    <value>비밀번호를 반복 입력</value>
+  </data>
+  <data name="Select atleast one Role" xml:space="preserve">
+    <value>하나 이상의 역할을 선택</value>
+  </data>
+  <data name="Please select Scrap Category Type" xml:space="preserve">
+    <value>스크랩 카테고리 유형을 선택하십시오</value>
+  </data>
+  <data name="* Zip Code does not exist in this state." xml:space="preserve">
+    <value>* 우편 번호는이 상태에 존재하지 않습니다.</value>
+  </data>
+  <data name="Please enter different Phone Numbers" xml:space="preserve">
+    <value>다른 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Facility ZIP Code e.g; 06514, M3C 0C1" xml:space="preserve">
+    <value>유효한 시설 우편 번호 예컨대을 입력하십시오; 06514, M3C 0C1</value>
+  </data>
+  <data name="Please select Title" xml:space="preserve">
+    <value>제목을 선택하세요</value>
+  </data>
+  <data name="Email already exists for this state. Choose another" xml:space="preserve">
+    <value>이메일은 이미이 상태로 존재한다. 다른 선택</value>
+  </data>
+  <data name="Please add at least three client’s references" xml:space="preserve">
+    <value>적어도 세 개의 클라이언트의 참조를 추가하십시오</value>
+  </data>
+  <data name="Please enter valid Billing Contact Email" xml:space="preserve">
+    <value>유효한 결제 연락 이메일을 입력하세요</value>
+  </data>
+  <data name="Please enter valid Billing Contact Phone" xml:space="preserve">
+    <value>유효한 결제 연락 전화 번호를 입력하세요</value>
+  </data>
+  <data name="Please enter valid Cell Phone" xml:space="preserve">
+    <value>유효한 휴대 전화를 입력하세요</value>
+  </data>
+  <data name="* Zipcode does not exist." xml:space="preserve">
+    <value>*하여 Zipcode가 존재하지 않습니다.</value>
+  </data>
+  <data name="* Zipcode does not exist in this state." xml:space="preserve">
+    <value>*하여 Zipcode이 상태에 존재하지 않습니다.</value>
+  </data>
+  <data name="Please enter valid Location Contact Email" xml:space="preserve">
+    <value>유효한 위치 연락 이메일을 입력하세요</value>
+  </data>
+  <data name="Please enter valid data. Each supplier should have unique company name,business phone and email." xml:space="preserve">
+    <value>유효한 데이터를 입력하십시오. 각 업체는 고유의 회사 명, 회사 전화 및 이메일을 가져야한다.</value>
+  </data>
+  <data name="Please select at least one Product type" xml:space="preserve">
+    <value>적어도 하나의 제품 유형을 선택하십시오</value>
+  </data>
+</root>

@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Business Legal Name" xml:space="preserve">
+    <value>Legal Business Name</value>
+  </data>
+  <data name="Location Legal Name" xml:space="preserve">
+    <value>Location Legal Name</value>
+  </data>
+  <data name="Please enter  Mailing Suite# or PO Box#" xml:space="preserve">
+    <value>Please enter  Mailing Suite# or PO Box#</value>
+  </data>
+  <data name="Please enter Address" xml:space="preserve">
+    <value>Please enter Address</value>
+  </data>
+  <data name="Please enter Business Name" xml:space="preserve">
+    <value>Please enter Business Legal Name</value>
+  </data>
+  <data name="Please select Accounting Interface" xml:space="preserve">
+    <value>Please select Accounting Interface</value>
+  </data>
+  <data name="Please select Inventory Interface" xml:space="preserve">
+    <value>Please select Inventory Interface</value>
+  </data>
+  <data name="Please enter City" xml:space="preserve">
+    <value>Please enter City</value>
+  </data>
+  <data name="Please enter Company Name" xml:space="preserve">
+    <value>Please enter Company Name</value>
+  </data>
+  <data name="Please enter Contact Name" xml:space="preserve">
+    <value>Please enter Contact Name</value>
+  </data>
+  <data name="Please enter Location Contact Email" xml:space="preserve">
+    <value>Please enter Location Contact Email</value>
+  </data>
+  <data name="Please enter Location Name" xml:space="preserve">
+    <value>Please enter Location Legal Name</value>
+  </data>
+  <data name="Please enter Location Permit #" xml:space="preserve">
+    <value>Please enter Location Permit #</value>
+  </data>
+  <data name="Please enter Mailing Address" xml:space="preserve">
+    <value>Please enter Mailing Address</value>
+  </data>
+  <data name="Please enter Mailing Address City" xml:space="preserve">
+    <value>Please enter Mailing Address City</value>
+  </data>
+  <data name="Please enter Owner Email" xml:space="preserve">
+    <value>Please enter Owner Email</value>
+  </data>
+  <data name="Please enter Password" xml:space="preserve">
+    <value>Please enter Password</value>
+  </data>
+  <data name="Please enter Primary Contact Email" xml:space="preserve">
+    <value>Please enter Primary Contact Email</value>
+  </data>
+  <data name="Please enter Suit #" xml:space="preserve">
+    <value>Please enter Suit #</value>
+  </data>
+  <data name="Please enter Tire Storage Permit Number" xml:space="preserve">
+    <value>Please enter Tire Storage Permit Number</value>
+  </data>
+  <data name="Please enter Tire Transportation Permit Number" xml:space="preserve">
+    <value>Please enter Tire Transportation Permit Number</value>
+  </data>
+  <data name="Please enter valid Email Address" xml:space="preserve">
+    <value>Please enter valid Email Address</value>
+  </data>
+  <data name="Please enter valid Primary Contact Email" xml:space="preserve">
+    <value>Please enter valid Primary Contact Email</value>
+  </data>
+  <data name="Please enter valid ZIP Code e.g; 06514, M3C 0C1" xml:space="preserve">
+    <value>Please enter valid ZIP Code e.g; 06514, M3C 0C1</value>
+  </data>
+  <data name="Please enter ZIP Code" xml:space="preserve">
+    <value>Please enter ZIP Code</value>
+  </data>
+  <data name="Please Re-Enter Password" xml:space="preserve">
+    <value>Please Re-Enter Password</value>
+  </data>
+  <data name="Please select Country" xml:space="preserve">
+    <value>Please select Country</value>
+  </data>
+  <data name="Please select Mailing Address Country" xml:space="preserve">
+    <value>Please select Mailing Address Country</value>
+  </data>
+  <data name="Please select Mailing Address State" xml:space="preserve">
+    <value>Please select Mailing Address State</value>
+  </data>
+  <data name="Please select Organization Type" xml:space="preserve">
+    <value>Please select Organization Type</value>
+  </data>
+  <data name="Please select State" xml:space="preserve">
+    <value>Please select State</value>
+  </data>
+  <data name="Please select Temporary Event Type" xml:space="preserve">
+    <value>Please select Temporary Event Type</value>
+  </data>
+  <data name="Temporary User Login ID" xml:space="preserve">
+    <value>Temporary User Login ID</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Password does not match" xml:space="preserve">
+    <value>Password does not match</value>
+  </data>
+  <data name="Please add atleast three clients" xml:space="preserve">
+    <value>Please add atleast three clients</value>
+  </data>
+  <data name="Please enter Business Phone" xml:space="preserve">
+    <value>Please enter Business Phone</value>
+  </data>
+  <data name="Please enter Primary Contact Cell Phone" xml:space="preserve">
+    <value>Please enter Primary Contact Cell Phone</value>
+  </data>
+  <data name="Please select Date Range" xml:space="preserve">
+    <value>Please select Date Range</value>
+  </data>
+  <data name="Please select Province" xml:space="preserve">
+    <value>Please select Province</value>
+  </data>
+  <data name="&quot;Suite # or Unit #" xml:space="preserve">
+    <value>"Suite # or Unit #</value>
+  </data>
+  <data name="Add Supplier" xml:space="preserve">
+    <value>Add this Reference</value>
+  </data>
+  <data name="Enter ZIP Code" xml:space="preserve">
+    <value>Enter ZIP Code</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="If applicable" xml:space="preserve">
+    <value>If applicable</value>
+  </data>
+  <data name="If Mailing Address different" xml:space="preserve">
+    <value>If Mailing Address different</value>
+  </data>
+  <data name="Mailing Street# - Street name" xml:space="preserve">
+    <value>Street# - Name</value>
+  </data>
+  <data name="Please add atleast three Suppliers" xml:space="preserve">
+    <value>Please add atleast three Suppliers</value>
+  </data>
+  <data name="Please check mark the Steward Privacy Agreement box" xml:space="preserve">
+    <value>Please check mark the Steward Privacy Agreement box</value>
+  </data>
+  <data name="Please check mark the EPRTS Privacy Agreement box" xml:space="preserve">
+    <value>Please check mark the EPRTS Privacy Agreement box</value>
+  </data>
+  <data name="Please select atleast one Stakeholder Certification" xml:space="preserve">
+    <value>Please select atleast one Stakeholder Certification</value>
+  </data>
+  <data name="Please select City" xml:space="preserve">
+    <value>Please select City</value>
+  </data>
+  <data name="Primary Contact Name" xml:space="preserve">
+    <value>Primary Contact Name</value>
+  </data>
+  <data name="Primary physical location Street # - Street name" xml:space="preserve">
+    <value>Physical location Street# - Name</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Please check mark Permanent or Temporary box" xml:space="preserve">
+    <value>Please check mark Permanent or Temporary box</value>
+  </data>
+  <data name="Please enter Mailing Address ZIP Code" xml:space="preserve">
+    <value>Please enter Mailing Address ZIP Code</value>
+  </data>
+  <data name="Please enter valid Business Phone" xml:space="preserve">
+    <value>Please enter valid Business Phone</value>
+  </data>
+  <data name="Please enter valid Primary Contact Business Phone" xml:space="preserve">
+    <value>Please enter valid Primary Contact Business Phone</value>
+  </data>
+  <data name="Please enter valid Primary Contact Cell Phone" xml:space="preserve">
+    <value>Please enter valid Primary Contact Cell Phone</value>
+  </data>
+  <data name="Please select atleast one Transporter Hauling Certification" xml:space="preserve">
+    <value>Please select atleast one Transporter Hauling Certification</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Please enter Cell Phone" xml:space="preserve">
+    <value>Please enter Cell Phone</value>
+  </data>
+  <data name="Please enter Location Contact Name" xml:space="preserve">
+    <value>Please enter Location Contact Name</value>
+  </data>
+  <data name="Please check mark S-Trax Stewardship Services" xml:space="preserve">
+    <value>Please check mark S-Trax Stewardship Services</value>
+  </data>
+  <data name="Please enter Billing Contact Cell Phone" xml:space="preserve">
+    <value>Please enter Billing Contact Cell Phone</value>
+  </data>
+  <data name="Please enter Billing Contact Email" xml:space="preserve">
+    <value>Please enter Billing Contact Email</value>
+  </data>
+  <data name="Please enter Billing Contact Name" xml:space="preserve">
+    <value>Please enter Billing Contact Name</value>
+  </data>
+  <data name="Please enter Billing Contact Phone" xml:space="preserve">
+    <value>Please enter Billing Contact Phone</value>
+  </data>
+  <data name="Please enter Client Contact Name" xml:space="preserve">
+    <value>Please enter Client Contact Name</value>
+  </data>
+  <data name="Please enter Facility City" xml:space="preserve">
+    <value>Please enter Facility City</value>
+  </data>
+  <data name="Please enter Facility Street Address" xml:space="preserve">
+    <value>Please enter Facility Street Address</value>
+  </data>
+  <data name="Please enter Facility ZIP Code" xml:space="preserve">
+    <value>Please enter Facility ZIP Code</value>
+  </data>
+  <data name="Please enter Mailing City" xml:space="preserve">
+    <value>Please enter Mailing City</value>
+  </data>
+  <data name="Please enter Mailing ZIP Code" xml:space="preserve">
+    <value>Please enter Mailing ZIP Code</value>
+  </data>
+  <data name="Please enter Primary Contact Name" xml:space="preserve">
+    <value>Please enter Primary Contact Name</value>
+  </data>
+  <data name="Please enter Primary Contact Phone" xml:space="preserve">
+    <value>Please enter Primary Contact Phone</value>
+  </data>
+  <data name="Please enter Supplier Contact Name" xml:space="preserve">
+    <value>Please enter Supplier Contact Name</value>
+  </data>
+  <data name="Please enter Temporary User Login ID" xml:space="preserve">
+    <value>Please enter Temporary User Login ID</value>
+  </data>
+  <data name="Please select atleast one Stewardship Module" xml:space="preserve">
+    <value>Please select atleast one Stewardship Module</value>
+  </data>
+  <data name="Please select Facility State" xml:space="preserve">
+    <value>Please select Facility State</value>
+  </data>
+  <data name="Please select Mailing State" xml:space="preserve">
+    <value>Please select Mailing State</value>
+  </data>
+  <data name="Enter Bin/Space" xml:space="preserve">
+    <value>Enter Bin/Space</value>
+  </data>
+  <data name="Enter Brand" xml:space="preserve">
+    <value>Enter Brand</value>
+  </data>
+  <data name="Enter Brand 2" xml:space="preserve">
+    <value>Enter Brand 2</value>
+  </data>
+  <data name="Enter Lot Number" xml:space="preserve">
+    <value>Enter Lot Number</value>
+  </data>
+  <data name="Enter Month" xml:space="preserve">
+    <value>Enter Month</value>
+  </data>
+  <data name="Enter Month e.g 02" xml:space="preserve">
+    <value>Enter Month e.g 02</value>
+  </data>
+  <data name="Enter Only Numbers" xml:space="preserve">
+    <value>Enter Only Numbers</value>
+  </data>
+  <data name="Enter Plant" xml:space="preserve">
+    <value>Enter Plant</value>
+  </data>
+  <data name="Enter Size" xml:space="preserve">
+    <value>Enter Size</value>
+  </data>
+  <data name="Enter TX-Barcode" xml:space="preserve">
+    <value>Enter TX-Barcode</value>
+  </data>
+  <data name="Enter Year" xml:space="preserve">
+    <value>Enter Year</value>
+  </data>
+  <data name="Enter Year e.g 2012" xml:space="preserve">
+    <value>Enter Year e.g 2012</value>
+  </data>
+  <data name="Enter Numeric Only." xml:space="preserve">
+    <value>Enter Numeric Only.</value>
+  </data>
+  <data name="Select Value" xml:space="preserve">
+    <value>Select Value</value>
+  </data>
+  <data name="Enter Dollar Value" xml:space="preserve">
+    <value>Enter Dollar Value</value>
+  </data>
+  <data name="Enter Effective Date" xml:space="preserve">
+    <value>Enter Effective Date</value>
+  </data>
+  <data name="Enter Expiration Date" xml:space="preserve">
+    <value>Enter Expiration Date</value>
+  </data>
+  <data name="Enter Email" xml:space="preserve">
+    <value>Enter Email</value>
+  </data>
+  <data name="Enter First Name" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="Enter Last Name" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="Enter Password" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="Enter Valid Email" xml:space="preserve">
+    <value>Enter Valid Email</value>
+  </data>
+  <data name="Please enter a valid Phone Number. e.g; 000-000-0000" xml:space="preserve">
+    <value>Please enter a valid Phone Number. e.g; 000-000-0000</value>
+  </data>
+  <data name="Please enter Phone" xml:space="preserve">
+    <value>Please enter Phone</value>
+  </data>
+  <data name="Re Enter Password" xml:space="preserve">
+    <value>Re Enter Password</value>
+  </data>
+  <data name="Please select Role" xml:space="preserve">
+    <value>Please select Role</value>
+  </data>
+  <data name="Enter Login" xml:space="preserve">
+    <value>Enter Login</value>
+  </data>
+  <data name="Enter Repeat Password" xml:space="preserve">
+    <value>Enter Repeat Password</value>
+  </data>
+  <data name="Select atleast one Role" xml:space="preserve">
+    <value>Select atleast one Role</value>
+  </data>
+  <data name="Please select Scrap Category Type" xml:space="preserve">
+    <value>Please select Scrap Category Type</value>
+  </data>
+  <data name="Create New Lot" xml:space="preserve">
+    <value>Create New Lot</value>
+  </data>
+  <data name="Add Batch" xml:space="preserve">
+    <value>Add Batch</value>
+  </data>
+  <data name="Add Delivery Notes" xml:space="preserve">
+    <value>Add Delivery Notes</value>
+  </data>
+  <data name="Invoice Type" xml:space="preserve">
+    <value>Invoice Type</value>
+  </data>
+  <data name="Template Name" xml:space="preserve">
+    <value>Template Name</value>
+  </data>
+  <data name="Template Type" xml:space="preserve">
+    <value>Template Type</value>
+  </data>
+</root>

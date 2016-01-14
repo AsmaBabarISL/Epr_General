@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using TireTraxLib;
+
+public partial class Revenue_Revenue : BasePage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        ScriptManager.RegisterStartupScript(this, GetType(), "AddDataPicker", "SetDatePicket();", true);
+
+        ClientScript.RegisterStartupScript(GetType(), "SetHeaderMenu", String.Format("SetHeaderMenu('liRevenue','{0}');", ResourceMgr.GetMessage("Revenue")), true);
+        if (User.Identity.IsAuthenticated == false)
+        {
+            Response.Redirect("/");
+        }
+
+
+        if (!IsPostBack)
+        {
+
+            ScriptManager.RegisterStartupScript(this, GetType(), "AddDataPicker", "SetDatePicket();", true);
+            String RevenueDetail = Request.QueryString["Revenuedetail"];
+            if (RevenueDetail == null)
+            {
+                LoadRevenue_Summary();
+            }
+            else
+            {
+                LoadRevenue_Detail();
+
+            }
+        }
+    }
+
+
+
+    private void LoadRevenue_Summary()
+    {
+        try
+        {
+            gvRevenue.DataSource = Commission.GetRevenue_Summary(txtfrmdate.Text.Trim(), txttodate.Text.Trim());
+           // gvRevenue.DataSource = RevenuInventory.getDetailsRevenueByOrganizationId(UserOrganizationId, DateTime.Now);
+            gvRevenue.DataBind();
+
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "Revenue.aspx.LoadRevenueSummary", ex);
+        }
+    }
+
+
+    private void LoadRevenue_Detail()
+    {
+        try
+        {
+
+          gvRevenue.DataSource = Commission.GetRevenue_Detail(txtfrmdate.Text.Trim(), txttodate.Text.Trim());
+            //gvRevenue.DataSource = RevenuInventory.getDetailsRevenueByOrganizationId(UserOrganizationId, DateTime.Now);
+            gvRevenue.DataBind();
+
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "Revenue.aspx.LoadRevenueDetail", ex);
+        }
+    }
+
+    protected void btnRevenueSearch_Click(object sender, EventArgs e)
+    {
+        String RevenueDetail = Request.QueryString["Revenuedetail"];
+        if (RevenueDetail == null)
+        {
+            LoadRevenue_Summary();
+        }
+        else
+        {
+
+            LoadRevenue_Detail();
+
+        }
+
+    }
+
+
+
+}

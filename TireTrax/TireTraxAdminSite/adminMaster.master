@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMaster.master.cs" Inherits="adminMaster" %>
+
+
+<%@ Register Src="CommonControls/adminFooter.ascx" TagName="adminFooter" TagPrefix="uc4" %>
+<%@ Register Src="~/CommonControls/TopNavigation.ascx" TagPrefix="uc3" TagName="TopNavigation" %>
+<%@ Register Src="~/CommonControls/LeftNavigation.ascx" TagPrefix="uc3" TagName="LeftNavigation" %>
+<%@ Register Src="~/CommonControls/Breadcrumb.ascx" TagPrefix="uc3" TagName="Breadcrumb" %>
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EPR Technology Solutions</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen" />
+
+    <link href="/css/plugins/datapicker/datepicker3.css" rel="stylesheet" media="screen" />
+
+    <link href="/css/animate.css" rel="stylesheet" media="screen" />
+    <link href="/css/style.css" rel="stylesheet" media="screen" />
+    <link href="/css/eprAdmin-style.css" rel="stylesheet" media="screen" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input:text').blur(function () {
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+            $('textarea').blur(function () {
+                var textarea = $("#" + this.id)[0];
+                var refinTextAreaVal = $(textarea).val().replace(/[<>]+/g, "");
+                $($(textarea)[0]).val(refinTextAreaVal);
+            });
+            $('input:password').blur(function () {
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body class="fixed-sidebar pace-done">
+    <div class="initializer_outer" style="display: block;">
+        <div class="initializer-block">
+           <div class="spinner">
+  <div class="dot1"></div>
+  <div class="dot2"></div>
+</div>
+            <p class="initializer-copy"> Loading... </p>
+        </div>
+    </div>
+    <div id="wraper">
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div id="wrapper">
+                <uc3:LeftNavigation runat="server" ID="LeftNavigation" />
+                <div id="page-wrapper" class="gray-bg">
+                    <div class="row border-bottom">
+                        <uc3:TopNavigation runat="server" ID="TopNavigation" />
+                    </div>
+                    <uc3:Breadcrumb runat="server" ID="Breadcrumb" />
+                    <uc4:adminFooter ID="adminFooter1" runat="server" />
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wrapper wrapper-content">
+                                <div class="wrapper wrapper-content animated fadeInRight">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Mainly scripts -->
+    <script type="text/javascript" src="/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script type="text/javascript" src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script type="text/javascript" src="/js/inspinia.js"></script>
+
+    <script src="/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <script>
+        // Loader
+        $(window).load(function () {
+            $('.initializer_outer').css("display", "none");
+        });
+    </script>
+
+       <script>
+           /*--- datepicker function*/
+           $(document).ready(function () {
+
+               $('.date-pick .input-group.date').datepicker({
+                   todayBtn: "linked",
+                   keyboardNavigation: false,
+                   forceParse: false,
+                   calendarWeeks: true,
+                   autoclose: true
+               });
+
+               $('#date_range .input-daterange').datepicker({
+                   keyboardNavigation: false,
+                   forceParse: false,
+                   autoclose: true
+               });
+               
+               $(".start-date").datepicker({
+                   startDate: "today"
+               });
+
+               function SetDatePicket() {
+                   $(".datepicker").datepicker();
+               }
+           });
+           /*--- navigation function*/
+           function showHideInventory(li) {
+
+               $(li).addClass("active");
+           }
+           /*--- Alert function*/
+           function fadeOut() {
+               $(".custom-absolute-alert").delay(3000).fadeOut(300);
+               $(".custom-absolute-alert").appendTo("form");
+           }
+       </script>
+
+</body>
+</html>

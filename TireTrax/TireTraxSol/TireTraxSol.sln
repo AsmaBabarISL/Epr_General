@@ -1,0 +1,144 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TireTraxPublicSite", "http://localhost:55997", "{2BCC46F4-C9EC-4C02-9E79-FC192402017C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{cf2a9bfb-1b29-49d6-9f0b-a296fabb2310}|TireTraxLib.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55997"
+		Debug.AspNetCompiler.PhysicalPath = "..\TireTraxPublicSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55997\"
+		Debug.AspNetCompiler.Updateable = "false"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "true"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55997"
+		Release.AspNetCompiler.PhysicalPath = "..\TireTraxPublicSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55997\"
+		Release.AspNetCompiler.Updateable = "false"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "true"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\TireTraxPublicSite\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310} = {CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TireTraxAdminSite", "http://localhost:49346", "{70724EAE-7CDC-49CE-8F8A-3DBE49A7699A}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{cf2a9bfb-1b29-49d6-9f0b-a296fabb2310}|TireTraxLib.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49346"
+		Debug.AspNetCompiler.PhysicalPath = "..\TireTraxAdminSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49346\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49346"
+		Release.AspNetCompiler.PhysicalPath = "..\TireTraxAdminSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49346\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\TireTraxAdminSite\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310} = {CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "StewardTrax", "http://localhost:55999", "{E315E553-C96E-40FA-AE18-B172438291BF}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55999"
+		Debug.AspNetCompiler.PhysicalPath = "..\StewardTrax\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55999\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55999"
+		Release.AspNetCompiler.PhysicalPath = "..\StewardTrax\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55999\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\StewardTrax\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310} = {CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TireTraxLib", "..\TireTraxLib\TireTraxLib.csproj", "{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs01:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\TireTraxLib\\TireTraxLib.csproj
+		SccProjectName1 = ../TireTraxLib
+		SccLocalPath1 = ..\\TireTraxLib
+		SccWebProject2 = true
+		SccProjectUniqueName2 = http://localhost:55999
+		SccProjectName2 = ../StewardTrax
+		SccLocalPath2 = ..\\StewardTrax
+		SccProjectEnlistmentChoice2 = 2
+		SccWebProject3 = true
+		SccProjectUniqueName3 = http://localhost:49346
+		SccProjectName3 = ../TireTraxAdminSite
+		SccLocalPath3 = ..\\TireTraxAdminSite
+		SccProjectEnlistmentChoice3 = 2
+		SccWebProject4 = true
+		SccProjectUniqueName4 = http://localhost:55997
+		SccProjectName4 = ../TireTraxPublicSite
+		SccLocalPath4 = ..\\TireTraxPublicSite
+		SccProjectEnlistmentChoice4 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BCC46F4-C9EC-4C02-9E79-FC192402017C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCC46F4-C9EC-4C02-9E79-FC192402017C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BCC46F4-C9EC-4C02-9E79-FC192402017C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCC46F4-C9EC-4C02-9E79-FC192402017C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{70724EAE-7CDC-49CE-8F8A-3DBE49A7699A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70724EAE-7CDC-49CE-8F8A-3DBE49A7699A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70724EAE-7CDC-49CE-8F8A-3DBE49A7699A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{70724EAE-7CDC-49CE-8F8A-3DBE49A7699A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{E315E553-C96E-40FA-AE18-B172438291BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E315E553-C96E-40FA-AE18-B172438291BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E315E553-C96E-40FA-AE18-B172438291BF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E315E553-C96E-40FA-AE18-B172438291BF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="/Dashboard/admindashboard.aspx" title="$resources:SiteMapLocalizations,Home">
+    <siteMapNode url="/Accounting/ViewAccounting.aspx" title="$resources:SiteMapLocalizations,Accounting"/>
+    <siteMapNode url="" title="$resources:SiteMapLocalizations,Inventory">
+      
+      <siteMapNode url="/Lots/ViewLots.aspx" title="$resources:SiteMapLocalizations,Lots"/>
+      <siteMapNode url="/Loads/ViewLoads.aspx" title="$resources:SiteMapLocalizations,Loads"/>
+     
+    </siteMapNode>
+
+  
+    <siteMapNode url="/Application/PendingApplication.aspx" title="$resources:SiteMapLocalizations,PendingApplication"/>
+    <siteMapNode url="adminRegistration.aspx" title="$resources:SiteMapLocalizations,Registration"/>
+    <siteMapNode url="adminRegistrationForm.aspx" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+    <siteMapNode url="/Revenue/Revenue.aspx" title="$resources:SiteMapLocalizations,Revenue"/>
+    <siteMapNode url="/Invoices/ViewInvoice.aspx" title="$resources:SiteMapLocalizations,Invoice"/>
+    <siteMapNode url="/Stewardship/ViewStewardship.aspx" title="$resources:SiteMapLocalizations,Stewardships">
+      <siteMapNode url="Registration/" title="$resources:SiteMapLocalizations,Registration"/>
+      <siteMapNode url="USA/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="Canada/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="Mexico/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="Japan/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="SouthKorea/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="Australia/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="China/RegistrationForm/" title="$resources:SiteMapLocalizations,RegistrationForm"/>
+      <siteMapNode url="/Stewardship/ViewDetailStewardship.aspx" title="$resources:SiteMapLocalizations,ViewStewardship"/>
+      <siteMapNode url="/Stakeholder/ViewStakeholder.aspx" title="$resources:SiteMapLocalizations,Stakeholders"/>
+      <siteMapNode url="/Application/ViewApplication.aspx" title="$resources:SiteMapLocalizations,Applications">
+        <siteMapNode url="/Stakeholder/ViewDetailStakeholder.aspx" title="$resources:SiteMapLocalizations,ViewApplication"/>
+      </siteMapNode>
+     
+      <siteMapNode url="/User/ViewUser.aspx" title="$resources:SiteMapLocalizations,Users">
+        <siteMapNode url="/User/AddUser.aspx" title="$resources:SiteMapLocalizations,Add"/>
+        <siteMapNode url="/User/EditUser.aspx" title="$resources:SiteMapLocalizations,Edit"/>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="/LookupManagment/ViewLookUpManagment.aspx" title="$resources:SiteMapLocalizations,LookupManagement"/>
+    <siteMapNode url="/Reports/ViewReports.aspx" title="$resources:SiteMapLocalizations,Reports"/>
+    <!--<siteMapNode url="securityRoles.aspx" title="$resources:SiteMapLocalizations,Roles"/>-->
+    <siteMapNode url="/PTE/PTESettings.aspx" title="$resources:SiteMapLocalizations,PTE">
+      <siteMapNode url="/PTE/PTEStandard.aspx" title="$resources:SiteMapLocalizations,Standard"/>
+    </siteMapNode>
+    <siteMapNode url="" title="$resources:SiteMapLocalizations,Setting">
+    
+    <siteMapNode url="/Creditcard/ViewCreditcard.aspx" title="$resources:SiteMapLocalizations,CreditCard">
+      <siteMapNode url="/Creditcard/AddCreditCard.aspx" title="$resources:SiteMapLocalizations,AddEdit"/>
+      
+    </siteMapNode>
+    <siteMapNode url="/BankAccount/ViewBankAccount.aspx" title="$resources:SiteMapLocalizations,BankAccount">
+     
+    <siteMapNode url="/BankAccount/AddBankAccount.aspx" title="$resources:SiteMapLocalizations,addbankaccount"/>
+  </siteMapNode>
+    <siteMapNode url="/Commission/ViewCommission.aspx" title="$resources:SiteMapLocalizations,Commission"/>
+      </siteMapNode>
+    <siteMapNode url="/Templates/ViewTemplates.aspx" title="$resources:SiteMapLocalizations,Templates">
+
+      <siteMapNode url="/Templates/AddTemplate.aspx" title="$resources:SiteMapLocalizations,AddTemplate"/>
+    </siteMapNode>
+    <siteMapNode url="/Permission/PagePermissions.aspx" title="$resources:SiteMapLocalizations,Permission">
+      <siteMapNode url="/User/ViewAdminUsers.aspx" title="$resources:SiteMapLocalizations,AdminUsers">
+        <siteMapNode url="/User/AddAdminUser.aspx" title="$resources:SiteMapLocalizations,AddAdminUser"/>
+        </siteMapNode>
+      <siteMapNode url="/Permission/AddGroups.aspx" title="$resources:SiteMapLocalizations,AddGroups"/>
+      <siteMapNode url="/Permission/AddPages.aspx" title="$resources:SiteMapLocalizations,AddPages"/>
+      <siteMapNode url="/Permission/AddRole.aspx" title="$resources:SiteMapLocalizations,AddRole"/>
+      <siteMapNode url="/Permission/GroupPermissions.aspx" title="$resources:SiteMapLocalizations,GroupPermissions"/>
+      <siteMapNode url="/Permission/UsersPermission.aspx" title="$resources:SiteMapLocalizations,UserPermissions"/>
+    </siteMapNode>
+
+    <siteMapNode url="/SecurityRoles/ViewSecurityRoles.aspx" title="$resources:SiteMapLocalizations,Roles">
+      <siteMapNode url="AdminPermission.aspx" title="$resources:SiteMapLocalizations,View"/>
+      <siteMapNode url="addpermission.aspx" title="$resources:SiteMapLocalizations,Add"/>
+     </siteMapNode>
+  </siteMapNode>
+</siteMap>

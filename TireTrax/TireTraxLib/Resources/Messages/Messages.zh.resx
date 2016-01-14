@@ -1,0 +1,1491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="*Check mark all applicable boxes" xml:space="preserve">
+    <value>*检查标记所有适用的方块</value>
+  </data>
+  <data name="Accept Auto-Fund Transfers:" xml:space="preserve">
+    <value>接受自动转账：</value>
+  </data>
+  <data name="Accept Text Messages:" xml:space="preserve">
+    <value>接受短信：</value>
+  </data>
+  <data name="Accounting Interface:" xml:space="preserve">
+    <value>会计接口：</value>
+  </data>
+  <data name="Additional Locations" xml:space="preserve">
+    <value>其他地点</value>
+  </data>
+  <data name="Additional Locations are generally for Temporary Events or if the Stakeholder has no permanent management on premise. Please, file all managed facilities as a New and seperate location. There are no additional charges. The primary facility's stakeholder is provided with both individual and consolidated facilities management reports." xml:space="preserve">
+    <value>其他地点一般为临时活动或利益相关者，如果没有永久管理的前提下。作为一个新的，独立的位置，文件管理设施。有没有额外的费用。主要设施的利益相关者提供个人及综合设施管理报告。</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>背面</value>
+  </data>
+  <data name="Billing Cell Phone:" xml:space="preserve">
+    <value>计费手机：</value>
+  </data>
+  <data name="Billing Contact Name:" xml:space="preserve">
+    <value>帐单联系名字：</value>
+  </data>
+  <data name="Billing Contact Same:" xml:space="preserve">
+    <value>同样的帐单联系方式：</value>
+  </data>
+  <data name="Billing Email:" xml:space="preserve">
+    <value>交费邮箱：</value>
+  </data>
+  <data name="Billing Phone:" xml:space="preserve">
+    <value>帐单电话：</value>
+  </data>
+  <data name="Business Name:" xml:space="preserve">
+    <value>企业法定名称：</value>
+  </data>
+  <data name="Business Phone:" xml:space="preserve">
+    <value>主要联系电话：</value>
+  </data>
+  <data name="Cell Phone:" xml:space="preserve">
+    <value>手机：</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>城市：</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>客户端</value>
+  </data>
+  <data name="Clients – Non-Retail Client Trade References" xml:space="preserve">
+    <value>客户端 - 非零售客户交易参考</value>
+  </data>
+  <data name="Company Name:" xml:space="preserve">
+    <value>公司名称：</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>国家：</value>
+  </data>
+  <data name="DBA Name:" xml:space="preserve">
+    <value>DBA名称：</value>
+  </data>
+  <data name="Define" xml:space="preserve">
+    <value>详细信息</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>您确定要删除这条记录。</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 non-retail client trade references are required." xml:space="preserve">
+    <value>请，至少需要3个非零售客户交易参考。</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 Supplier trade references are required." xml:space="preserve">
+    <value>请，至少需要3个供应商的参考。</value>
+  </data>
+  <data name="Disclaimer: *You will be able to self-update your Temporary User Login ID or password once your application has been verified and your site is activated." xml:space="preserve">
+    <value>一旦你的应用程序进行验证，并激活您的公司网站，您可以更改您的临时用户登录和/或您的密码。</value>
+  </data>
+  <data name="Event Dates:" xml:space="preserve">
+    <value>活动日期：</value>
+  </data>
+  <data name="Extension:" xml:space="preserve">
+    <value>扩展：</value>
+  </data>
+  <data name="Facility Street Address:" xml:space="preserve">
+    <value>设施地址：</value>
+  </data>
+  <data name="Facility ZIP Code:" xml:space="preserve">
+    <value>设施邮政编码：</value>
+  </data>
+  <data name="I have reviewed the" xml:space="preserve">
+    <value>我已审阅</value>
+  </data>
+  <data name="Import/Export" xml:space="preserve">
+    <value>导入/导出</value>
+  </data>
+  <data name="Internationally" xml:space="preserve">
+    <value>国际</value>
+  </data>
+  <data name="Inventory Interface:" xml:space="preserve">
+    <value>库存接口：</value>
+  </data>
+  <data name="Location Contact Email:" xml:space="preserve">
+    <value>地点联系电子邮件：</value>
+  </data>
+  <data name="Location Contact Person:" xml:space="preserve">
+    <value>定位联系人：</value>
+  </data>
+  <data name="Location Event:" xml:space="preserve">
+    <value>地点活动：</value>
+  </data>
+  <data name="Location Name:" xml:space="preserve">
+    <value>位置法定名称：</value>
+  </data>
+  <data name="Location Permit #:" xml:space="preserve">
+    <value>位置许可证编号：</value>
+  </data>
+  <data name="Location Status:" xml:space="preserve">
+    <value>位置状态：</value>
+  </data>
+  <data name="Location Street Address:" xml:space="preserve">
+    <value>地点地址：</value>
+  </data>
+  <data name="Location ZIP Code:" xml:space="preserve">
+    <value>位置邮政编码：</value>
+  </data>
+  <data name="Login Registration" xml:space="preserve">
+    <value>登录确认</value>
+  </data>
+  <data name="Mailing Address Same:" xml:space="preserve">
+    <value>邮寄地址相同：</value>
+  </data>
+  <data name="Mailing ZIP Code:" xml:space="preserve">
+    <value>邮寄邮政编码：</value>
+  </data>
+  <data name="NAFTA" xml:space="preserve">
+    <value>北美自由贸易协定</value>
+  </data>
+  <data name="Nationally" xml:space="preserve">
+    <value>在全国范围内</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>没有</value>
+  </data>
+  <data name="No Record Exists" xml:space="preserve">
+    <value>没有记录</value>
+  </data>
+  <data name="Organization:" xml:space="preserve">
+    <value>组织：</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="Permanent" xml:space="preserve">
+    <value>永久</value>
+  </data>
+  <data name="Please, review the Terms and Conditions of the Stewardship and EPRTS Privacy agreements before submitting your enrollment applications." xml:space="preserve">
+    <value>请审查的监管和EPRTS的隐私协议的条款及条件，然后提交您的入学申请表。</value>
+  </data>
+  <data name="Primary Contact Cell Phone:" xml:space="preserve">
+    <value>主要联系人手机：</value>
+  </data>
+  <data name="Primary Contact Email:" xml:space="preserve">
+    <value>主要联络电邮：</value>
+  </data>
+  <data name="Primary Contact Name:" xml:space="preserve">
+    <value>主要联络人名称：</value>
+  </data>
+  <data name="Primary Information" xml:space="preserve">
+    <value>主要信息</value>
+  </data>
+  <data name="Primary Registration" xml:space="preserve">
+    <value>主要注册</value>
+  </data>
+  <data name="Re-Enter Password:" xml:space="preserve">
+    <value>重新输入密码：</value>
+  </data>
+  <data name="RecordExistence" xml:space="preserve">
+    <value>没有记录</value>
+  </data>
+  <data name="SAME" xml:space="preserve">
+    <value>同</value>
+  </data>
+  <data name="Stakeholder Certifications" xml:space="preserve">
+    <value>利益相关者的认证</value>
+  </data>
+  <data name="Stakeholders" xml:space="preserve">
+    <value>利益相关者</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>国家：</value>
+  </data>
+  <data name="Step 1 of 8" xml:space="preserve">
+    <value>步骤8之1</value>
+  </data>
+  <data name="Step 2 of 8" xml:space="preserve">
+    <value>步骤8之2</value>
+  </data>
+  <data name="Step 3 of 8" xml:space="preserve">
+    <value>步骤8之3</value>
+  </data>
+  <data name="Step 4 of 8" xml:space="preserve">
+    <value>步骤8之4</value>
+  </data>
+  <data name="Step 5 of 8" xml:space="preserve">
+    <value>步骤8之5</value>
+  </data>
+  <data name="Step 6 of 8" xml:space="preserve">
+    <value>步骤8之6</value>
+  </data>
+  <data name="Step 7 of 8" xml:space="preserve">
+    <value>步骤8之7</value>
+  </data>
+  <data name="Stewardship Privacy Agreement" xml:space="preserve">
+    <value>管家隐私协议</value>
+  </data>
+  <data name="Street Address:" xml:space="preserve">
+    <value>地址：</value>
+  </data>
+  <data name="Submit Application" xml:space="preserve">
+    <value>提交申请</value>
+  </data>
+  <data name="SubmitApplication" xml:space="preserve">
+    <value>提交申请</value>
+  </data>
+  <data name="Suit #:" xml:space="preserve">
+    <value>套房＃＃或单位：</value>
+  </data>
+  <data name="Suite# or PO Box#:" xml:space="preserve">
+    <value>套房＃或邮政信箱：</value>
+  </data>
+  <data name="Suppliers" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="Suppliers – Trade References" xml:space="preserve">
+    <value>供应商 - 贸易参考</value>
+  </data>
+  <data name="Temporary User Login ID:" xml:space="preserve">
+    <value>临时用户登录ID：</value>
+  </data>
+  <data name="Thank You" xml:space="preserve">
+    <value>谢谢您</value>
+  </data>
+  <data name="Thank you for submitting your application. Your application has been forwarded for approval. Once your application is approved we will let you know by email." xml:space="preserve">
+    <value>感谢您提交您的应用程序。您的申请已被批准转发。一旦你的申请被批准，我们会通过电子邮件让你知道。</value>
+  </data>
+  <data name="This Login is not available" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Tire Storage Permit #:" xml:space="preserve">
+    <value>轮胎存放许可证编号：</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>轮胎运输许可证编号：</value>
+  </data>
+  <data name="EPRTS Privacy Agreement" xml:space="preserve">
+    <value>EPRTS隐私协议</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>标题：</value>
+  </data>
+  <data name="Transporter Hauling Certifications" xml:space="preserve">
+    <value>运输车牵引认证</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>网址：</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ZIP Code:" xml:space="preserve">
+    <value>邮政编码：</value>
+  </data>
+  <data name="Add Supplier" xml:space="preserve">
+    <value>将此参考</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Add New Stakeholder" xml:space="preserve">
+    <value>添加新的利益主体</value>
+  </data>
+  <data name="Add New Stewardship" xml:space="preserve">
+    <value>添加新的管理服务</value>
+  </data>
+  <data name="Business Type" xml:space="preserve">
+    <value>企业类型</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>联系</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="Franchise Name" xml:space="preserve">
+    <value>特许经营名称</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>法定名称</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>机构名称</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search Filters" xml:space="preserve">
+    <value>搜索过滤器</value>
+  </data>
+  <data name="Stakeholder Name" xml:space="preserve">
+    <value>利益相关者的名称</value>
+  </data>
+  <data name="Stakeholder Type" xml:space="preserve">
+    <value>利益相关者的类型</value>
+  </data>
+  <data name="Stewardships" xml:space="preserve">
+    <value>管家职</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="TX-ID" xml:space="preserve">
+    <value>TX-ID</value>
+  </data>
+  <data name="TX-Barcode" xml:space="preserve">
+    <value>TX-条码</value>
+  </data>
+  <data name="Business Type:" xml:space="preserve">
+    <value>企业类型：</value>
+  </data>
+  <data name="C-Barcode" xml:space="preserve">
+    <value>C-条码</value>
+  </data>
+  <data name="Component Type:" xml:space="preserve">
+    <value>组件类型：</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>说明：</value>
+  </data>
+  <data name="Latest Stakeholder/User" xml:space="preserve">
+    <value>利益相关者/用户</value>
+  </data>
+  <data name="Location Type:" xml:space="preserve">
+    <value>地点类型：</value>
+  </data>
+  <data name="Lookup Table:" xml:space="preserve">
+    <value>查找表：</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>产品名称：</value>
+  </data>
+  <data name="No record(s) found." xml:space="preserve">
+    <value>没有找到记录。</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>秩序</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>收入</value>
+  </data>
+  <data name="School Type:" xml:space="preserve">
+    <value>学校类别：</value>
+  </data>
+  <data name="Section Type:" xml:space="preserve">
+    <value>栏目类型：</value>
+  </data>
+  <data name="Select Value:" xml:space="preserve">
+    <value>选择价值：</value>
+  </data>
+  <data name="StakeHolder-ID" xml:space="preserve">
+    <value>利益相关者的ID</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Stewardship" xml:space="preserve">
+    <value>管家</value>
+  </data>
+  <data name="Timeline" xml:space="preserve">
+    <value>时间轴</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Organization Type" xml:space="preserve">
+    <value>组织类型</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>看</value>
+  </data>
+  <data name="Accounting" xml:space="preserve">
+    <value>会计</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>量</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add More" xml:space="preserve">
+    <value>添加更多</value>
+  </data>
+  <data name="Add PTE Setting" xml:space="preserve">
+    <value>PTE设置</value>
+  </data>
+  <data name="Dollar Value" xml:space="preserve">
+    <value>美元的价值</value>
+  </data>
+  <data name="Effective Date" xml:space="preserve">
+    <value>生效日期</value>
+  </data>
+  <data name="Expiration Date" xml:space="preserve">
+    <value>失效日期</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="PTE" xml:space="preserve">
+    <value>PTE</value>
+  </data>
+  <data name="Tire Size" xml:space="preserve">
+    <value>轮胎规格</value>
+  </data>
+  <data name="Add this Location" xml:space="preserve">
+    <value>这个位置</value>
+  </data>
+  <data name="Business Waste Self-Survey and Solutions" xml:space="preserve">
+    <value>商业废物自我评估及解决方案</value>
+  </data>
+  <data name="Community Services" xml:space="preserve">
+    <value>社区服务</value>
+  </data>
+  <data name="Compliance Trax" xml:space="preserve">
+    <value>合规TRAX</value>
+  </data>
+  <data name="Consumer" xml:space="preserve">
+    <value>消费者</value>
+  </data>
+  <data name="Consumer Household Chemicals" xml:space="preserve">
+    <value>消费者日用化工</value>
+  </data>
+  <data name="Consumer Paint Products" xml:space="preserve">
+    <value>消费者涂料产品</value>
+  </data>
+  <data name="Global eCommerce Website" xml:space="preserve">
+    <value>全球电子商务网站</value>
+  </data>
+  <data name="Goods" xml:space="preserve">
+    <value>货</value>
+  </data>
+  <data name="Government Agencies" xml:space="preserve">
+    <value>政府机构</value>
+  </data>
+  <data name="Government Permits" xml:space="preserve">
+    <value>政府许可</value>
+  </data>
+  <data name="Green Business Innovation" xml:space="preserve">
+    <value>绿色商业创新</value>
+  </data>
+  <data name="Green Collar Jobs" xml:space="preserve">
+    <value>绿领工作机会</value>
+  </data>
+  <data name="Green Equation" xml:space="preserve">
+    <value>绿色方程</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Law Enforcement Agencies" xml:space="preserve">
+    <value>执法机构</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新</value>
+  </data>
+  <data name="Please enter Primary Contact Business Phone" xml:space="preserve">
+    <value>请进入主要联系人商务电话</value>
+  </data>
+  <data name="Please enter Primary Contact Cell Phone" xml:space="preserve">
+    <value>请进入主要联系人手机</value>
+  </data>
+  <data name="Please select atleast one Stakeholder Certification" xml:space="preserve">
+    <value>请选择至少一个利益相关者认证</value>
+  </data>
+  <data name="Products or Materials" xml:space="preserve">
+    <value>产品或材料</value>
+  </data>
+  <data name="Scrap Tire Related Products" xml:space="preserve">
+    <value>废旧轮胎相关产品</value>
+  </data>
+  <data name="Scrap Tires" xml:space="preserve">
+    <value>废旧轮胎</value>
+  </data>
+  <data name="Stakeholder Carbon Credit Management" xml:space="preserve">
+    <value>利益相关者碳信用管理</value>
+  </data>
+  <data name="Stewardship Certifications" xml:space="preserve">
+    <value>管理认证</value>
+  </data>
+  <data name="Stewardship Modules" xml:space="preserve">
+    <value>管理模块</value>
+  </data>
+  <data name="Stewardship Services" xml:space="preserve">
+    <value>管家服务</value>
+  </data>
+  <data name="Temporary" xml:space="preserve">
+    <value>临时</value>
+  </data>
+  <data name="Tire Transportation Permit #:" xml:space="preserve">
+    <value>轮胎运输许可证编号：</value>
+  </data>
+  <data name="Tire Trax" xml:space="preserve">
+    <value>轮胎TRAX</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>对</value>
+  </data>
+  <data name="Trax Exchange" xml:space="preserve">
+    <value>TRAX交易所</value>
+  </data>
+  <data name="Tronic Trax" xml:space="preserve">
+    <value>变速器TRAX</value>
+  </data>
+  <data name="Troxic Trax" xml:space="preserve">
+    <value>Troxic Trax</value>
+  </data>
+  <data name="User or Scrap" xml:space="preserve">
+    <value>用户或废</value>
+  </data>
+  <data name="Waste Hauling Permit #2:" xml:space="preserve">
+    <value>废牵引许可证＃2：</value>
+  </data>
+  <data name="Waste Storage Permit #2:" xml:space="preserve">
+    <value>废物贮存许可证＃2：</value>
+  </data>
+  <data name="Waste Trax" xml:space="preserve">
+    <value>废物TRAX</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加</value>
+  </data>
+  <data name="Contact Name" xml:space="preserve">
+    <value>联络人姓名</value>
+  </data>
+  <data name="Lookup Management" xml:space="preserve">
+    <value>查找管理</value>
+  </data>
+  <data name="State Name" xml:space="preserve">
+    <value>国家名称</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="Select Stewardship" xml:space="preserve">
+    <value>选择管家</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling" xml:space="preserve">
+    <value>100％绿色的废旧轮胎回收再利用</value>
+  </data>
+  <data name="Add New Inventory" xml:space="preserve">
+    <value>添加新库存</value>
+  </data>
+  <data name="Alerts Notifications" xml:space="preserve">
+    <value>警报通知</value>
+  </data>
+  <data name="Application of Stakeholders" xml:space="preserve">
+    <value>利益相关者中的应用</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>批准日期</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="TechSol Inc. copyrights 2014" xml:space="preserve">
+    <value>TechSol动态公司版权2014</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>家</value>
+  </data>
+  <data name="Inventory" xml:space="preserve">
+    <value>库存</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>快速链接</value>
+  </data>
+  <data name="Recently Added Stakeholders" xml:space="preserve">
+    <value>最近加入的利益相关者</value>
+  </data>
+  <data name="Recently Added Stewardships" xml:space="preserve">
+    <value>最近加入的管家职</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>报告</value>
+  </data>
+  <data name="Role Name" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="Search Inventory" xml:space="preserve">
+    <value>搜索库存</value>
+  </data>
+  <data name="Security/Roles" xml:space="preserve">
+    <value>安全/角色</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="EPRTS Updates" xml:space="preserve">
+    <value>EPRTS更新</value>
+  </data>
+  <data name="view details" xml:space="preserve">
+    <value>查看详细信息</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>网站</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>欢迎</value>
+  </data>
+  <data name="You are" xml:space="preserve">
+    <value>您</value>
+  </data>
+  <data name="Admin Login" xml:space="preserve">
+    <value>管理员登录</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>记住我</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="Step 8 of 8" xml:space="preserve">
+    <value>步骤8之8</value>
+  </data>
+  <data name="Please check-mark all choices." xml:space="preserve">
+    <value>请所有选择标记。</value>
+  </data>
+  <data name="Step 1 of 3" xml:space="preserve">
+    <value>步骤3之1</value>
+  </data>
+  <data name="Step 1 of 4" xml:space="preserve">
+    <value>步骤4之1</value>
+  </data>
+  <data name="Step 2 of 3" xml:space="preserve">
+    <value>步骤3之2</value>
+  </data>
+  <data name="Step 2 of 4" xml:space="preserve">
+    <value>步骤4之2</value>
+  </data>
+  <data name="Step 3 of 3" xml:space="preserve">
+    <value>步骤3之3</value>
+  </data>
+  <data name="Step 3 of 4" xml:space="preserve">
+    <value>步骤4之3</value>
+  </data>
+  <data name="Step 4 of 4" xml:space="preserve">
+    <value>步骤4之4</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>模块名称</value>
+  </data>
+  <data name="Security Roles" xml:space="preserve">
+    <value>安全角色</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="User Type" xml:space="preserve">
+    <value>用户类型</value>
+  </data>
+  <data name="Step 1 of 7" xml:space="preserve">
+    <value>步骤7之1</value>
+  </data>
+  <data name="Step 2 of 7" xml:space="preserve">
+    <value>步骤7之2</value>
+  </data>
+  <data name="Step 3 of 7" xml:space="preserve">
+    <value>步骤7之3</value>
+  </data>
+  <data name="Step 4 of 7" xml:space="preserve">
+    <value>步骤7之4</value>
+  </data>
+  <data name="Step 5 of 7" xml:space="preserve">
+    <value>步骤7之5</value>
+  </data>
+  <data name="Step 6 of 7" xml:space="preserve">
+    <value>步骤7之6</value>
+  </data>
+  <data name="Step 7 of 7" xml:space="preserve">
+    <value>步骤7之7</value>
+  </data>
+  <data name="Real World Solutions for Global Recycling" xml:space="preserve">
+    <value>现实世界的解决方案，为全球回收</value>
+  </data>
+  <data name="Location Business Phone:" xml:space="preserve">
+    <value>业务联系电话：</value>
+  </data>
+  <data name="Waste Hauling Permit #1:" xml:space="preserve">
+    <value>废牵引许可证＃1：</value>
+  </data>
+  <data name="Waste Storage Permit #1:" xml:space="preserve">
+    <value>废物贮存许可证＃1：</value>
+  </data>
+  <data name="Address:" xml:space="preserve">
+    <value>地址：</value>
+  </data>
+  <data name="Billing Contact:" xml:space="preserve">
+    <value>帐单联系方式：</value>
+  </data>
+  <data name="Billing Mail Address:" xml:space="preserve">
+    <value>帐单邮寄地址：</value>
+  </data>
+  <data name="Business Address1:" xml:space="preserve">
+    <value>营业地址：</value>
+  </data>
+  <data name="Business Address2:" xml:space="preserve">
+    <value>商家地址2：</value>
+  </data>
+  <data name="Business Phone Extension:" xml:space="preserve">
+    <value>商业电话分机：</value>
+  </data>
+  <data name="Business Phone Number:" xml:space="preserve">
+    <value>公司电话号码：</value>
+  </data>
+  <data name="Business Phone Type:" xml:space="preserve">
+    <value>商务手机类型：</value>
+  </data>
+  <data name="Business Text Messages:" xml:space="preserve">
+    <value>商务短信：</value>
+  </data>
+  <data name="Cell Phone Extension:" xml:space="preserve">
+    <value>手机分机：</value>
+  </data>
+  <data name="Cell Phone Number:" xml:space="preserve">
+    <value>手机号码：</value>
+  </data>
+  <data name="Cell Phone Type:" xml:space="preserve">
+    <value>手机类型：</value>
+  </data>
+  <data name="Cell Text Message:" xml:space="preserve">
+    <value>单元格的文本内容：</value>
+  </data>
+  <data name="Certifications" xml:space="preserve">
+    <value>认证</value>
+  </data>
+  <data name="Client Trade Refrences" xml:space="preserve">
+    <value>客户交易参考</value>
+  </data>
+  <data name="Contact Title:" xml:space="preserve">
+    <value>联系我们标题：</value>
+  </data>
+  <data name="Country Abbreviation:" xml:space="preserve">
+    <value>国家缩写：</value>
+  </data>
+  <data name="Fax:" xml:space="preserve">
+    <value>传真：</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>产品名称：</value>
+  </data>
+  <data name="Information:" xml:space="preserve">
+    <value>相关信息：</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>姓氏：</value>
+  </data>
+  <data name="Organization Information" xml:space="preserve">
+    <value>组织信息</value>
+  </data>
+  <data name="Primary Email:" xml:space="preserve">
+    <value>主要的电子邮件：</value>
+  </data>
+  <data name="Supplier Trade References" xml:space="preserve">
+    <value>供应商的成功案例</value>
+  </data>
+  <data name="&quot;Quick-Pay&quot; weekly compensation" xml:space="preserve">
+    <value>“快速支付”每周赔偿</value>
+  </data>
+  <data name="*Existing Stewardship Stakeholders are granted Pre-Approved status and Instant Access to their new EPRTS services by submitting an abreviated online information update application." xml:space="preserve">
+    <value>*现有的监管利益相关者被授予前批准的地位，缩写为网上信息更新应用程序提交到他们的新EPRTS服务的即时访问。</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling becomes a practical reality." xml:space="preserve">
+    <value>100％绿色的废旧轮胎回收再利用成为现实。</value>
+  </data>
+  <data name="Already a member" xml:space="preserve">
+    <value>已经是会员了</value>
+  </data>
+  <data name="And much...much more!" xml:space="preserve">
+    <value>等等...还有更多！</value>
+  </data>
+  <data name="Cradle-to-Reincarnation complete accountability for each individual Scrap Tire." xml:space="preserve">
+    <value>从摇篮到每一个人的废旧轮胎轮回完整的问责制。</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>忘记密码？</value>
+  </data>
+  <data name="Integrated Government Compliance" xml:space="preserve">
+    <value>整合政府合规性</value>
+  </data>
+  <data name="Integrated Stewardship Compliance" xml:space="preserve">
+    <value>综合监管合规性</value>
+  </data>
+  <data name="Market-based and Self-sustaining Stewardship Funding and Earnings platform." xml:space="preserve">
+    <value>以市场为基础和自我维持的监管资金和盈利平台。</value>
+  </data>
+  <data name="Mobile access to Stakeholder Accounts" xml:space="preserve">
+    <value>移动接入“到”利益相关者“帐户</value>
+  </data>
+  <data name="Read More" xml:space="preserve">
+    <value>阅读更多</value>
+  </data>
+  <data name="Register Now" xml:space="preserve">
+    <value>立即注册</value>
+  </data>
+  <data name="Remeber me" xml:space="preserve">
+    <value>记住我</value>
+  </data>
+  <data name="Scrap Tire Stewardships" xml:space="preserve">
+    <value>废旧轮胎管家</value>
+  </data>
+  <data name="The EPRTS Cradle-to-Reincarnation identification and tracking capabilities coupled with its complete systemic accoutability provide the initial framework necessary to insure the successful transition from existing scrap tire diversion projects to 100% Green product utilization." xml:space="preserve">
+    <value>的EPRTS从摇篮到轮回识别和跟踪能力，加上其完整的系统性问责提供了必要的初步框架，以确保100％的绿色产品利用现有的废旧轮胎引水工程的成功转型。</value>
+  </data>
+  <data name="The EPRTS Stewardship platform offers a market based concept that fully utilizes the existing tire industry's infrastuctures." xml:space="preserve">
+    <value>该EPRTS管理平台提供了一个以市场为基础的概念，充分利用现有的轮胎行业的基础设施。</value>
+  </data>
+  <data name="EPRTS Benefit Includes" xml:space="preserve">
+    <value>EPRTS福利包括</value>
+  </data>
+  <data name="EPRTS, by EPR Dynamics, is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>由EPR动力，EPRTS，是一个完整的解决方案扩展产品责任废旧轮胎监管的回收业务和管理方面的挑战。</value>
+  </data>
+  <data name="Bin/Space" xml:space="preserve">
+    <value>斌/空间</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>牌</value>
+  </data>
+  <data name="Brand 2" xml:space="preserve">
+    <value>品牌2</value>
+  </data>
+  <data name="C Barcode" xml:space="preserve">
+    <value>Ç条码</value>
+  </data>
+  <data name="DOT Number" xml:space="preserve">
+    <value>DOT号码</value>
+  </data>
+  <data name="Lot Number" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Plant" xml:space="preserve">
+    <value>厂</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>大小</value>
+  </data>
+  <data name="Thankyou for your Registrtion at EPRTS. You will be notify by Email. Please check your Email for your Login Information." xml:space="preserve">
+    <value>谢谢您注册EPRTS。您将通过电子邮件通知。您的登录信息，请检查您的电子邮件。</value>
+  </data>
+  <data name="Welcome to EPRTS" xml:space="preserve">
+    <value>欢迎来到EPRTS</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒绝</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>电邮地址</value>
+  </data>
+  <data name="Forgot Password" xml:space="preserve">
+    <value>忘记密码</value>
+  </data>
+  <data name="Error 404 - Page Not Found" xml:space="preserve">
+    <value>错误404 - 找不到网页</value>
+  </data>
+  <data name="Go back to Home Page" xml:space="preserve">
+    <value>回到首页</value>
+  </data>
+  <data name="Sorry, but the page you are looking for might have been removed,had its name changed, or is temporarily unavailable." xml:space="preserve">
+    <value>很抱歉，但你正在寻找的页面可能已经删除，更名或暂时不可用。</value>
+  </data>
+  <data name="Business Phone" xml:space="preserve">
+    <value>业务电话</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="Permit #" xml:space="preserve">
+    <value>许可证号码</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>国</value>
+  </data>
+  <data name="WHP #1:" xml:space="preserve">
+    <value>WHP #1:</value>
+  </data>
+  <data name="WHP #2:" xml:space="preserve">
+    <value>WHP #2:</value>
+  </data>
+  <data name="WSP #1:" xml:space="preserve">
+    <value>WSP #1:</value>
+  </data>
+  <data name="WSP #2:" xml:space="preserve">
+    <value>WSP #2:</value>
+  </data>
+  <data name="Pending Goverment Agency" xml:space="preserve">
+    <value>等待电子政务机构</value>
+  </data>
+  <data name="Pending Law Enforcement Agency" xml:space="preserve">
+    <value>等待执法机构</value>
+  </data>
+  <data name="Pending Organization" xml:space="preserve">
+    <value>待处理组织</value>
+  </data>
+  <data name="Pending Stakeholders" xml:space="preserve">
+    <value>待处理利益相关者</value>
+  </data>
+  <data name="Pending Stewards" xml:space="preserve">
+    <value>待定董事局</value>
+  </data>
+  <data name="Pending Stewardships" xml:space="preserve">
+    <value>挂起的管家职</value>
+  </data>
+  <data name="EPR User Name" xml:space="preserve">
+    <value>EPR用户名</value>
+  </data>
+  <data name="Stewardship Type" xml:space="preserve">
+    <value>管理类型</value>
+  </data>
+  <data name="Agency Type" xml:space="preserve">
+    <value>公司类型</value>
+  </data>
+  <data name="Steward Type" xml:space="preserve">
+    <value>管家型</value>
+  </data>
+  <data name="Stewardship Type(s)" xml:space="preserve">
+    <value>管理型（S）</value>
+  </data>
+  <data name="Action Date" xml:space="preserve">
+    <value>行动日期</value>
+  </data>
+  <data name="Received Date" xml:space="preserve">
+    <value>收稿日期</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>复位</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>--选择--</value>
+  </data>
+  <data name="Go To Home" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>地点名称</value>
+  </data>
+  <data name="Primary Contact:" xml:space="preserve">
+    <value>主要联系人：</value>
+  </data>
+  <data name="Registration Form" xml:space="preserve">
+    <value>报名表</value>
+  </data>
+  <data name="Business Legal Name" xml:space="preserve">
+    <value>企业法定名称</value>
+  </data>
+  <data name="Enter ZIP Code" xml:space="preserve">
+    <value>输入邮政编码</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="If applicable" xml:space="preserve">
+    <value>（如果适用）</value>
+  </data>
+  <data name="Primary physical location Street # - Street name" xml:space="preserve">
+    <value>主要物理位置街 - 街道名称</value>
+  </data>
+  <data name="Suite # or Unit #" xml:space="preserve">
+    <value>套房＃股＃</value>
+  </data>
+  <data name="Email:" xml:space="preserve">
+    <value>电子邮件地址：</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>登录：</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>中间名：</value>
+  </data>
+  <data name="Phone Number:" xml:space="preserve">
+    <value>电话号码：</value>
+  </data>
+  <data name="Re Enter Password:" xml:space="preserve">
+    <value>重新输入密码：</value>
+  </data>
+  <data name="Update Password:" xml:space="preserve">
+    <value>更新密码：</value>
+  </data>
+  <data name="User Role:" xml:space="preserve">
+    <value>用户角色：</value>
+  </data>
+  <data name="Scrap Category Type:" xml:space="preserve">
+    <value>废料分类类型：</value>
+  </data>
+  <data name="Scrap Category:" xml:space="preserve">
+    <value>废料分类：</value>
+  </data>
+  <data name="Tire Types:" xml:space="preserve">
+    <value>轮胎类型：</value>
+  </data>
+  <data name="Inventory Revenue" xml:space="preserve">
+    <value>库存收益</value>
+  </data>
+  <data name="Size to PET" xml:space="preserve">
+    <value>大小为PET</value>
+  </data>
+  <data name="--Select--" xml:space="preserve">
+    <value>- 请选择 -</value>
+  </data>
+  <data name="Account Information" xml:space="preserve">
+    <value>帐户信息</value>
+  </data>
+  <data name="Account Number" xml:space="preserve">
+    <value>帐号</value>
+  </data>
+  <data name="Account Title" xml:space="preserve">
+    <value>账户名称</value>
+  </data>
+  <data name="Account Title :" xml:space="preserve">
+    <value>账户名称：</value>
+  </data>
+  <data name="Account Type" xml:space="preserve">
+    <value>帐户类型</value>
+  </data>
+  <data name="Account Type :" xml:space="preserve">
+    <value>帐户类型：</value>
+  </data>
+  <data name="Account# :" xml:space="preserve">
+    <value>帐号：</value>
+  </data>
+  <data name="Add New Credit Information" xml:space="preserve">
+    <value>添加新的信用卡信息</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="Admin Permission" xml:space="preserve">
+    <value>管理员权限</value>
+  </data>
+  <data name="Bank Account Information" xml:space="preserve">
+    <value>银行帐户资料</value>
+  </data>
+  <data name="Bank Address Information" xml:space="preserve">
+    <value>银行地址信息</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="Bank Name :" xml:space="preserve">
+    <value>银行名称：</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>支</value>
+  </data>
+  <data name="Branch :" xml:space="preserve">
+    <value>分公司：</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>业务</value>
+  </data>
+  <data name="Card Name" xml:space="preserve">
+    <value>卡名称</value>
+  </data>
+  <data name="Card Number" xml:space="preserve">
+    <value>身份证号码</value>
+  </data>
+  <data name="Card#:" xml:space="preserve">
+    <value>卡编号：</value>
+  </data>
+  <data name="City :" xml:space="preserve">
+    <value>城市：</value>
+  </data>
+  <data name="Credit Card Information" xml:space="preserve">
+    <value>信用卡信息</value>
+  </data>
+  <data name="Credit Card Type" xml:space="preserve">
+    <value>信用卡类型</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>当前</value>
+  </data>
+  <data name="Default Permission" xml:space="preserve">
+    <value>默认权限</value>
+  </data>
+  <data name="Default URL:" xml:space="preserve">
+    <value>默认URL：</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>到期日</value>
+  </data>
+  <data name="Group:" xml:space="preserve">
+    <value>组：</value>
+  </data>
+  <data name="IBAN# :" xml:space="preserve">
+    <value>IBAN# :</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>纬度</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>经度</value>
+  </data>
+  <data name="LookUp Name" xml:space="preserve">
+    <value>查找名称</value>
+  </data>
+  <data name="Navigate on main screen:" xml:space="preserve">
+    <value>主屏幕上的导航：</value>
+  </data>
+  <data name="Order By" xml:space="preserve">
+    <value>排列方式</value>
+  </data>
+  <data name="Page Name" xml:space="preserve">
+    <value>页面名称</value>
+  </data>
+  <data name="Page Path" xml:space="preserve">
+    <value>页路径</value>
+  </data>
+  <data name="Path:" xml:space="preserve">
+    <value>路径：</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>允许</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="Phone# :" xml:space="preserve">
+    <value>电话号码：</value>
+  </data>
+  <data name="Primary Account" xml:space="preserve">
+    <value>主帐户</value>
+  </data>
+  <data name="Primary Card" xml:space="preserve">
+    <value>主卡</value>
+  </data>
+  <data name="Primary Phone" xml:space="preserve">
+    <value>主要电话</value>
+  </data>
+  <data name="Roles:" xml:space="preserve">
+    <value>角色：</value>
+  </data>
+  <data name="Routing# :" xml:space="preserve">
+    <value>路由：</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>节约</value>
+  </data>
+  <data name="Serial Number" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="State :" xml:space="preserve">
+    <value>国家：</value>
+  </data>
+  <data name="Street Name" xml:space="preserve">
+    <value>街道名称</value>
+  </data>
+  <data name="Street Name :" xml:space="preserve">
+    <value>街道名称：</value>
+  </data>
+  <data name="Street Number" xml:space="preserve">
+    <value>街道号码</value>
+  </data>
+  <data name="Street Number :" xml:space="preserve">
+    <value>街道号码：</value>
+  </data>
+  <data name="Swift Code :" xml:space="preserve">
+    <value>Swift代码：</value>
+  </data>
+  <data name="Type:" xml:space="preserve">
+    <value>类型：</value>
+  </data>
+  <data name="VC2 Code" xml:space="preserve">
+    <value>VC2代码</value>
+  </data>
+  <data name="View Permission" xml:space="preserve">
+    <value>查看权限</value>
+  </data>
+  <data name="Zip Code :" xml:space="preserve">
+    <value>邮编：</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>银行帐户</value>
+  </data>
+  <data name="Credit Card" xml:space="preserve">
+    <value>信用卡</value>
+  </data>
+  <data name="Select Country and Stewardship to continue" xml:space="preserve">
+    <value>选择国家和监管继续</value>
+  </data>
+  <data name="Welcome to EPR" xml:space="preserve">
+    <value>欢迎到EPR</value>
+  </data>
+  <data name="EPR Technology Solutions Benefit Includes" xml:space="preserve">
+    <value>EPR技术解决方案益处包括</value>
+  </data>
+  <data name="EPR Technology Solutions is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>EPR技术解决方案是一个扩展产品责任废旧轮胎监管的回收业务和管理挑战的完整解决方案。</value>
+  </data>
+  <data name="*Existing Stewardship Stakeholders are granted Pre-Approved status and Instant Access to their new EPR Technology Solutions services by submitting an abbreviated online information update application." xml:space="preserve">
+    <value>*现有的监管利益相关方提交的缩写网上信息更新申请，即可获得预批准状态和即时访问他们的新的EPR技术解决方案服务。</value>
+  </data>
+  <data name="Real World Solutions for Global Resource Recycling" xml:space="preserve">
+    <value>真实世界解决全球资源回收</value>
+  </data>
+  <data name="Auto-Fund Transfers:" xml:space="preserve">
+    <value>自动资金转账：</value>
+  </data>
+  <data name="Facility Postal Code:" xml:space="preserve">
+    <value>基金邮编：</value>
+  </data>
+  <data name="Organization Type:" xml:space="preserve">
+    <value>机构类型：</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="EPR Technology Solutions provides the unified and incentivised operations and management solutions for businesses and governments to welcome the incorporation of a 100% Green Recycling initiative." xml:space="preserve">
+    <value>EPR技术解决方案提供了统一的诱因运营和管理解决方案，为企业和政府欢迎100％绿色回收行动的结合。</value>
+  </data>
+  <data name="The EPR Technology Solutions Cradle-to-Reincarnation identification and tracking capabilities coupled with its complete systemic accountability provide the initial framework necessary to insure the successful transition from existing scrap tire diversion projects to 100% Green product utilization." xml:space="preserve">
+    <value>再加上其完整的系统性问责制EPR技术解决方案从摇篮到轮回识别和跟踪能力提供了必要的保证，从现有的废旧轮胎引水工程，100％绿色产品的利用率成功转型的初步框架。</value>
+  </data>
+  <data name="The EPR Technology Solutions Stewardship platform offers a market based concept that fully utilizes the existing tire industry's infrastructures." xml:space="preserve">
+    <value>EPR的技术解决方案监管平台提供了一个基于市场的概念，充分利用现有轮胎行业的基础设施。</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>真实世界解决全球资源回收</value>
+  </data>
+  <data name="Business Energy/Water Self-Survey and Solutions" xml:space="preserve">
+    <value>企业节能/供水自我调查和解决方案</value>
+  </data>
+  <data name="Carpets and Rugs" xml:space="preserve">
+    <value>地毯和地毯</value>
+  </data>
+  <data name="Center Trax" xml:space="preserve">
+    <value>Trax的中心</value>
+  </data>
+  <data name="Consumer Trax" xml:space="preserve">
+    <value>消费者特里克斯</value>
+  </data>
+  <data name="E-Waste" xml:space="preserve">
+    <value>电子废物</value>
+  </data>
+  <data name="Global Market Values and Futures Exchange" xml:space="preserve">
+    <value>全球市场价值和期货交易所</value>
+  </data>
+  <data name="Global Producer and Product Registry" xml:space="preserve">
+    <value>全球生产商和产品注册</value>
+  </data>
+  <data name="Global Waste Resource e-Commerce Site" xml:space="preserve">
+    <value>全球垃圾资源化的电子商务网站</value>
+  </data>
+  <data name="Home Appliances" xml:space="preserve">
+    <value>家庭设备</value>
+  </data>
+  <data name="Home Energy/Water Self-Survey and Solutions" xml:space="preserve">
+    <value>家庭能源/供水自我调查和解决方案</value>
+  </data>
+  <data name="Home Waste Self-Survey and Solutions" xml:space="preserve">
+    <value>主页废物自我调查和解决方案</value>
+  </data>
+  <data name="Household Chemicals" xml:space="preserve">
+    <value>日用化工</value>
+  </data>
+  <data name="ISO 14064-III Carbon Credit Management" xml:space="preserve">
+    <value>ISO14064-III碳信用管理</value>
+  </data>
+  <data name="Mattresses" xml:space="preserve">
+    <value>床垫</value>
+  </data>
+  <data name="New Products or Materials" xml:space="preserve">
+    <value>新的产品或材料</value>
+  </data>
+  <data name="Paint and Paint Products" xml:space="preserve">
+    <value>涂料和Paint产品</value>
+  </data>
+  <data name="Recycling Centers" xml:space="preserve">
+    <value>回收中心</value>
+  </data>
+  <data name="Redemption Centers" xml:space="preserve">
+    <value>兑换中心</value>
+  </data>
+  <data name="Resource Trax" xml:space="preserve">
+    <value>Trax的资源</value>
+  </data>
+  <data name="Scrap Tubes and Flaps" xml:space="preserve">
+    <value>废钢管和襟翼</value>
+  </data>
+  <data name="Social Media NPO Recycling/Fund-Raising Program" xml:space="preserve">
+    <value>社会化媒体NPO回收/募集资金计划</value>
+  </data>
+  <data name="Toxic Trax" xml:space="preserve">
+    <value>有毒特里克斯</value>
+  </data>
+  <data name="Trash Trax" xml:space="preserve">
+    <value>Trax的垃圾桶</value>
+  </data>
+  <data name="Trash Tweets" xml:space="preserve">
+    <value>垃圾推文</value>
+  </data>
+  <data name="Used Products or Materials" xml:space="preserve">
+    <value>使用过的产品或材料</value>
+  </data>
+  <data name="I accept the terms of" xml:space="preserve">
+    <value>我接受条款</value>
+  </data>
+  <data name="Please, review the Terms and Conditions of the Stewardship and EPRTS Privacy agreements before submitting your enrollment application." xml:space="preserve">
+    <value>请阅读本服务条款的监管条件和EPRTS保密协议提交入学申请。</value>
+  </data>
+  <data name="Please select at least one Stewardship Module" xml:space="preserve">
+    <value>请选择至少一个管家模块</value>
+  </data>
+  <data name="Product Type:" xml:space="preserve">
+    <value>产品类型：</value>
+  </data>
+</root>

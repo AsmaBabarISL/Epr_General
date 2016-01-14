@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master.master.cs" Inherits="master" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%@ Register Src="~/CommonControls/LeftNavigation.ascx" TagPrefix="uc1" TagName="LeftNavigation" %>
+<%@ Register Src="~/CommonControls/TopNavigation.ascx" TagPrefix="uc1" TagName="TopNavigation" %>
+<%@ Register Src="~/CommonControls/BreadCrumb.ascx" TagPrefix="uc1" TagName="BreadCrumb" %>
+<%@ Register Src="~/CommonControls/footer.ascx" TagPrefix="uc1" TagName="footer" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EPR Technology Solutions</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen" />
+
+    <link href="/css/plugins/datapicker/datepicker3.css" rel="stylesheet" media="screen" />
+
+    <link href="/css/animate.css" rel="stylesheet" media="screen" />
+    <link href="/css/style.css" rel="stylesheet" media="screen" />
+    <link href="/css/epr-style.css" rel="stylesheet" media="screen" />
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('input:text').blur(function () {
+
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+            $('textarea').blur(function () {
+                var textarea = $("#" + this.id)[0];
+                var refinTextAreaVal = $(textarea).val().replace(/[<>]+/g, "");
+                $($(textarea)[0]).val(refinTextAreaVal);
+            });
+            $('input:password').blur(function () {
+                var txtId = this.id;
+                var el = $("#" + txtId)[0];
+
+                var refinedVal = $(el).val().replace(/[<>]+/g, "");
+                $($(el)[0]).val(refinedVal);
+
+            });
+
+        });
+
+
+
+    </script>
+
+</head>
+<body class="fixed-sidebar pace-done">
+    <div class="initializer_outer" style="display: block;">
+        <div class="initializer-block">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+            <p class="initializer-copy">Loading... </p>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+        </asp:ToolkitScriptManager>
+
+        <div id="wrapper">
+            <uc1:LeftNavigation runat="server" ID="LeftNavigation" />
+            <div id="page-wrapper" class="gray-bg">
+                <div class="row border-bottom">
+                    <uc1:TopNavigation runat="server" ID="TopNavigation" />
+                </div>
+                <uc1:BreadCrumb runat="server" ID="BreadCrumb" />
+                <uc1:footer runat="server" ID="footer" />
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapper wrapper-content">
+                            <div class="wrapper wrapper-content animated fadeInRight">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- Mainly scripts -->
+    <script type="text/javascript" src="/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script type="text/javascript" src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+
+    <script src="/Scripts/jquery.mask.min.js" type="text/javascript"></script>
+    <!-- Custom and plugin javascript -->
+    <script type="text/javascript" src="/js/inspinia.js"></script>
+
+    <script src="/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+
+    <script>
+        // Loader
+        $(window).load(function () {
+            $('.initializer_outer').css("display", "none");
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('.date-pick .input-group.date').datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: false,
+                forceParse: false,
+                calendarWeeks: true,
+                autoclose: true
+            });
+
+            $('#date_range .input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
+            $('#date_range_p .input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
+            $(".start-date").datepicker({
+                startDate: "today"
+            });
+
+            function SetDatePicket() {
+                $(".datepicker").datepicker();
+            }
+        });
+
+        function showHideInventory(li) {
+
+            $(li).addClass("active");
+        }
+        /*--- Alert function*/
+        function fadeOut() {
+            $(".custom-absolute-alert").delay(3000).fadeOut(300);
+            $(".custom-absolute-alert").appendTo("form");
+        }
+        function fadeOutLong() {
+            $(".custom-absolute-alert").delay(5000).fadeOut(300);
+            $(".custom-absolute-alert").appendTo("form");
+        }
+
+        $(document).ready(function () {
+            $('li.active').click(function () {
+                window.location.href = $('li.active').children('a').attr('href');
+            });
+        });
+
+
+    </script>
+</body>
+</html>
+

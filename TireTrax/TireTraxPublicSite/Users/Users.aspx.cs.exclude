@@ -1,0 +1,138 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using TireTraxLib;
+
+public partial class Users_Users : BasePage
+{
+
+    public int CurPageNum
+    {
+        get
+        {
+            if (Request.QueryString["p"] != null)
+                return Conversion.ParseInt(Request.QueryString["p"]);
+            else
+                return 1;
+        }
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (User.Identity.IsAuthenticated == false)
+        {
+            Response.Redirect("/");
+        }
+        ClientScript.RegisterStartupScript(GetType(), "SetHeaderMenu", String.Format("SetHeaderMenu('liUsers','{0}');", ResourceMgr.GetMessage("Users")), true);
+        if (!IsPostBack)
+        {
+            SearchAdminUsers(1);
+        }
+
+        if (TotalItemsR > 0)
+        {
+            pager.DrawPager(CurrentPage, TotalItemsR, pageSize, MaxPagesToShow);
+        }
+    }
+
+
+
+    protected void gvUserAdmin_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName == "Approve")
+        {
+
+            UserInfo.ApproveAdminUser(Convert.ToInt32(e.CommandArgument));
+            SearchAdminUsers(1);
+        }
+        else if (e.CommandName == "DeleteUser")
+        {
+
+            UserInfo.DeleteAdminUser(Convert.ToInt32(e.CommandArgument));
+            SearchAdminUsers(1);
+        }
+        else if (e.CommandName == "DisApprove")
+        {
+
+            UserInfo.DisApproveAdminUser(Convert.ToInt32(e.CommandArgument));
+            SearchAdminUsers(1);
+
+        }
+    }
+
+    protected void btnUserSearch_Click(object sender, EventArgs e)
+    {
+        SearchAdminUsers(1);
+    }
+
+    protected void SearchAdminUsers(int pageNo)
+    {
+        try
+        {
+
+            gvUserAdmin.PageSize = pageSize;
+
+            int OrganizationId = UserOrganizationId;
+
+            if (string.IsNullOrEmpty(Request.QueryString["OrganizationId"]) == false)
+            {
+                OrganizationId = Convert.ToInt32(Request.QueryString["OrganizationId"]);
+            }
+
+            string FirstName = txtFirstName.Text.Trim();
+            string LastName = txtLastName.Text.Trim();
+            string LoginName = txtLogin.Text.Trim();
+            DateTime CreatedFromDate = txtCreatedFromDate.Text.Trim() == "" ? DateTime.MinValue : Convert.ToDateTime(txtCreatedFromDate.Text.Trim(), System.Globalization.CultureInfo.InvariantCulture);
+            DateTime CreatedToDate = txtCreatedToDate.Text.Trim() == "" ? DateTime.MinValue : Convert.ToDateTime(txtCreatedToDate.Text.Trim(), System.Globalization.CultureInfo.InvariantCulture);
+            int count = 0;
+            bool? status = null;
+            if (ddlstatus.SelectedItem.Value == "1")
+                status = false;
+            else if (ddlstatus.SelectedItem.Value == "2")
+                status = true;
+            gvUserAdmin.DataSource = UserInfo.getAdminUsers(pageNo, pageSize, OrganizationId, out count, FirstName, LastName, LoginName, CreatedFromDate.Date, CreatedToDate.Date, LanguageId, LoginMemberId,status);
+            gvUserAdmin.DataBind();
+
+            this.TotalItems = count;
+            this.pager.DrawPager(pageNo, this.TotalItems, pageSize, MaxPagesToShow);
+
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "AdminUsers.LoadAdminUsers", ex);
+        }
+    }
+
+    protected override bool OnBubbleEvent(object source, EventArgs args)
+    {
+        if (this.pager.Equals(source))
+        {
+            CommandEventArgs cmdArgs = (CommandEventArgs)args;
+            CurrentPage = Convert.ToInt32(cmdArgs.CommandArgument);
+
+            this.SearchAdminUsers(CurrentPage);
+        }
+
+
+        return base.OnBubbleEvent(source, args);
+    }
+
+
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        txtFirstName.Text = "";
+        txtLastName.Text = "";
+        txtLogin.Text = "";
+        txtCreatedFromDate.Text = "";
+        txtCreatedToDate.Text = "";
+        SearchAdminUsers(1);
+    }
+    protected void ddlPageSize_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        SearchAdminUsers(1);
+    }
+
+}

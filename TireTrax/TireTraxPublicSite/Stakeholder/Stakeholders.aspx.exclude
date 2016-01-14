@@ -1,0 +1,285 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.master" AutoEventWireup="true" CodeFile="Stakeholders.aspx.cs" Inherits="Stakeholder_Stakeholders" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Assembly="TireTraxLib" Namespace="TireTraxLib" TagPrefix="cc1" %>
+<%@ Register Src="~/CommonControls/Pager.ascx" TagName="Pager" TagPrefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<link rel="stylesheet" type="text/css" href="/Scripts/themes/base/jquery.ui.all.css" />
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <style type="text/css">
+        .style4
+        {
+            height: 14px;
+        }
+        .style5
+        {
+            height: 27px;
+        }
+    </style>
+    <script type="text/javascript">
+        function ClearSearchFields() {
+            $("#<%=txtStakeholderName.ClientID%>").val('');
+            $("#<%=txtCreatedFromDate.ClientID%>").val('');
+            $("#<%=txtCreatedToDate.ClientID%>").val('');
+            $("#<%=txtDBAName.ClientID%>").val('');
+            $("#<%=txtPrimaryCotnact.ClientID%>").val('');
+            $("#<%=txtZipCode.ClientID%>").val('');
+
+            $("#<%=btnStakeSearch.ClientID%>")[0].click();
+        }
+
+
+        function SetFilterDateRange() {
+            $("#<%=txtCreatedFromDate.ClientID %>").datepicker({
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    $("#<%=txtCreatedToDate.ClientID %>").datepicker("option", "minDate", selectedDate);
+                },
+                onClose: function (dateText, inst) {
+                    if (dateText == "") {
+                        $("#<%=txtCreatedToDate.ClientID %>").datepicker("option", "minDate", null);
+                    }
+                }
+            });
+            $("#<%=txtCreatedToDate.ClientID %>").datepicker({
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    $("#<%=txtCreatedFromDate.ClientID %>").datepicker("option", "maxDate", selectedDate);
+                },
+                onClose: function (dateText, inst) {
+                    if (dateText == "") {
+                        $("#<%=txtCreatedFromDate.ClientID %>").datepicker("option", "maxDate", null);
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('#asearch').toggle(function () {
+                $('#midSearch').slideDown();
+                SetFilterDateRange();
+            }, function () {
+                $('#midSearch').slideUp();
+            });
+        });
+
+    </script>
+
+
+
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:UpdateProgress ID="UpdateProgress1" runat="server">
+    <ProgressTemplate>
+    <div id="Div1" runat="server" style=" background:url(/images/bg_shadow.png) repeat;width:100%;height:100%;position:fixed;
+    z-index:999;top:0;left:0;z-index:99999;display:block;"> 
+           <img src="/images/ajax-loader.gif" style="position:fixed; left:0; right:0; top:0; bottom:0; margin:auto;" />
+            </div>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+
+<script src="/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.datepicker.js" type="text/javascript"></script>
+    <!-- Start Search Filters --------------------------------------------------------------------->
+
+ 
+
+    <div class="grid-contain-outer">
+        <div class="txt-main-had">
+            <div class="txt-had-left" style="background: none;">
+                <%= ResourceMgr.GetMessage("Stakeholders")%>
+            </div>
+            <div class="txt-had-right">
+                <a class="ico_search" id="asearch" href="javascript:void();">
+                    <%= ResourceMgr.GetMessage("Search")%></a>
+            </div>
+        </div>
+          <asp:UpdatePanel runat="server" ID="upnlGrid" UpdateMode="Conditional">
+            <ContentTemplate>
+        <div id="midSearch" style="display: none;">
+            <div class="search-filter-outer" style="height:auto;">
+                <asp:Panel ID="pnlSearch" runat="server" CssClass="search-filter_inner" DefaultButton="btnStakeSearch">
+                    <div class="search-filter_heading">
+                        Search Filters
+                        <div class="grid_footer">
+                            <div class="select_rows_numbers">
+                                <asp:Literal ID="ltrlPage" runat="server"></asp:Literal>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("Organization Name")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtStakeholderName" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("From")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtCreatedFromDate" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("To")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtCreatedToDate" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("Email")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtEmail" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer" runat="server" visible="false">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("DBA Name")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtDBAName" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("Contact")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtPrimaryCotnact" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer" runat="server" visible="false">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("ZIP Code")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtZipCode" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="btn-search_outer" style="top: 0px;">
+                        <cc1:ResourceLinkButton ID="btnStakeCancel" runat="server" CssClass="btn-search" OnClientClick="ClearSearchFields(); return false;"><%= ResourceMgr.GetMessage("Reset")%></cc1:ResourceLinkButton>
+                        <cc1:ResourceLinkButton ID="btnStakeSearch" runat="server" CssClass="btn-search"
+                            OnClick="btnStakeSearch_Click"><%= ResourceMgr.GetMessage("Search")%></cc1:ResourceLinkButton>
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+      
+                <asp:GridView ID="gvApplicationApproved" runat="server" AutoGenerateColumns="False"
+                    GridLines="None" CssClass="add-new-inventory" DataKeyNames="OrganizationId" EnableViewState="true"
+                    EmptyDataText="No data found" wrap="nowrap" CellPadding="0" Width="100%"
+                    ShowFooter="true" OnRowCommand="gvApplicationApproved_RowCommand">
+                    <AlternatingRowStyle CssClass="highlighted-row" />
+                    <%--<RowStyle CssClass="highlighted-row" />--%>
+                    <HeaderStyle CssClass="txt-had" />
+                    <Columns>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Left" HeaderStyle-Width="17%">
+                             <HeaderStyle HorizontalAlign="Left" />
+                           <ItemStyle HorizontalAlign="Left" />
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Organization Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <a href='viewStakeholder?OrganizationId=<%# Eval("OrganizationId") %>'>
+                                    <%# Eval("LegalName") %></a>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Left" HeaderStyle-Width="17%">
+                             <HeaderStyle HorizontalAlign="Left" />
+                           <ItemStyle HorizontalAlign="Left" />
+                            
+                            <HeaderTemplate>
+                                <%=ResourceMgr.GetMessage("DBA Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("DBAName")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Left" HeaderStyle-Width="17%">
+                             <HeaderStyle HorizontalAlign="Left" />
+                           <ItemStyle HorizontalAlign="Left" />
+                            <HeaderTemplate>
+                                <%=ResourceMgr.GetMessage("Contact Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("ContactName") %>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Left" HeaderStyle-Width="17%">
+                             <HeaderStyle HorizontalAlign="Left" />
+                           <ItemStyle HorizontalAlign="Left" />
+                            
+                            <HeaderTemplate>
+                                <%=ResourceMgr.GetMessage("City")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("City") %>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Center" HeaderStyle-HorizontalAlign="Center">
+                             <HeaderStyle HorizontalAlign="Center" />
+                           <ItemStyle HorizontalAlign="Center" />
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("User")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <a href='Users?p=1&OrganizationId=<%# Eval("OrganizationId") %>&RoleId=<%# Eval("RoleId") %>&OrganizationTypeID=<%#Eval("OrganizationTypeId")%>'>
+                                   <img title="View User" src="/Images/view-user_icon.png" /></a>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Center">
+                             <HeaderStyle HorizontalAlign="Center" />
+                           <ItemStyle HorizontalAlign="Center" />
+                            
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Status")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:HyperLink ID="hyplnkStatusTrue" runat="server" ToolTip="Status" ImageUrl="/Images/thumb-up_icon.png"
+                                    Visible='<%#  Convert.ToBoolean(Eval("IsApproved")) %>'></asp:HyperLink>
+                                <asp:HyperLink ID="hyplnkStatusFalse" runat="server" ToolTip="Status" ImageUrl="/Images/thumb-down_icon.png"
+                                    Visible='<%# !Convert.ToBoolean(Eval("IsApproved")) %>'></asp:HyperLink>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText=""  ItemStyle-HorizontalAlign="Center">
+                             
+                           
+                            <HeaderStyle HorizontalAlign="Center" />
+                            <ItemStyle HorizontalAlign="Center" />
+                            <HeaderTemplate>
+                                <%=ResourceMgr.GetMessage("Delete")%>
+                            </HeaderTemplate>
+                            
+                            <ItemTemplate>
+
+                                <asp:ImageButton ID="lnkbtnDelete" runat="server" CausesValidation="false" Text="Delete"
+                                    ToolTip="Delete this record" ImageUrl="/Images/delete_icon.png" OnClientClick="return confirm('Are you sure you want to delete Approved Stakeholder?');"
+                                    CommandName="DeleteStakeholder" CommandArgument='<%#Bind("StakeholderApprovalId")%>'>
+                                </asp:ImageButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+                <div class="txt-pagination">
+                   
+                        <uc2:Pager ID="pager" runat="server" />
+                </div>
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="btnStakeSearch" EventName="Click" />
+            </Triggers>
+        </asp:UpdatePanel>
+    </div>
+
+
+
+</asp:Content>
+

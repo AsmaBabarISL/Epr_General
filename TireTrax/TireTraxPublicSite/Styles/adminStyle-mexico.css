@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.col-360 {
+width: 400px;
+height: 200px;
+}
+.login-area {
+height: 210px;
+background-image: url(../images/login_bg-mexico.png);
+background-repeat: no-repeat;
+width: 847px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 15px;
+padding-top: 30px;
+padding-right: 40px;
+padding-bottom: 35px;
+padding-left: 40px;
+}
+.col-300 {
+width: 385px;
+height: 200px;
+margin-left: 30px;
+}
+.fltlftmx {
+float: left;
+}
+.frm_section {
+margin-top: 20px;
+height: 25px;
+width: 400px;
+}
+.frm_inner_block {
+position: relative;
+left: 0px;
+color: #333;
+width: 400px;
+}
+.frm_section .frm-feild {
+float: none;
+width: 400px;
+}
+.frm_section .txt-feild {
+box-shadow: inset 0px 2px 8px 0px #E3E3E3;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+width: 300px;
+height: 25px;
+font: arial 12px;
+color: #333;
+border: 1px solid #CCC;
+}
+.Login-btn {
+right: -15px;
+}
+.mx-basic_login-had {
+color: #555;
+float: left;
+font: 11px/2 arial;
+margin-top: 3px;
+text-align: right;
+width: 185px;
+height:25px;
+overflow:hidden;
+}

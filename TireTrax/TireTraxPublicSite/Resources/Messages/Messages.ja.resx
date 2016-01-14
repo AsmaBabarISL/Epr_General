@@ -1,0 +1,1414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="*Check mark all applicable boxes" xml:space="preserve">
+    <value>*該当するすべてのチェックボックスをマークする</value>
+  </data>
+  <data name="Accept Auto-Fund Transfers:" xml:space="preserve">
+    <value>自動送金を受け入れる：</value>
+  </data>
+  <data name="Accept Text Messages:" xml:space="preserve">
+    <value>テキストメッセージを受け入れます。</value>
+  </data>
+  <data name="Accounting" xml:space="preserve">
+    <value>会計</value>
+  </data>
+  <data name="Accounting Interface:" xml:space="preserve">
+    <value>会計インタフェース：</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>アクション</value>
+  </data>
+  <data name="Add More" xml:space="preserve">
+    <value>詳細を追加</value>
+  </data>
+  <data name="Add New Stakeholder" xml:space="preserve">
+    <value>新しいステークホルダーを追加</value>
+  </data>
+  <data name="Add New Stewardship" xml:space="preserve">
+    <value>新しいスチュワードシップを追加</value>
+  </data>
+  <data name="Add PTE Setting" xml:space="preserve">
+    <value>PTEの設定を追加</value>
+  </data>
+  <data name="Add Supplier" xml:space="preserve">
+    <value>サプライヤーを追加</value>
+  </data>
+  <data name="Additional Locations" xml:space="preserve">
+    <value>追加の場所</value>
+  </data>
+  <data name="Additional Locations are generally for Temporary Events or if the Stakeholder has no permanent management on premise. Please, file all managed facilities as a New and seperate location. There are no additional charges. The primary facility's stakeholder is provided with both individual and consolidated facilities management reports." xml:space="preserve">
+    <value>追加の場所は一時的なイベントのためか、ステークホルダーが前提には恒久的な管理機能を持っていない場合が一般的である。 、新機能と独立した場所など、すべての管理対象設備を提出してください。追加の料金はかかりません。主要施設のステークホルダーは、個別および連結の両方の施設管理レポートが設けられている。</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>量</value>
+  </data>
+  <data name="b" xml:space="preserve">
+    <value>タイヤ輸送は＃許可します：</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>バック</value>
+  </data>
+  <data name="Billing Cell Phone:" xml:space="preserve">
+    <value>課金携帯電話：</value>
+  </data>
+  <data name="Billing Contact Name:" xml:space="preserve">
+    <value>請求担当者名：</value>
+  </data>
+  <data name="Billing Contact Same:" xml:space="preserve">
+    <value>同じ請求先：</value>
+  </data>
+  <data name="Billing Email:" xml:space="preserve">
+    <value>請求メール：</value>
+  </data>
+  <data name="Billing Phone:" xml:space="preserve">
+    <value>請求先電話番号：</value>
+  </data>
+  <data name="Business Name:" xml:space="preserve">
+    <value>事業名：</value>
+  </data>
+  <data name="Business Phone:" xml:space="preserve">
+    <value>勤務先電話：</value>
+  </data>
+  <data name="Business Type" xml:space="preserve">
+    <value>事業の種類</value>
+  </data>
+  <data name="Business Type:" xml:space="preserve">
+    <value>事業の種類：</value>
+  </data>
+  <data name="C-Barcode" xml:space="preserve">
+    <value>C-バーコード</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Cell Phone:" xml:space="preserve">
+    <value>携帯電話：</value>
+  </data>
+  <data name="City:" xml:space="preserve">
+    <value>市：</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>クライアント</value>
+  </data>
+  <data name="Clients – Non-Retail Client Trade References" xml:space="preserve">
+    <value>クライアント - 非リテール·クライアント·トレード·リファレンス</value>
+  </data>
+  <data name="Company Name:" xml:space="preserve">
+    <value>会社名：</value>
+  </data>
+  <data name="Component Type:" xml:space="preserve">
+    <value>コンポーネントのタイプ：</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>連絡</value>
+  </data>
+  <data name="Country:" xml:space="preserve">
+    <value>国：</value>
+  </data>
+  <data name="Currency" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>日付</value>
+  </data>
+  <data name="DBA Name:" xml:space="preserve">
+    <value>DBAの名称：</value>
+  </data>
+  <data name="Define" xml:space="preserve">
+    <value>細部</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>削除の確認</value>
+  </data>
+  <data name="Description:" xml:space="preserve">
+    <value>説明：</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 non-retail client trade references are required." xml:space="preserve">
+    <value>お、3つの非リテール貿易参照の最小が必要です。</value>
+  </data>
+  <data name="Disclaimer: *Please, a minimum of 3 Supplier trade references are required." xml:space="preserve">
+    <value>お、3サプライヤー貿易参照の最小値が必要です。</value>
+  </data>
+  <data name="Disclaimer: *You will be able to self-update your Temporary User Login ID or password once your application has been verified and your site is activated." xml:space="preserve">
+    <value>あなたのアプリケーションが確認され、あなたの会社のサイトが活性化されれば、あなたの一時的なユーザーログインおよび/またはパスワードを変更することができます。</value>
+  </data>
+  <data name="Dollar Value" xml:space="preserve">
+    <value>ドル価値</value>
+  </data>
+  <data name="Effective Date" xml:space="preserve">
+    <value>発効日</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>メール</value>
+  </data>
+  <data name="Event Dates:" xml:space="preserve">
+    <value>イベント日程：</value>
+  </data>
+  <data name="Expiration Date" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Extension:" xml:space="preserve">
+    <value>拡張子：</value>
+  </data>
+  <data name="Facility Street Address:" xml:space="preserve">
+    <value>施設住所：</value>
+  </data>
+  <data name="Facility ZIP Code:" xml:space="preserve">
+    <value>施設の郵便番号：</value>
+  </data>
+  <data name="Franchise Name" xml:space="preserve">
+    <value>フランチャイズ名</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>歴史</value>
+  </data>
+  <data name="I have reviewed the" xml:space="preserve">
+    <value>私は検討しました</value>
+  </data>
+  <data name="Import/Export" xml:space="preserve">
+    <value>輸出入</value>
+  </data>
+  <data name="Internationally" xml:space="preserve">
+    <value>国際的に</value>
+  </data>
+  <data name="Inventory Interface:" xml:space="preserve">
+    <value>インベントリインタフェース：</value>
+  </data>
+  <data name="Latest Stakeholder/User" xml:space="preserve">
+    <value>最新のステークホルダー/ユーザー</value>
+  </data>
+  <data name="Legal Name" xml:space="preserve">
+    <value>正式名称</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="Location Contact Email:" xml:space="preserve">
+    <value>場所の連絡先メールアドレス：</value>
+  </data>
+  <data name="Location Contact Person:" xml:space="preserve">
+    <value>場所コンタクトパーソン：</value>
+  </data>
+  <data name="Location Event:" xml:space="preserve">
+    <value>場所·イベント：</value>
+  </data>
+  <data name="Location Name:" xml:space="preserve">
+    <value>場所名：</value>
+  </data>
+  <data name="Location Permit #:" xml:space="preserve">
+    <value>場所は＃許可します：</value>
+  </data>
+  <data name="Location Status:" xml:space="preserve">
+    <value>場所の状況：</value>
+  </data>
+  <data name="Location Street Address:" xml:space="preserve">
+    <value>場所住所：</value>
+  </data>
+  <data name="Location Type:" xml:space="preserve">
+    <value>場所のタイプ：</value>
+  </data>
+  <data name="Location ZIP Code:" xml:space="preserve">
+    <value>場所の郵便番号：</value>
+  </data>
+  <data name="Login Registration" xml:space="preserve">
+    <value>確認ログイン</value>
+  </data>
+  <data name="Lookup Table:" xml:space="preserve">
+    <value>ルックアップテーブル：</value>
+  </data>
+  <data name="Mailing Address Same:" xml:space="preserve">
+    <value>同じメーリングリストアドレス：</value>
+  </data>
+  <data name="Mailing ZIP Code:" xml:space="preserve">
+    <value>郵送郵便番号：</value>
+  </data>
+  <data name="NAFTA" xml:space="preserve">
+    <value>北米自由貿易協定（NAFTA）</value>
+  </data>
+  <data name="Name:" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="Nationally" xml:space="preserve">
+    <value>全国的に</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>ノー</value>
+  </data>
+  <data name="No Record Exists" xml:space="preserve">
+    <value>記録は残りません</value>
+  </data>
+  <data name="No record(s) found." xml:space="preserve">
+    <value>レコード（s）見つかりませんでした。</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>オーダー</value>
+  </data>
+  <data name="Organization Name" xml:space="preserve">
+    <value>組織名</value>
+  </data>
+  <data name="Organization Type" xml:space="preserve">
+    <value>組織タイプ</value>
+  </data>
+  <data name="Organization:" xml:space="preserve">
+    <value>組織：</value>
+  </data>
+  <data name="Password:" xml:space="preserve">
+    <value>パスワード：</value>
+  </data>
+  <data name="Permanent" xml:space="preserve">
+    <value>恒久的な</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>電話</value>
+  </data>
+  <data name="Please, review the Terms and Conditions of the Stewardship and EPRTS Privacy agreements before submitting your enrollment applications." xml:space="preserve">
+    <value>、あなたの登録申請書を提出する前にスチュワードとEPRTSプライバシー契約書の条項を確認してください。</value>
+  </data>
+  <data name="Primary Contact Cell Phone:" xml:space="preserve">
+    <value>メイン連絡先の携帯電話：</value>
+  </data>
+  <data name="Primary Contact Email:" xml:space="preserve">
+    <value>プライマリ連絡先メールアドレス：</value>
+  </data>
+  <data name="Primary Contact Name:" xml:space="preserve">
+    <value>主要な担当者名：</value>
+  </data>
+  <data name="Primary Information" xml:space="preserve">
+    <value>一次情報</value>
+  </data>
+  <data name="Primary Registration" xml:space="preserve">
+    <value>一次登録</value>
+  </data>
+  <data name="PTE" xml:space="preserve">
+    <value>PTE</value>
+  </data>
+  <data name="Re-Enter Password:" xml:space="preserve">
+    <value>パスワードを再入力：</value>
+  </data>
+  <data name="RecordExistence" xml:space="preserve">
+    <value>レコードの存在</value>
+  </data>
+  <data name="Revenue" xml:space="preserve">
+    <value>収入</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>役割</value>
+  </data>
+  <data name="SAME" xml:space="preserve">
+    <value>同じ</value>
+  </data>
+  <data name="School Type:" xml:space="preserve">
+    <value>学校の種類：</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Search Filters" xml:space="preserve">
+    <value>検索フィルタ</value>
+  </data>
+  <data name="Section Type:" xml:space="preserve">
+    <value>セクションの種類：</value>
+  </data>
+  <data name="Select Value:" xml:space="preserve">
+    <value>値を選択します。</value>
+  </data>
+  <data name="Stakeholder Certifications" xml:space="preserve">
+    <value>ステークホルダー認定</value>
+  </data>
+  <data name="Stakeholder Name" xml:space="preserve">
+    <value>利害関係者名</value>
+  </data>
+  <data name="Stakeholder Type" xml:space="preserve">
+    <value>ステークホルダータイプ</value>
+  </data>
+  <data name="StakeHolder-ID" xml:space="preserve">
+    <value>利害関係者のID</value>
+  </data>
+  <data name="Stakeholders" xml:space="preserve">
+    <value>利害関係者</value>
+  </data>
+  <data name="State:" xml:space="preserve">
+    <value>状態：</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="Step 1 of 8" xml:space="preserve">
+    <value>8のステップ1</value>
+  </data>
+  <data name="Step 2 of 8" xml:space="preserve">
+    <value>8のステップ2</value>
+  </data>
+  <data name="Step 3 of 8" xml:space="preserve">
+    <value>8のステップ3</value>
+  </data>
+  <data name="Step 4 of 8" xml:space="preserve">
+    <value>8のステップ4</value>
+  </data>
+  <data name="Step 5 of 8" xml:space="preserve">
+    <value>8のステップ5</value>
+  </data>
+  <data name="Step 6 of 8" xml:space="preserve">
+    <value>8のステップ6</value>
+  </data>
+  <data name="Step 7 of 8" xml:space="preserve">
+    <value>8のステップ7</value>
+  </data>
+  <data name="Stewardship" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Stewardship Privacy Agreement" xml:space="preserve">
+    <value>スチュワードプライバシー契約</value>
+  </data>
+  <data name="Stewardships" xml:space="preserve">
+    <value>スチュワード船</value>
+  </data>
+  <data name="Street Address:" xml:space="preserve">
+    <value>番地：</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提出する</value>
+  </data>
+  <data name="Submit Application" xml:space="preserve">
+    <value>申請書を提出</value>
+  </data>
+  <data name="SubmitApplication" xml:space="preserve">
+    <value>申請書を提出</value>
+  </data>
+  <data name="Suit #:" xml:space="preserve">
+    <value>＃に合う：</value>
+  </data>
+  <data name="Suite# or PO Box#:" xml:space="preserve">
+    <value>＃スイート＃または私書箱：</value>
+  </data>
+  <data name="Suppliers" xml:space="preserve">
+    <value>サプライヤー</value>
+  </data>
+  <data name="Suppliers – Trade References" xml:space="preserve">
+    <value>サプライヤー - 貿易リファレンス</value>
+  </data>
+  <data name="Temporary User Login ID:" xml:space="preserve">
+    <value>一時的なユーザー·ログインID：</value>
+  </data>
+  <data name="Thank You" xml:space="preserve">
+    <value>ありがとうございました</value>
+  </data>
+  <data name="Thank you for submitting your application. Your application has been forwarded for approval. Once your application is approved we will let you know by email." xml:space="preserve">
+    <value>あなたの申請書を提出していただきありがとうございます。あなたのアプリケーションは、承認のために転送されています。お申し込みが承認されたら、我々は電子メールでお知らせします。</value>
+  </data>
+  <data name="This Login is not available" xml:space="preserve">
+    <value>このログインは使用できません</value>
+  </data>
+  <data name="Timeline" xml:space="preserve">
+    <value>タイムライン</value>
+  </data>
+  <data name="Tire Size" xml:space="preserve">
+    <value>タイヤサイズ</value>
+  </data>
+  <data name="Tire Storage Permit #:" xml:space="preserve">
+    <value>タイヤ保管は＃許可します：</value>
+  </data>
+  <data name="EPRTS Privacy Agreement" xml:space="preserve">
+    <value>EPRTSプライバシー規約</value>
+  </data>
+  <data name="Title:" xml:space="preserve">
+    <value>タイトル：</value>
+  </data>
+  <data name="Transporter Hauling Certifications" xml:space="preserve">
+    <value>輸送運搬認定</value>
+  </data>
+  <data name="TX-Barcode" xml:space="preserve">
+    <value>TX - バーコード</value>
+  </data>
+  <data name="TX-ID" xml:space="preserve">
+    <value>TX-ID</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>タイプ</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>ユーザー</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="Website:" xml:space="preserve">
+    <value>ウェブサイト：</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="ZIP Code:" xml:space="preserve">
+    <value>郵便番号：</value>
+  </data>
+  <data name="Add Client" xml:space="preserve">
+    <value>クライアントの追加</value>
+  </data>
+  <data name="Add Location" xml:space="preserve">
+    <value>ロケーションの追加</value>
+  </data>
+  <data name="Business Waste Self-Survey and Solutions" xml:space="preserve">
+    <value>事業廃棄物の自己調査とソリューション</value>
+  </data>
+  <data name="Community Services" xml:space="preserve">
+    <value>コミュニティサービス</value>
+  </data>
+  <data name="Compliance Trax" xml:space="preserve">
+    <value>コンプライアンストラックス</value>
+  </data>
+  <data name="Consumer" xml:space="preserve">
+    <value>消費者</value>
+  </data>
+  <data name="Consumer Household Chemicals" xml:space="preserve">
+    <value>消費者の家庭用化学薬品</value>
+  </data>
+  <data name="Consumer Paint Products" xml:space="preserve">
+    <value>コンシューマー塗料製品</value>
+  </data>
+  <data name="Global eCommerce Website" xml:space="preserve">
+    <value>グローバルeコマースウェブサイト</value>
+  </data>
+  <data name="Goods" xml:space="preserve">
+    <value>商品</value>
+  </data>
+  <data name="Government Agencies" xml:space="preserve">
+    <value>省庁</value>
+  </data>
+  <data name="Government Permits" xml:space="preserve">
+    <value>政府の許可</value>
+  </data>
+  <data name="Green Business innovation" xml:space="preserve">
+    <value>グリーンビジネス·イノベーション</value>
+  </data>
+  <data name="Green Collar Jobs" xml:space="preserve">
+    <value>グリーンカラー·ジョブ</value>
+  </data>
+  <data name="Green Equation" xml:space="preserve">
+    <value>緑式</value>
+  </data>
+  <data name="Last Name" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Law Enforcement Agencies" xml:space="preserve">
+    <value>法執行機関</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新しい</value>
+  </data>
+  <data name="Please enter Primary Contact Business Phone" xml:space="preserve">
+    <value>メイン連絡先ビジネス電話を入力してください</value>
+  </data>
+  <data name="Please enter Primary Contact Cell Phone" xml:space="preserve">
+    <value>メイン連絡先の携帯電話を入力してください</value>
+  </data>
+  <data name="Please select atleast one Stakeholder Certification" xml:space="preserve">
+    <value>少なくとも1つのステークホルダーの認証を選択してください</value>
+  </data>
+  <data name="Products or Materials" xml:space="preserve">
+    <value>製品や材料</value>
+  </data>
+  <data name="Scrap Tire Related Products" xml:space="preserve">
+    <value>タイヤ関連製品をスクラップ</value>
+  </data>
+  <data name="Scrap Tires" xml:space="preserve">
+    <value>廃タイヤ</value>
+  </data>
+  <data name="Stakeholder Carbon Credit Management" xml:space="preserve">
+    <value>ステークホルダーカーボン与信管理</value>
+  </data>
+  <data name="Stewardship Certifications" xml:space="preserve">
+    <value>スチュワードシップ認定</value>
+  </data>
+  <data name="Stewardship Services" xml:space="preserve">
+    <value>スチュワードシップサービス</value>
+  </data>
+  <data name="Temporary" xml:space="preserve">
+    <value>一時的な</value>
+  </data>
+  <data name="Tire Transportation Permit #:" xml:space="preserve">
+    <value>タイヤ輸送は＃許可します：</value>
+  </data>
+  <data name="Tire Trax" xml:space="preserve">
+    <value>タイヤトラックス</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>へ</value>
+  </data>
+  <data name="Trax Exchange" xml:space="preserve">
+    <value>Traxの為替</value>
+  </data>
+  <data name="Tronic Trax" xml:space="preserve">
+    <value>Tronicのトラックス</value>
+  </data>
+  <data name="Troxic Trax" xml:space="preserve">
+    <value>Troxicトラックス</value>
+  </data>
+  <data name="User or Scrap" xml:space="preserve">
+    <value>ユーザーまたはスクラップ</value>
+  </data>
+  <data name="Waste Hauling Permit #2:" xml:space="preserve">
+    <value>許可第2廃棄物運搬：</value>
+  </data>
+  <data name="Waste Storage Permit #2:" xml:space="preserve">
+    <value>預かり証第2廃棄物：</value>
+  </data>
+  <data name="Waste Trax" xml:space="preserve">
+    <value>廃棄トラックス</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>加える</value>
+  </data>
+  <data name="fd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Lookup Management" xml:space="preserve">
+    <value>管理ルックアップ</value>
+  </data>
+  <data name="State Name" xml:space="preserve">
+    <value>都道府県名</value>
+  </data>
+  <data name="Contact Name" xml:space="preserve">
+    <value>担当者名</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>続ける</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>登録</value>
+  </data>
+  <data name="Select Stewardship" xml:space="preserve">
+    <value>スチュワードシップを選択</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling" xml:space="preserve">
+    <value>100％グリーン廃タイヤのリサイクル</value>
+  </data>
+  <data name="Add New Inventory" xml:space="preserve">
+    <value>新しい資産を追加</value>
+  </data>
+  <data name="Alerts Notifications" xml:space="preserve">
+    <value>アラート通知</value>
+  </data>
+  <data name="Application of Stakeholders" xml:space="preserve">
+    <value>ステークホルダーへの応用</value>
+  </data>
+  <data name="Approval Date" xml:space="preserve">
+    <value>承認年月日</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>承認する</value>
+  </data>
+  <data name="TechSol Inc. copyrights 2014" xml:space="preserve">
+    <value>TechSolのダイナミクス社の著作権2014</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="Inventory" xml:space="preserve">
+    <value>インベントリー</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="Quick Links" xml:space="preserve">
+    <value>クイックリンク</value>
+  </data>
+  <data name="Recently Added Stakeholders" xml:space="preserve">
+    <value>最近追加されたステークホルダー</value>
+  </data>
+  <data name="Recently Added Stewardships" xml:space="preserve">
+    <value>最近追加されたStewardships</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>レポート</value>
+  </data>
+  <data name="Role Name" xml:space="preserve">
+    <value>役割名</value>
+  </data>
+  <data name="Search Inventory" xml:space="preserve">
+    <value>在庫検索</value>
+  </data>
+  <data name="Security/Roles" xml:space="preserve">
+    <value>セキュリティ/ロール</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="EPRTS Updates" xml:space="preserve">
+    <value>EPRTSアップデート</value>
+  </data>
+  <data name="view details" xml:space="preserve">
+    <value>詳細を表示</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>ウェブサイト</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>歓迎</value>
+  </data>
+  <data name="You are" xml:space="preserve">
+    <value>あなたは</value>
+  </data>
+  <data name="Admin Login" xml:space="preserve">
+    <value>管理者ログイン</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>ログイン</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="Remember me" xml:space="preserve">
+    <value>私を覚えている</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="Step 8 of 8" xml:space="preserve">
+    <value>8のステップ8</value>
+  </data>
+  <data name="Please check-mark all choices." xml:space="preserve">
+    <value>すべての選択肢にチェックマークを付けてください。</value>
+  </data>
+  <data name="Step 1 of 3" xml:space="preserve">
+    <value>3のステップ1</value>
+  </data>
+  <data name="Step 1 of 4" xml:space="preserve">
+    <value>4のステップ1</value>
+  </data>
+  <data name="Step 2 of 3" xml:space="preserve">
+    <value>3のステップ2</value>
+  </data>
+  <data name="Step 2 of 4" xml:space="preserve">
+    <value>4のステップ2</value>
+  </data>
+  <data name="Step 3 of 3" xml:space="preserve">
+    <value>3のステップ3</value>
+  </data>
+  <data name="Step 3 of 4" xml:space="preserve">
+    <value>4のステップ3</value>
+  </data>
+  <data name="Step 4 of 4" xml:space="preserve">
+    <value>4のステップ4</value>
+  </data>
+  <data name="Module Name" xml:space="preserve">
+    <value>モジュール名</value>
+  </data>
+  <data name="Security Roles" xml:space="preserve">
+    <value>セキュリティロール</value>
+  </data>
+  <data name="User Name" xml:space="preserve">
+    <value>ユーザー名</value>
+  </data>
+  <data name="User Type" xml:space="preserve">
+    <value>ユーザータイプ</value>
+  </data>
+  <data name="Step 1 of 7" xml:space="preserve">
+    <value>7のステップ1</value>
+  </data>
+  <data name="Step 2 of 7" xml:space="preserve">
+    <value>7のステップ2</value>
+  </data>
+  <data name="Step 3 of 7" xml:space="preserve">
+    <value>7のステップ3</value>
+  </data>
+  <data name="Step 4 of 7" xml:space="preserve">
+    <value>7のステップ4</value>
+  </data>
+  <data name="Step 5 of 7" xml:space="preserve">
+    <value>7のステップ5</value>
+  </data>
+  <data name="Step 6 of 7" xml:space="preserve">
+    <value>7のステップ6</value>
+  </data>
+  <data name="Step 7 of 7" xml:space="preserve">
+    <value>7のステップ7</value>
+  </data>
+  <data name="Real World Solutions for Global Recycling" xml:space="preserve">
+    <value>グローバルなリサイクルのためのリアルワールドソリューションズ</value>
+  </data>
+  <data name="Location Business Phone:" xml:space="preserve">
+    <value>勤務先電話：</value>
+  </data>
+  <data name="Waste Hauling Permit #1:" xml:space="preserve">
+    <value>許可＃1を運搬廃棄物：</value>
+  </data>
+  <data name="Waste Storage Permit #1:" xml:space="preserve">
+    <value>預かり証＃1廃棄物：</value>
+  </data>
+  <data name="Add this Location" xml:space="preserve">
+    <value>この場所を追加</value>
+  </data>
+  <data name="Address:" xml:space="preserve">
+    <value>住所 :</value>
+  </data>
+  <data name="Billing Contact:" xml:space="preserve">
+    <value>請求先：</value>
+  </data>
+  <data name="Billing Mail Address:" xml:space="preserve">
+    <value>請求メールアドレス：</value>
+  </data>
+  <data name="Business Address1:" xml:space="preserve">
+    <value>ビジネスアドレス1：</value>
+  </data>
+  <data name="Business Address2:" xml:space="preserve">
+    <value>ビジネスハンドセット：</value>
+  </data>
+  <data name="Business Phone Extension:" xml:space="preserve">
+    <value>ビジネス電話の拡張子：</value>
+  </data>
+  <data name="Business Phone Number:" xml:space="preserve">
+    <value>会社の電話番号：</value>
+  </data>
+  <data name="Business Phone Type:" xml:space="preserve">
+    <value>ビジネス電話の種類：</value>
+  </data>
+  <data name="Business Text Messages:" xml:space="preserve">
+    <value>ビジネステキストメッセージ：</value>
+  </data>
+  <data name="Cell Phone Extension:" xml:space="preserve">
+    <value>携帯電話の拡張子：</value>
+  </data>
+  <data name="Cell Phone Number:" xml:space="preserve">
+    <value>携帯電話番号：</value>
+  </data>
+  <data name="Cell Phone Type:" xml:space="preserve">
+    <value>携帯電話の種類：</value>
+  </data>
+  <data name="Cell Text Message:" xml:space="preserve">
+    <value>セル·テキストメッセージ：</value>
+  </data>
+  <data name="Certifications" xml:space="preserve">
+    <value>認定</value>
+  </data>
+  <data name="Client Trade Refrences" xml:space="preserve">
+    <value>クライアント·トレード·リファレンス</value>
+  </data>
+  <data name="Contact Title:" xml:space="preserve">
+    <value>タイトルにお問い合わせください：</value>
+  </data>
+  <data name="Country Abbreviation:" xml:space="preserve">
+    <value>国の略：</value>
+  </data>
+  <data name="Fax:" xml:space="preserve">
+    <value>ファックス：</value>
+  </data>
+  <data name="First Name:" xml:space="preserve">
+    <value>ファーストネーム：</value>
+  </data>
+  <data name="Information:" xml:space="preserve">
+    <value>情報：</value>
+  </data>
+  <data name="Last Name:" xml:space="preserve">
+    <value>姓：</value>
+  </data>
+  <data name="Organization Information" xml:space="preserve">
+    <value>組織に関する情報</value>
+  </data>
+  <data name="Primary Email:" xml:space="preserve">
+    <value>プライマリ電子メール：</value>
+  </data>
+  <data name="Supplier Trade References" xml:space="preserve">
+    <value>サプライヤー貿易参照</value>
+  </data>
+  <data name="&quot;Quick-Pay&quot; weekly compensation" xml:space="preserve">
+    <value>"クイックペイ"週刊補償</value>
+  </data>
+  <data name="*Existing Stewardship Stakeholders are granted Pre-Approved status and Instant Access to their new EPRTS services by submitting an abreviated online information update application." xml:space="preserve">
+    <value>*既存のスチュワードシップステークホルダーはabreviatedオンライン情報の更新申請書を提出することによって事前に承認された状況とそれらの新しいEPRTSサービスへのインスタントアクセスを付与されます。</value>
+  </data>
+  <data name="100% Green Scrap Tire Recycling becomes a practical reality." xml:space="preserve">
+    <value>100％グリーン廃タイヤのリサイクルは現実のものとなります。</value>
+  </data>
+  <data name="Already a member" xml:space="preserve">
+    <value>既にメンバー</value>
+  </data>
+  <data name="And much...much more!" xml:space="preserve">
+    <value>よりずっと...ずっと！</value>
+  </data>
+  <data name="Cradle-to-Reincarnation complete accountability for each individual Scrap Tire." xml:space="preserve">
+    <value>個々の廃タイヤ用ゆりかごから輪廻転生完全責任。</value>
+  </data>
+  <data name="Forgot password?" xml:space="preserve">
+    <value>パスワードをお忘れですか？</value>
+  </data>
+  <data name="Integrated Government Compliance" xml:space="preserve">
+    <value>統合された政府のコンプライアンス</value>
+  </data>
+  <data name="Integrated Stewardship Compliance" xml:space="preserve">
+    <value>統合されたスチュワードシップ·コンプライアンス</value>
+  </data>
+  <data name="Market-based and Self-sustaining Stewardship Funding and Earnings platform." xml:space="preserve">
+    <value>市場ベースと自立スチュワードシップの資金調達および収益基盤の。</value>
+  </data>
+  <data name="Mobile access to Stakeholder Accounts" xml:space="preserve">
+    <value>ステークホルダー·アカウントへのモバイルアクセス</value>
+  </data>
+  <data name="Read More" xml:space="preserve">
+    <value>続きを読む</value>
+  </data>
+  <data name="Register Now" xml:space="preserve">
+    <value>今すぐ登録</value>
+  </data>
+  <data name="Remeber me" xml:space="preserve">
+    <value>思い出してくれる私</value>
+  </data>
+  <data name="Scrap Tire Stewardships" xml:space="preserve">
+    <value>タイヤスチュワードスクラップ</value>
+  </data>
+  <data name="The EPRTS Cradle-to-Reincarnation identification and tracking capabilities coupled with its complete systemic accoutability provide the initial framework necessary to insure the successful transition from existing scrap tire diversion projects to 100% Green product utilization." xml:space="preserve">
+    <value>その完全な全身のアカウンタビリティと相まってEPRTSゆりかごから輪廻転生の識別とトラッキング機能は、既存の廃タイヤの転換プロジェクトから100％グリーン製品の利用への移行に成功を保証するために必要な初期のフレームワークを提供します。</value>
+  </data>
+  <data name="The EPRTS Stewardship platform offers a market based concept that fully utilizes the existing tire industry's infrastuctures." xml:space="preserve">
+    <value>EPRTSスチュワードシッププラットフォームは完全に既存のタイヤ業界のインフラを活用し、市場ベースの概念を提供しています。</value>
+  </data>
+  <data name="EPRTS Benefit Includes" xml:space="preserve">
+    <value>EPRTS給付は含まれています</value>
+  </data>
+  <data name="EPRTS, by EPR Dynamics, is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>EPRTSは、EPRのダイナミクスによって、拡張製品責任のための完全なソリューションです
+タイヤ·スチュワードのリサイクルの運用と管理の課題をスクラップ。</value>
+  </data>
+  <data name="EPRTS provides the unified and incentivised operations and management solutions for businesses and governments to welcome the incorporation of a 100% Green Recycling initiative." xml:space="preserve">
+    <value>EPRTSは、企業や100％グリーンリサイクルイニシアティブの設立を歓迎するために政府の統一的かつインセンティブ運用と管理ソリューションを提供しています。</value>
+  </data>
+  <data name="Add Inventory" xml:space="preserve">
+    <value>在庫を追加</value>
+  </data>
+  <data name="Advance Search" xml:space="preserve">
+    <value>アドバンス検索</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>カントリー</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="TX User ID" xml:space="preserve">
+    <value>テキサスユーザーID</value>
+  </data>
+  <data name="Zip Code" xml:space="preserve">
+    <value>郵便番号</value>
+  </data>
+  <data name="Add New User" xml:space="preserve">
+    <value>新規ユーザの追加</value>
+  </data>
+  <data name="Bin/Space" xml:space="preserve">
+    <value>ビン/スペース</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>ブランド</value>
+  </data>
+  <data name="Brand 2" xml:space="preserve">
+    <value>ブランド2</value>
+  </data>
+  <data name="C Barcode" xml:space="preserve">
+    <value>C言語バーコード</value>
+  </data>
+  <data name="DisApprove" xml:space="preserve">
+    <value>不可とする</value>
+  </data>
+  <data name="DOT Number" xml:space="preserve">
+    <value>ドット数</value>
+  </data>
+  <data name="Lot Number" xml:space="preserve">
+    <value>ロット番号</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="Plant" xml:space="preserve">
+    <value>植物</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>サイズ</value>
+  </data>
+  <data name="Thankyou for your Registrtion at EPRTS. You will be notify by Email. Please check your Email for your Login Information." xml:space="preserve">
+    <value>EPRTSであなたの登録のためのありがとう。あなたが電子メールで通知されます。あなたのログイン情報のためのあなたのメールをチェックしてください。</value>
+  </data>
+  <data name="Welcome to EPRTS" xml:space="preserve">
+    <value>EPRTSへようこそ</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>拒絶する</value>
+  </data>
+  <data name="Alerts" xml:space="preserve">
+    <value>アラート</value>
+  </data>
+  <data name="Applications" xml:space="preserve">
+    <value>アプリケーション</value>
+  </data>
+  <data name="Email Address" xml:space="preserve">
+    <value>メールアドレス</value>
+  </data>
+  <data name="Forgot Password" xml:space="preserve">
+    <value>パスワードを忘れた方</value>
+  </data>
+  <data name="Error 404 - Page Not Found" xml:space="preserve">
+    <value>エラー404 - ページが見つかりません</value>
+  </data>
+  <data name="Go back to Home Page" xml:space="preserve">
+    <value>ホームページに戻る</value>
+  </data>
+  <data name="Sorry, but the page you are looking for might have been removed,had its name changed, or is temporarily unavailable." xml:space="preserve">
+    <value>申し訳ありませんが、あなたが探しているページは削除され、その名前が変更されたか、または一時的に利用できませんされている場合があります。</value>
+  </data>
+  <data name="Business Phone" xml:space="preserve">
+    <value>ビジネス用電話機</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>シティ</value>
+  </data>
+  <data name="Company Name" xml:space="preserve">
+    <value>会社名</value>
+  </data>
+  <data name="Permit #" xml:space="preserve">
+    <value>＃許可</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="WHP #1:" xml:space="preserve">
+    <value>WHP #1:</value>
+  </data>
+  <data name="WHP #2:" xml:space="preserve">
+    <value>WHP #2:</value>
+  </data>
+  <data name="WSP #1:" xml:space="preserve">
+    <value>WSP #1:</value>
+  </data>
+  <data name="WSP #2:" xml:space="preserve">
+    <value>WSP #2:</value>
+  </data>
+  <data name="Pending Goverment Agency" xml:space="preserve">
+    <value>ペンディング楊州庁</value>
+  </data>
+  <data name="Pending Law Enforcement Agency" xml:space="preserve">
+    <value>係属中の法執行機関</value>
+  </data>
+  <data name="Pending Organization" xml:space="preserve">
+    <value>組織を保留</value>
+  </data>
+  <data name="Pending Stakeholders" xml:space="preserve">
+    <value>保留中のステークホルダー</value>
+  </data>
+  <data name="Pending Stewards" xml:space="preserve">
+    <value>保留中のスチュワード</value>
+  </data>
+  <data name="Pending Stewardships" xml:space="preserve">
+    <value>ペンディングStewardships</value>
+  </data>
+  <data name="EPR User Name" xml:space="preserve">
+    <value>EPRのユーザ名</value>
+  </data>
+  <data name="Stewardship Type" xml:space="preserve">
+    <value>スチュワードシップの種類</value>
+  </data>
+  <data name="Agency Type" xml:space="preserve">
+    <value>機関の種類</value>
+  </data>
+  <data name="Steward Type" xml:space="preserve">
+    <value>スチュワードタイプ</value>
+  </data>
+  <data name="Stewardship Type(s)" xml:space="preserve">
+    <value>スチュワードシップタイプ（S）</value>
+  </data>
+  <data name="Action Date" xml:space="preserve">
+    <value>アクション日付</value>
+  </data>
+  <data name="Received Date" xml:space="preserve">
+    <value>受信日</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>--選択する--</value>
+  </data>
+  <data name="Go To Home" xml:space="preserve">
+    <value>ホームページに戻る</value>
+  </data>
+  <data name="Location Name" xml:space="preserve">
+    <value>場所の名前</value>
+  </data>
+  <data name="Stewardship Modules" xml:space="preserve">
+    <value>スチュワードシップモジュール</value>
+  </data>
+  <data name="Primary Contact:" xml:space="preserve">
+    <value>主担当：</value>
+  </data>
+  <data name="Registration Form" xml:space="preserve">
+    <value>登録用紙</value>
+  </data>
+  <data name="Business Legal Name" xml:space="preserve">
+    <value>ビジネス正式名称</value>
+  </data>
+  <data name="Enter ZIP Code" xml:space="preserve">
+    <value>郵便番号を入力する</value>
+  </data>
+  <data name="First Name" xml:space="preserve">
+    <value>ファーストネーム</value>
+  </data>
+  <data name="If applicable" xml:space="preserve">
+    <value>該当する場合</value>
+  </data>
+  <data name="Primary physical location Street # - Street name" xml:space="preserve">
+    <value>主要な物理的な場所ストリート＃ - ストリート名</value>
+  </data>
+  <data name="Suite # or Unit #" xml:space="preserve">
+    <value>スイート＃またはユニット＃</value>
+  </data>
+  <data name="Email:" xml:space="preserve">
+    <value>Eメール：</value>
+  </data>
+  <data name="Login:" xml:space="preserve">
+    <value>ログイン：</value>
+  </data>
+  <data name="Middle Name:" xml:space="preserve">
+    <value>ミドルネーム：</value>
+  </data>
+  <data name="Phone Number:" xml:space="preserve">
+    <value>電話番号：</value>
+  </data>
+  <data name="Re Enter Password:" xml:space="preserve">
+    <value>パスワードを再入力：</value>
+  </data>
+  <data name="Update Password:" xml:space="preserve">
+    <value>パスワードを更新します。</value>
+  </data>
+  <data name="User Role:" xml:space="preserve">
+    <value>ユーザーの役割：</value>
+  </data>
+  <data name="Scrap Category Type:" xml:space="preserve">
+    <value>カテゴリタイプをスクラップ。</value>
+  </data>
+  <data name="Scrap Category:" xml:space="preserve">
+    <value>カテゴリをスクラップ。</value>
+  </data>
+  <data name="Tire Types:" xml:space="preserve">
+    <value>タイヤの種類：</value>
+  </data>
+  <data name="Inventory Revenue" xml:space="preserve">
+    <value>インベントリ収入</value>
+  </data>
+  <data name="Size to PET" xml:space="preserve">
+    <value>PETへのサイズ</value>
+  </data>
+  <data name="--Select--" xml:space="preserve">
+    <value>- 選択してください -</value>
+  </data>
+  <data name="Account Information" xml:space="preserve">
+    <value>アカウント情報</value>
+  </data>
+  <data name="Account Number" xml:space="preserve">
+    <value>口座番号</value>
+  </data>
+  <data name="Account Title" xml:space="preserve">
+    <value>勘定科目</value>
+  </data>
+  <data name="Account Title :" xml:space="preserve">
+    <value>アカウントのタイトル：</value>
+  </data>
+  <data name="Account Type" xml:space="preserve">
+    <value>口座の種類</value>
+  </data>
+  <data name="Account Type :" xml:space="preserve">
+    <value>アカウントの種類：</value>
+  </data>
+  <data name="Account# :" xml:space="preserve">
+    <value>＃アカウント：</value>
+  </data>
+  <data name="Add New Credit Information" xml:space="preserve">
+    <value>新しい信用情報を追加</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>アドレス</value>
+  </data>
+  <data name="Admin Permission" xml:space="preserve">
+    <value>Admin権限</value>
+  </data>
+  <data name="Bank Account Information" xml:space="preserve">
+    <value>銀行口座情報</value>
+  </data>
+  <data name="Bank Address Information" xml:space="preserve">
+    <value>バンクアドレス情報</value>
+  </data>
+  <data name="Bank Name" xml:space="preserve">
+    <value>銀行名</value>
+  </data>
+  <data name="Bank Name :" xml:space="preserve">
+    <value>銀行名：</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>ブランチ</value>
+  </data>
+  <data name="Branch :" xml:space="preserve">
+    <value>ブランチ：</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>ビジネス</value>
+  </data>
+  <data name="Card Name" xml:space="preserve">
+    <value>カード名</value>
+  </data>
+  <data name="Card Number" xml:space="preserve">
+    <value>カード番号</value>
+  </data>
+  <data name="Card#:" xml:space="preserve">
+    <value>カード＃：</value>
+  </data>
+  <data name="City :" xml:space="preserve">
+    <value>市：</value>
+  </data>
+  <data name="Credit Card Information" xml:space="preserve">
+    <value>クレジットカード情報</value>
+  </data>
+  <data name="Credit Card Type" xml:space="preserve">
+    <value>クレジットカードの種類</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>現在</value>
+  </data>
+  <data name="Default Permission" xml:space="preserve">
+    <value>デフォルトのアクセス権</value>
+  </data>
+  <data name="Default URL:" xml:space="preserve">
+    <value>デフォルトのURL：</value>
+  </data>
+  <data name="Expiry Date" xml:space="preserve">
+    <value>有効期限</value>
+  </data>
+  <data name="Group:" xml:space="preserve">
+    <value>グループ：</value>
+  </data>
+  <data name="IBAN# :" xml:space="preserve">
+    <value>IBAN# :</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>緯度</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>経度</value>
+  </data>
+  <data name="LookUp Name" xml:space="preserve">
+    <value>名前を検索</value>
+  </data>
+  <data name="Navigate on main screen:" xml:space="preserve">
+    <value>メイン画面に移動します。</value>
+  </data>
+  <data name="Order By" xml:space="preserve">
+    <value>ORDER BYの</value>
+  </data>
+  <data name="Page Name" xml:space="preserve">
+    <value>ページ名</value>
+  </data>
+  <data name="Page Path" xml:space="preserve">
+    <value>ページパス</value>
+  </data>
+  <data name="Path:" xml:space="preserve">
+    <value>パス：</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>許可</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>パーミッション</value>
+  </data>
+  <data name="Phone# :" xml:space="preserve">
+    <value>電話番号＃：</value>
+  </data>
+  <data name="Primary Account" xml:space="preserve">
+    <value>主要口座</value>
+  </data>
+  <data name="Primary Card" xml:space="preserve">
+    <value>プライマリカード</value>
+  </data>
+  <data name="Primary Phone" xml:space="preserve">
+    <value>プライマリ電話</value>
+  </data>
+  <data name="Roles:" xml:space="preserve">
+    <value>ロール：</value>
+  </data>
+  <data name="Routing# :" xml:space="preserve">
+    <value>＃ルーティング：</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>節約</value>
+  </data>
+  <data name="Serial Number" xml:space="preserve">
+    <value>シリアルナンバー</value>
+  </data>
+  <data name="State :" xml:space="preserve">
+    <value>状態：</value>
+  </data>
+  <data name="Street Name" xml:space="preserve">
+    <value>仲買人名義</value>
+  </data>
+  <data name="Street Name :" xml:space="preserve">
+    <value>ストリート名：</value>
+  </data>
+  <data name="Street Number" xml:space="preserve">
+    <value>番地</value>
+  </data>
+  <data name="Street Number :" xml:space="preserve">
+    <value>ストリート番号：</value>
+  </data>
+  <data name="Swift Code :" xml:space="preserve">
+    <value>スウィフトコード：</value>
+  </data>
+  <data name="Type:" xml:space="preserve">
+    <value>種類：</value>
+  </data>
+  <data name="VC2 Code" xml:space="preserve">
+    <value>VC2コード</value>
+  </data>
+  <data name="View Permission" xml:space="preserve">
+    <value>アクセス許可の表示</value>
+  </data>
+  <data name="Zip Code :" xml:space="preserve">
+    <value>郵便番号：</value>
+  </data>
+  <data name="Bank Account" xml:space="preserve">
+    <value>銀行預金口座</value>
+  </data>
+  <data name="Credit Card" xml:space="preserve">
+    <value>クレジットカード</value>
+  </data>
+  <data name="Select Country and Stewardship to continue" xml:space="preserve">
+    <value>継続して国とスチュワードシップを選択</value>
+  </data>
+  <data name="Welcome to EPR" xml:space="preserve">
+    <value>EPRへようこそ</value>
+  </data>
+  <data name="EPR Technology Solutions is the complete solution for an Extended Product Responsibility Scrap Tire Stewardship's recycling operations and management challenges." xml:space="preserve">
+    <value>EPRテクノロジー·ソリューションズは、拡張製品責任スクラップタイヤスチュワードシップのリサイクル事業と管理の課題のための完全なソリューションです。</value>
+  </data>
+</root>

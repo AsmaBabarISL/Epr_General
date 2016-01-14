@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF2A9BFB-1B29-49D6-9F0B-A296FABB2310}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TireTraxLib</RootNamespace>
+    <AssemblyName>TireTraxLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\..\DLL's\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core">
+      <HintPath>..\..\..\..\DLL's\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zen.Barcode.Web">
+      <HintPath>..\..\..\..\DLL's\Zen.Barcode.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessToken.cs" />
+    <Compile Include="Agreement.cs" />
+    <Compile Include="BankAccounts.cs" />
+    <Compile Include="BarCode.cs" />
+    <Compile Include="BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commission.cs" />
+    <Compile Include="ContactInfo.cs" />
+    <Compile Include="Conversion.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="DbManager.cs" />
+    <Compile Include="Delivery.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Emails.cs" />
+    <Compile Include="Encryption.cs" />
+    <Compile Include="Facility.cs" />
+    <Compile Include="ILog.cs" />
+    <Compile Include="ImageResize.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="Loads.cs" />
+    <Compile Include="LookupsManagement.cs" />
+    <Compile Include="Lots.cs" />
+    <Compile Include="Notifications.cs" />
+    <Compile Include="OrganizationInfo.cs" />
+    <Compile Include="Pagination.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="Phones.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTE.cs" />
+    <Compile Include="PTEStandards.cs" />
+    <Compile Include="RegionInfo.cs" />
+    <Compile Include="ResourceMgr.cs" />
+    <Compile Include="LotRows.cs" />
+    <Compile Include="Resources\Controls\Controls.Designer.cs" />
+    <Compile Include="Resources\Controls\Controls.fr.Designer.cs" />
+    <Compile Include="Resources\Errors\Errors.Designer.cs" />
+    <Compile Include="Resources\Messages\Messages.Designer.cs" />
+    <Compile Include="RevenuInventory.cs" />
+    <Compile Include="ReverseAjax\Client.cs" />
+    <Compile Include="ReverseAjax\ClientAdapter.cs" />
+    <Compile Include="ReverseAjax\Message.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Security\GroupPages.cs" />
+    <Compile Include="Security\Groups.cs" />
+    <Compile Include="Security\Permission.cs" />
+    <Compile Include="Security\PermissionManagement.cs" />
+    <Compile Include="Security\RoleManagement.cs" />
+    <Compile Include="SiteCookie.cs" />
+    <Compile Include="LotSpace.cs" />
+    <Compile Include="SqlLog.cs" />
+    <Compile Include="Templates.cs" />
+    <Compile Include="Tire.cs" />
+    <Compile Include="UI\ResourceButton.cs" />
+    <Compile Include="UI\ResourceCheckBoxListValidator.cs" />
+    <Compile Include="UI\ResourceCompareValidator.cs" />
+    <Compile Include="UI\ResourceCustomValidator.cs" />
+    <Compile Include="UI\ResourceHiddenField.cs" />
+    <Compile Include="UI\ResourceHyperLink.cs" />
+    <Compile Include="UI\ResourceLabel.cs" />
+    <Compile Include="UI\ResourceLinkButton.cs" />
+    <Compile Include="UI\ResourceLiteral.cs" />
+    <Compile Include="UI\ResourceRangeValidator.cs" />
+    <Compile Include="UI\ResourceRegularExpressionValidator.cs" />
+    <Compile Include="UI\ResourceRequiredFieldValidator.cs" />
+    <Compile Include="UploadFile.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Controls\Controls.es.resx" />
+    <EmbeddedResource Include="Resources\Controls\Controls.fr.resx" />
+    <EmbeddedResource Include="Resources\Controls\Controls.ja.resx" />
+    <EmbeddedResource Include="Resources\Controls\Controls.ko.resx" />
+    <EmbeddedResource Include="Resources\Controls\Controls.resx" />
+    <EmbeddedResource Include="Resources\Errors\Errors.en-AU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.en-CA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Errors\Errors.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.en-AU.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.en-CA.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.es.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.ja.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.ko.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages\Messages.zh.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

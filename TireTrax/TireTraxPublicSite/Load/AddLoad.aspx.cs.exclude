@@ -1,0 +1,412 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using TireTraxLib;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Text;
+using System.Data;
+
+public partial class Load_AddLoad : BasePage
+{
+    public int CurPageNum
+    {
+        get
+        {
+            if (Request.QueryString["p"] != null)
+                return Conversion.ParseInt(Request.QueryString["p"]);
+            else
+                return 1;
+        }
+
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        pageSize = 5;
+        
+        if (!IsPostBack)
+        {
+            Utils.GetLookUpData<DropDownList>(ref ddlLoadType, LookUps.LoadType);
+            txtCompanyName.Text = UserInfo.GetCurrentUserInfo().FullName;
+            lnkMultiple_Click(null, null);
+            
+            Session["SelectedLotId"] = "";
+            Session["Load"] = "";
+            Session["loadId"] = "";
+        }
+        if (TotalItems > 0)
+        {
+            PgrLots.DrawPager(CurrentPage, TotalItems, pageSize, MaxPagesToShow);
+
+        }
+        if (TotalItemsR > 0)
+        {
+
+            pgrTires.DrawPager(CurrentPageR, TotalItems, pageSize, MaxPagesToShow);
+        }
+
+    }
+    protected void lnkbtnAddCreateLoad_Click(object sender, EventArgs e)
+    {
+
+
+        BarCode br = new BarCode();
+        br.DateCreated = DateTime.Now.ToShortDateString();
+        br.OrganizationID = UserOrganizationId;
+        br.BarCodeNumber = GenerateLotSerialNumber();
+
+        Guid g = Guid.NewGuid();
+        string str = g.ToString().Replace("-", "");
+        if (GenerateLotBarCodeImage(str))
+        {
+            hdnLotBarCodeImageFileName.Value = str + ".gif";
+            imgLotBarcode.ImageUrl = String.Format("/images/temp/{0}.Gif", str);
+            imgLotBarcode.Visible = true;
+            //txtBrand.Focus();
+        }
+        if (System.IO.File.Exists(Server.MapPath(String.Format("/images/temp/{0}", hdnLotBarCodeImageFileName.Value))))
+        {
+            br.Image = System.IO.File.ReadAllBytes(Server.MapPath(String.Format("/images/temp/{0}", hdnLotBarCodeImageFileName.Value)));
+
+        }
+
+        lnkbtnAddCreateLoad.Visible = false;
+        lnkContinue.Visible = true;
+        int barcodeId = BarCode.Insert(br);
+        int loadId = Loads.insertLoad(Convert.ToInt32(Session["LoadType"].ToString()), txtponumber.Text.Trim(), txtinvoicenumber.Text.Trim(), txtsealnumber.Text.Trim(), txttrailernumber.Text.Trim(), txthauleridnumber.Text.Trim(), txtweight.Text.Trim(), txtladingnumber.Text.Trim(), UserOrganizationId, barcodeId, str, txtLoadnumber.Text.Trim());
+        Session["loadId"] = loadId.ToString();
+        /* lot.BarCodeId*/
+        //int id = BarCode.Insert(br);
+    }
+    protected void lnkSingle_Click(object sender, EventArgs e)
+    {
+        dvLoadOption.Visible = false;
+        divLoadType.Visible = true;
+        Session["Load"] = "single";
+        txtquantity.Text = "1";
+        txtquantity.Enabled = false;
+    }
+    protected void lnkMultiple_Click(object sender, EventArgs e)
+    {
+        dvLoadOption.Visible = false;
+        divLoadType.Visible = true;
+        Session["Load"] = "multiple";
+        txtquantity.Enabled = true;
+    }
+    protected void ddlLoadType_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (ddlLoadType.SelectedIndex > 0)
+        {
+            Session["LoadType"] = ddlLoadType.SelectedValue;
+            divLoads.Visible = true;
+            divLoadType.Visible = false;
+            if (ddlLoadType.SelectedItem.Text.ToLower().Contains("transfer"))
+            {
+                rfvPonumber.Enabled = false;
+                rfvInvoice.Enabled = false;
+                rfvSeal.Enabled = false;
+                rfvTrail.Enabled = false;
+                rfvHaul.Enabled = false;
+                rfvWeight.Enabled = false;
+                rfvLanding.Enabled = false;
+            }
+            else
+            {
+                rfvPonumber.Enabled = true;
+                rfvInvoice.Enabled = true;
+                rfvSeal.Enabled = true;
+                rfvTrail.Enabled = true;
+                rfvHaul.Enabled = true;
+                rfvWeight.Enabled = true;
+                rfvLanding.Enabled = true;
+            }
+        }
+    }
+    private bool GenerateLotBarCodeImage(string g)
+    {
+        try
+        {
+            if (hdnBarCodeImageFileName.Value != "")
+            {
+                if (System.IO.File.Exists(Server.MapPath(String.Format("/images/temp/{0}", hdnBarCodeImageFileName.Value))))
+                {
+                    System.IO.File.Delete(Server.MapPath(String.Format("/images/temp/{0}", hdnBarCodeImageFileName.Value)));
+                }
+                hdnBarCodeImageFileName.Value = "";
+            }
+            string Code = g.ToString(); //txtLotNmber.Text;
+
+            Bitmap oBitmap = new Bitmap((Code.Length * 30), 110);
+
+            Graphics oGraphics = Graphics.FromImage(oBitmap);
+            oGraphics.FillRectangle(new SolidBrush(Color.White), 0, 0, (Code.Length * 30), 110);
+
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            pfc.AddFontFile(Server.MapPath("/Font/IDAutomationHC39M.ttf"));
+            Font oFont = new Font(pfc.Families[0], 18);
+
+            oGraphics.DrawString("*" + Code + "*", oFont, new SolidBrush(Color.Black), 20, 10);
+
+            oBitmap.Save(Server.MapPath(String.Format("/images/temp/{0}.Gif", g)), System.Drawing.Imaging.ImageFormat.Gif);
+
+            oBitmap.Dispose();
+            oGraphics.Dispose();
+            oFont.Dispose();
+            pfc.Dispose();
+
+            oBitmap = null;
+            oGraphics = null;
+            oFont = null;
+            pfc = null;
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(currentUserInfo.UserId, "GenerateBarCodeImageAndBytes", ex);
+            return false;
+        }
+
+        return true;
+    }
+    private string GenerateLotSerialNumber()
+    {
+        StringBuilder SerialNumber = new StringBuilder(255);
+        DataSet ds = OrganizationInfo.GetCountryAndStateCodeByOrganizationId(UserOrganizationId);//string.IsNullOrEmpty(Session["OrganizationId"].ToString()) ? Convert.ToInt32(ddlStakeholder.SelectedValue) : Convert.ToInt32(Session["OrganizationId"]));
+
+        if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+        {
+            SerialNumber.Append(ds.Tables[0].Rows[0][0].ToString() + ds.Tables[0].Rows[0][1].ToString());
+        }
+
+        ds.Dispose();
+        ds = null;
+
+        SerialNumber.Append(Guid.NewGuid().ToString().Substring(0, 3));
+        SerialNumber.Append(Guid.NewGuid().ToString().Substring(0, 4));
+        SerialNumber.Append("L");
+
+        return SerialNumber.ToString().ToUpper();
+
+    }
+    protected void lnkContinue_Click(object sender, EventArgs e)
+    {
+        Load_AllAdminInventory(1);
+        dvLot.Visible = true;
+        divLoads.Visible = false;
+        //Response.Redirect("/load.aspx");
+        //dvLot.Visible = false;
+        //dvInventoryAdd.Visible = true;
+
+    }
+    protected void Load_AllAdminInventory(int pageNo)
+    {
+        try
+        {
+
+            int status = 1;
+          
+
+            DataSet ds = Lots.SearchLotInventory(pageNo, pageSize, 0, out totalRows, "", "", "", "", 0, status, 0);//UserOrganizationId);
+            gvAdminInventory.DataSource = ds;
+            gvAdminInventory.DataBind();
+            this.TotalItems = totalRows;
+            this.PgrLots.DrawPager(pageNo, TotalItems, pageSize, MaxPagesToShow);
+           
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "AddInventory.aspx Load_AllAdminInventory", ex);
+        }
+    }
+    protected void AdminInventory_RowCommand(Object sender, GridViewCommandEventArgs e)
+    {
+        if (e.CommandName.ToLower() == "loadtire")
+        {
+            if (Session["SelectedLotId"] == "")
+                Session["SelectedLotId"] += e.CommandArgument.ToString();
+            else
+                Session["SelectedLotId"] += "," + e.CommandArgument.ToString();
+
+            Load_TireInventory(1);
+        }
+    }
+    protected void Load_TireInventory(int PageIdCurrent)
+    {
+        try
+        {
+            int status = 1;
+            
+            DataSet ds = Lots.searchTireInventoryByLotIds(PageIdCurrent, 0, Session["SelectedLotId"].ToString(), out totalRows, "", "", "", "", 0, status);
+            gvTires.DataSource = ds;
+            gvTires.DataBind();
+     
+
+            dvTires.Visible = true;
+            if (Session["Load"].ToString() == "single")
+            {
+                gvTires.Columns[0].Visible = true;
+                gvTires.Columns[1].Visible = false;
+            }
+            else
+            {
+                gvTires.Columns[1].Visible = true;
+                gvTires.Columns[0].Visible = false;
+            }
+            this.TotalItemsR = totalRows;
+            this.pgrTires.DrawPager(PageIdCurrent, TotalItemsR, 10, MaxPagesToShow);
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "AddInventory.aspx Load_TireInventory", ex);
+        }
+    }
+    public void LotSelectMethod(object sender, EventArgs e)
+    {
+        GridView grd = (GridView)gvAdminInventory;
+        HiddenField hid;
+        CheckBox chk;
+        Session["SelectedLotId"] = "";
+        foreach (GridViewRow row in grd.Rows)
+        {
+            chk = (CheckBox)row.FindControl("chkLotSelect");
+            hid = (HiddenField)row.FindControl("hidLotId");
+            if (chk.Checked)
+            {
+                if (Session["SelectedLotId"] == "")
+                    Session["SelectedLotId"] += hid.Value;
+                else
+                    Session["SelectedLotId"] += "," + hid.Value;
+            }
+
+        }
+        Load_TireInventory(1);
+    }
+    public void SelectTireMethod(object sender, EventArgs e)
+    {
+        GridView grd = (GridView)gvTires;
+        HiddenField hid;
+        CheckBox chk;
+        Session["SelectedTiresId"] = "";
+        foreach (GridViewRow row in grd.Rows)
+        {
+            chk = (CheckBox)row.FindControl("chkSelectTire");
+            hid = (HiddenField)row.FindControl("hidTireId");
+            if (chk.Checked)
+            {
+                if (Session["SelectedTiresId"] == "")
+                    Session["SelectedTiresId"] += hid.Value;
+                else
+                    Session["SelectedTiresId"] += "," + hid.Value;
+            }
+            else
+            {
+                try
+                {
+                    string _tireIds = Conversion.ParseString(Session["SelectedTiresId"]);
+                    _tireIds = _tireIds.Replace("\r\n", "").Replace(" ", "").Trim(',');
+                    string removeids = hid.Value;
+                    removeids = removeids.Replace("\r\n", "").Replace(" ", "").Trim(',');
+
+                    string[] remList = _tireIds.Split(',');
+
+                    if (remList.Length > 0)
+                        for (int i = 0; i <= remList.Length - 1; i++)
+                        {
+                            if (remList[i].ToString().Contains("," + removeids + ","))
+                            {
+                                _tireIds = _tireIds.Replace("," + removeids + ",", ",");
+                                _tireIds = _tireIds.Replace(" ", "").Trim(',');
+                            }
+                            else if (remList[i].ToString().Contains(removeids + ","))
+                            {
+                                _tireIds = _tireIds.Replace(removeids + ",", ",");
+                                _tireIds = _tireIds.Replace(" ", "").Trim(',');
+                            }
+                            else if (remList[i].ToString().Contains("," + removeids))
+                            {
+                                _tireIds = _tireIds.Replace("," + removeids, ",");
+                                _tireIds = _tireIds.Replace(" ", "").Trim(',');
+                            }
+                        }
+                    Session["SelectedTiresId"] = _tireIds;
+                }
+                catch (Exception ex) { }
+
+
+            }
+        }
+        
+    }
+
+
+    
+    protected void lnkbtnAddInventory_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            CheckBox chk;
+            RadioButton rbt;
+
+            GridView grd = (GridView)gvAdminInventory;
+            StringBuilder str = new StringBuilder(255);
+            
+            //foreach (GridViewRow row in gvTires.Rows)
+            //{
+
+            //    HiddenField hid = (HiddenField)row.FindControl("hidTireId");
+            //    Literal lit = (Literal)row.FindControl("litTireId");
+            //    rbt = (RadioButton)row.FindControl("rbtSelectTire");
+            //    chk = (CheckBox)row.FindControl("chkSelectTire");
+            //    if (Session["Load"].ToString() == "single")
+            //    {
+            //        if (rbt.Checked)
+            //        {
+            //            str.Append(lit.Text);
+            //            break;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if (chk.Checked)
+            //            str.Append(lit.Text + ",");
+            //    }
+            //}
+
+            string tireIds = Conversion.ParseString(Session["SelectedTiresId"]);
+
+            if (Session["Load"].ToString() != "single")
+                str.Length = str.Length - 1;
+
+            Loads.addLoadTires(Convert.ToInt32(Session["loadId"]), tireIds, LoginMemberId);
+            //Loads.addLoadTires(Convert.ToInt32(Session["loadId"]), str.ToString(), LoginMemberId);
+
+            Response.Redirect("inventory-load");
+        }
+        catch (Exception ex)
+        {
+            new SqlLog().InsertSqlLog(0, "createload.lnkbtnAddInventory_Click", ex);
+        }
+    }
+
+    protected override bool OnBubbleEvent(object source, EventArgs args)
+    {
+        if (this.PgrLots.Equals(source))
+        {
+            CommandEventArgs cmdArgs = (CommandEventArgs)args;
+            CurrentPage = Convert.ToInt32(cmdArgs.CommandArgument);
+
+            this.Load_AllAdminInventory(CurrentPage);
+        }
+        else if (this.pgrTires.Equals(source))
+        {
+            CommandEventArgs cmdArgs = (CommandEventArgs)args;
+            CurrentPageR = Convert.ToInt32(cmdArgs.CommandArgument);
+
+            this.Load_TireInventory(CurrentPageR);
+        }
+
+        return base.OnBubbleEvent(source, args);
+    }
+}

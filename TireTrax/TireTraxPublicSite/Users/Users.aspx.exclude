@@ -1,0 +1,241 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.master" AutoEventWireup="true" CodeFile="Users.aspx.cs" Inherits="Users_Users" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Assembly="TireTraxLib" Namespace="TireTraxLib" TagPrefix="cc1" %>
+<%@ Register Src="~/CommonControls/Pager.ascx" TagName="Pager" TagPrefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+ <link rel="stylesheet" type="text/css" href="/Scripts/themes/base/jquery.ui.all.css" />
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        function SetFilterDateRange() {
+            $("#<%=txtCreatedFromDate.ClientID %>").datepicker({
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    $("#<%=txtCreatedToDate.ClientID %>").datepicker("option", "minDate", selectedDate);
+                },
+                onClose: function (dateText, inst) {
+                    if (dateText == "") {
+                        $("#<%=txtCreatedToDate.ClientID %>").datepicker("option", "minDate", null);
+                    }
+                }
+            });
+            $("#<%=txtCreatedToDate.ClientID %>").datepicker({
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    $("#<%=txtCreatedFromDate.ClientID %>").datepicker("option", "maxDate", selectedDate);
+                },
+                onClose: function (dateText, inst) {
+                    if (dateText == "") {
+                        $("#<%=txtCreatedFromDate.ClientID %>").datepicker("option", "maxDate", null);
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('#asearch').toggle(function () {
+                $('#midSearch').slideDown();
+                SetFilterDateRange();
+            }, function () {
+                $('#midSearch').slideUp();
+            });
+        });
+    </script>
+
+
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:UpdateProgress ID="UpdateProgress1" runat="server">
+    <ProgressTemplate>
+    <div id="Div1" runat="server" style=" background:url(/images/bg_shadow.png) repeat;width:100%;height:100%;position:fixed;
+    z-index:999;top:0;left:0;z-index:99999;display:block;"> 
+           <img src="/images/ajax-loader.gif" style="position:fixed; left:0; right:0; top:0; bottom:0; margin:auto;" />
+            </div>
+    </ProgressTemplate>
+    </asp:UpdateProgress>
+ <script src="/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/Scripts/ui/jquery.ui.datepicker.js" type="text/javascript"></script>
+    <!-- Start Search Filters --------------------------------------------------------------------->
+    <div class="grid-contain-outer">
+        <div class="txt-main-had">
+            <%--<div class="txt-had-left" style="float:left; margin-top:-2px;"> <%= ResourceMgr.GetMessage("Stewardship")%> </div> --%>
+            <div class="txt-had-left" style="background: none;">
+                <%= ResourceMgr.GetMessage("Users")%>
+            </div>
+            <div class="txt-had-right">
+                <a class="ico_search" id="asearch" href="javascript:void();">
+                    <%= ResourceMgr.GetMessage("Search")%></a>
+            </div>
+            <div class="txt-had-right" style="display:none;">
+                <a class="ico_add" href='addUser?OrganizationId=<%=Convert.ToInt32(Request.QueryString["OrganizationId"]) %>&RoleId=<%=Convert.ToInt32(Request.QueryString["RoleId"])%>&OrganizationTypeID=<%=Convert.ToInt32(Request.QueryString["OrganizationTypeId"]) %>'>
+                    <%= ResourceMgr.GetMessage("Add New User")%></a>
+            </div>
+        </div>
+           <asp:UpdatePanel ID="upnlsearch" runat="server">
+            <ContentTemplate>
+        <div id="midSearch" style="display: none;">
+            <div class="search-filter-outer">
+                    <asp:Panel ID="pnlUserSearch" runat="server" DefaultButton="btnUserSearch" CssClass="search-filter_inner">
+                        <div class="search-filter_heading">
+                            <%= ResourceMgr.GetMessage("Search Filters")%>
+                        </div>
+                        <div class="search-filter-content-outer">
+                            <div class="content-txt">
+                                <%= ResourceMgr.GetMessage("First Name")%>
+                            </div>
+                            <div class="content-field">
+                                <asp:TextBox ID="txtFirstName" runat="server" CssClass="txt-field"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="search-filter-content-outer">
+                            <div class="content-txt">
+                                <%= ResourceMgr.GetMessage("Last Name")%>
+                            </div>
+                            <div class="content-field">
+                                <asp:TextBox ID="txtLastName" runat="server" CssClass="txt-field"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="search-filter-content-outer">
+                            <div class="content-txt">
+                                <%= ResourceMgr.GetMessage("Login")%>
+                            </div>
+                            <div class="content-field">
+                                <asp:TextBox ID="txtLogin" runat="server" CssClass="txt-field"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("From")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtCreatedFromDate" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("To")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:TextBox ID="txtCreatedToDate" runat="server" CssClass="txt-field"></asp:TextBox>
+                        </div>
+                    </div>
+                     <div class="search-filter-content-outer">
+                        <div class="content-txt">
+                            <%= ResourceMgr.GetMessage("Status")%>
+                        </div>
+                        <div class="content-field">
+                            <asp:DropDownList ID="ddlstatus" runat="server" >
+                            <asp:ListItem Value="0" Selected="True" Text="All"></asp:ListItem>
+                             <asp:ListItem Value="1" Text="Rejected"></asp:ListItem>
+                              <asp:ListItem Value="2" Text="Approved"></asp:ListItem>
+                            </asp:DropDownList>
+                        </div>
+                    </div>
+                        <div class="btn-search_outer">
+                            <asp:LinkButton ID="btnCancel" runat="server" CssClass="btn-search" OnClick="btnCancel_Click"><%= ResourceMgr.GetMessage("Reset")%></asp:LinkButton>
+                            <asp:LinkButton ID="btnUserSearch" runat="server" CssClass="btn-search" OnClick="btnUserSearch_Click"><%= ResourceMgr.GetMessage("Search")%></asp:LinkButton>
+                        </div>
+                     
+                    </asp:Panel>
+            </div>
+        </div>
+           <br clear="all" />
+     
+                <asp:GridView ID="gvUserAdmin" runat="server" AutoGenerateColumns="False" GridLines="None"
+                    CssClass="add-new-inventory" DataKeyNames="UserId" EnableViewState="true" EmptyDataText="No data found"
+                    wrap="nowrap" CellPadding="5" Width="100%" ShowFooter="true" OnRowCommand="gvUserAdmin_RowCommand">
+                    <AlternatingRowStyle CssClass="highlighted-row" />
+                    <HeaderStyle CssClass="txt-had" />
+                    <Columns>
+                        <asp:TemplateField HeaderText=""  >
+                            <HeaderStyle HorizontalAlign="Left" />
+                            <ItemStyle HorizontalAlign="Left" />
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Login")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("Login")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText=""  ItemStyle-HorizontalAlign="Left">
+                            <HeaderStyle HorizontalAlign="Left" />
+                            <ItemStyle HorizontalAlign="Left" />
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Business Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("LegalName")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText=""  ItemStyle-HorizontalAlign="Left">
+                           <HeaderStyle HorizontalAlign="Left" />
+                            <ItemStyle HorizontalAlign="Left" />
+                           
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Role Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("RoleName")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText=""  ItemStyle-HorizontalAlign="Left">
+                           <HeaderStyle HorizontalAlign="Left" />
+                            <ItemStyle HorizontalAlign="Left" />
+                           
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Contact Name")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <%# Eval("ContactName")%>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="pnl-hdr-grid2 hdr-center" ItemStyle-HorizontalAlign="Center">
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Approve")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imgbtnApprove" runat="server" ImageUrl="~/Images/approval_icon.png"
+                                    ToolTip="Approve this record" OnClientClick="return confirm('Are you sure you want to Approve User?');"
+                                    CommandName="Approve" CommandArgument='<%#Bind("UserId")%>' Enabled='<%# Convert.ToBoolean(Eval("IsApproved")) ==false ||Eval("IsApproved")==null ? true: false  %>'></asp:ImageButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="pnl-hdr-grid2 hdr-center" ItemStyle-HorizontalAlign="Center">
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Reject")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:ImageButton ID="imgbtnDisApprove" runat="server" ImageUrl="~/Images/reject_icon.png"
+                                    ToolTip="Reject this record" OnClientClick="return confirm('Are you sure you want to Reject User?');"
+                                    CommandName="DisApprove" CommandArgument='<%# Bind("UserId") %>'  Enabled='<%#  Convert.ToBoolean(Eval("IsApproved")) == true ||Eval("IsApproved")==null ? true: false  %>'></asp:ImageButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="pnl-hdr-grid2 hdr-center" ItemStyle-HorizontalAlign="Center">
+                            <HeaderTemplate>
+                                <%= ResourceMgr.GetMessage("Status")%>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Images/thumb-up_icon.png"
+                                    ToolTip="Approved" Visible='<%# Convert.ToBoolean(Eval("IsApproved")) %>'></asp:HyperLink>
+                                <asp:HyperLink ID="hyplnkStatusFalse" runat="server" ImageUrl="~/Images/thumb-down_icon.png"
+                                    ToolTip="Pending" Visible='<%# !Convert.ToBoolean(Eval("IsApproved")) %>'></asp:HyperLink>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+                <div class="txt-pagination">
+                    <uc2:Pager ID="pager" runat="server" />
+                    
+                </div>
+                </div>
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="btnUserSearch" EventName="Click" />
+            </Triggers>
+        </asp:UpdatePanel>
+    </div>
+
+
+
+
+</asp:Content>
+

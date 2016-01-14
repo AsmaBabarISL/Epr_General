@@ -1,0 +1,254 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.master" AutoEventWireup="true" CodeFile="EditBankAccount.aspx.cs" Inherits="BankAccount_EditBankAccount" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Assembly="TireTraxLib" Namespace="TireTraxLib" TagPrefix="cc1" %>
+<%@ Register Src="~/CommonControls/Pager.ascx" TagName="Pager" TagPrefix="uc2" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function ShowLoginErrorMessage() {
+        $("#LoginNameExists").show();
+    }
+
+
+    function HideLoginErrorMessage() {
+        $("#LoginNameExists").hide();
+    }
+
+    function routingRangeValidator(sender, args) {
+        args.IsValid = false;
+        var val = $('#<%=txtRoutingNum.ClientID %>').val();
+        if (val.length >= 8 && val.length <= 9) {
+            args.IsValid = true;
+            return true;
+        }
+        return false;
+    }
+    
+</script>
+
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+<%--<asp:UpdatePanel id="up"  runat="server" >
+<asp:ContentTemplate >--%>
+
+
+
+<div class="add-inventory_container">
+        <div class="add-inventory-outer_block">
+            <div class="add-inventory-title_block">
+                <asp:Label ID="lblId1" runat="server"><%= ResourceMgr.GetMessage("Account Information")%></asp:Label>
+            </div>
+            <div class="new_inventory-block">
+                <div class="inv_title" style="width: 150px;">
+                    <asp:Label runat="server" ID="lblId2"><%= ResourceMgr.GetMessage("Account Type :")%></asp:Label>
+                </div>
+                <div class="inv_field">
+                        <asp:DropDownList ID="ddlIAcountType" runat="server" CssClass="field_block">
+                            <asp:ListItem Value="0">--Select-- </asp:ListItem>
+                            <asp:ListItem Value="1">Current </asp:ListItem>
+                             <asp:ListItem Value="2">Saving</asp:ListItem>
+                              <asp:ListItem Value="3">Business</asp:ListItem>
+                        </asp:DropDownList><br />
+                        <cc1:ResourceRequiredFieldValidator  ID="ResourceRequiredFieldValidator1" ValidationGroup="AddBankInfo"
+                   InitialValue="0"  CssClass="error_message" runat="server" ErrorText="Select Account Type" ControlToValidate="ddlIAcountType"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                    </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId3"><%= ResourceMgr.GetMessage("Account Title :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtAccountTitle" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvAcount" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Account Title" ControlToValidate="txtAccountTitle"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId4"><%= ResourceMgr.GetMessage("Account# :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtAccountNum" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvAcountno" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Acount#" ControlToValidate="txtAccountNum"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId5"><%= ResourceMgr.GetMessage("Routing# :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtRoutingNum" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvRouting" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Routing#" ControlToValidate="txtRoutingNum"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+
+                    <cc1:ResourceCustomValidator ID="CustomValidator35" runat="server" CssClass="error_message" ErrorMessage="*Routing number should be 8-9 digit code" ControlToValidate="txtRoutingNum"
+                                                    ClientValidationFunction="routingRangeValidator" Display="Dynamic" ValidationGroup="AddBankInfo"
+                                                    Font-Size="X-Small"></cc1:ResourceCustomValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId6"><%= ResourceMgr.GetMessage("Bank Name :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtBankName" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvBank" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Bank Name" ControlToValidate="txtBankName"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId7"><%= ResourceMgr.GetMessage("Branch :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtBranch" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvBranch" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Branch" ControlToValidate="txtBranch"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId8"><%= ResourceMgr.GetMessage("IBAN# :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtIBANNum" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvIBAN" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter IBAN#" ControlToValidate="txtIBANNum"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId9"><%= ResourceMgr.GetMessage("Swift Code :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtSwiftCode" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvSwiftCode" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Swift Code" ControlToValidate="txtSwiftCode"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+
+                 <div class="new_inventory-block">
+                 <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblchk" Text="ETF:"></asp:Label>
+                    </div>
+                     <div class="inv_field">
+                     <asp:CheckBox ID="chkboxetf" runat="server"  />      
+                 </div>
+                </div>
+
+                <br clear="all" />
+                <div class="add-inventory-title_block" style="margin-top:30px;">
+                    <asp:Label ID="lblId16" runat="server"><%= ResourceMgr.GetMessage("Bank Address Information")%></asp:Label>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId10"><%= ResourceMgr.GetMessage("Street Number :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtStreetNum" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvStreetNumer" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Street Number" ControlToValidate="txtStreetNum"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId11"><%= ResourceMgr.GetMessage("Street Name :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtStreetName" runat="server" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvName" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter Street Name" ControlToValidate="txtStreetName"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId12"><%= ResourceMgr.GetMessage("Zip Code :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox AutoPostBack="true" ID="txtZipCode" ontextchanged="txtBusinessZipCode_TextChanged" runat="server" MaxLength="10" class="field_block"></asp:TextBox><br />
+                          <cc1:ResourceRequiredFieldValidator ID="ResourceRequiredFieldValidator6" runat="server" ControlToValidate="txtZipCode" ValidationGroup="AdditionalInfoBusinessZipCode" ErrorText="Please enter Facility ZIP Code" CssClass="error_message" Display="None"></cc1:ResourceRequiredFieldValidator>
+                                        <cc1:ResourceRegularExpressionValidator ID="ResourceRegularExpressionValidator2" runat="server" ControlToValidate="txtZipCode" ErrorText="Please enter valid Facility ZIP Code e.g; 06514, M3C 0C1" ValidationGroup="AdditionalInfoBusinessZipCode" CssClass="error_message" Display="None" ValidationExpression="^\d{5}$|^([a-zA-Z]\d[a-zA-Z]( )\d[a-zA-Z]\d)$"></cc1:ResourceRegularExpressionValidator>
+                                        <cc1:ResourceRequiredFieldValidator ID="ResourceRequiredFieldValidator7" runat="server" ControlToValidate="txtZipCode" ValidationGroup="PrimaryRegistartion" ErrorText="Please enter Facility ZIP Code"  Display="Dynamic" CssClass="error_message"></cc1:ResourceRequiredFieldValidator>
+                                        <cc1:ResourceRegularExpressionValidator ID="ResourceRegularExpressionValidator3" runat="server" ControlToValidate="txtZipCode" ErrorText="Please enter valid Facility ZIP Code e.g; 06514, M3C 0C1" ValidationGroup="PrimaryRegistartion" CssClass="error_message" ValidationExpression="^\d{5}$|^([a-zA-Z]\d[a-zA-Z]( )\d[a-zA-Z]\d)$" Display="Dynamic"></cc1:ResourceRegularExpressionValidator>
+                                         <asp:Label ID="lblBusinessZipCode" runat="server" CssClass="error_message" ></asp:Label>
+                                                                  
+                        </div>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId13"><%= ResourceMgr.GetMessage("City :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtCity"  runat="server" Enabled="false" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvCity" ValidationGroup="AddBankInfo"
+                    CssClass="error_message" runat="server" ErrorText="Enter City" ControlToValidate="txtCity"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId14"><%= ResourceMgr.GetMessage("State :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:DropDownList ID="ddlState" runat="server" Enabled="false" CssClass="field_block">
+                            
+                        </asp:DropDownList><br />
+                        <cc1:ResourceRequiredFieldValidator  ID="ResourceRequiredFieldValidator11" ValidationGroup="AddBankInfo"
+                   InitialValue="0"  CssClass="error_message" runat="server" ErrorText="Select State" ControlToValidate="ddlState"
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                        </div>
+                </div>
+                <div class="new_inventory-block">
+                    <div class="inv_title" style="width: 150px;">
+                        <asp:Label runat="server" ID="lblId15"><%= ResourceMgr.GetMessage("Phone# :")%></asp:Label>
+                    </div>
+                    <div class="inv_field">
+                            <asp:TextBox ID="txtPhoneNum" runat="server" MaxLength="20" class="field_block"></asp:TextBox><br />
+                            <cc1:ResourceRequiredFieldValidator  ID="rfvPhoneNum" 
+                    CssClass="error_message" runat="server" ErrorText="Enter Phone#" ControlToValidate="txtPhoneNum" ValidationGroup='AddBankInfo'
+                    Display="Dynamic"></cc1:ResourceRequiredFieldValidator>
+                    <cc1:ResourceRegularExpressionValidator ID="ResourceRegularExpressionValidator1" ErrorText="Enter Valid Phone#" CssClass="error_message" ValidationExpression="^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$" Display="Dynamic" ControlToValidate="txtPhoneNum" ValidationGroup='AddBankInfo'
+                            runat="server"></cc1:ResourceRegularExpressionValidator>
+                        </div>
+                </div>
+                <br clear="all" />
+                <div class="reg_button-outer" style="bottom:0px; right:0px;">
+                    
+                    <asp:LinkButton ID="lnkbtnCancelBankAccount" runat="server" CausesValidation="false"
+                        CssClass="reg_button" onclick="lnkbtnCancelBankAccount_Click" >
+                <%= ResourceMgr.GetMessage("Cancel")%> </asp:LinkButton>
+                <asp:LinkButton ID="lnkbtnAddBankAccount" runat="server" CssClass="reg_button" 
+                        CausesValidation='true' ValidationGroup='AddBankInfo'  
+                        OnClientClick="HideLoginErrorMessage();" onclick="lnkbtnAddBankAccount_Click"
+                       > <%= ResourceMgr.GetMessage("Update")%> </asp:LinkButton>
+                </div>
+                <br clear="all" />
+            </div>
+    </div>
+
+
+ <%--   </asp:ContentTemplate>
+</asp:UpdatePanel>--%>
+
+</asp:Content>
+

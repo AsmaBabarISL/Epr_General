@@ -1,0 +1,138 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SamplePage.aspx.cs" Inherits="Stewardship_SamplePage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Contents to be copied start here   -->
+        <div class="grid-contain-outer">
+            <!-- Search Filters start here   -->
+            <asp:UpdatePanel ID="upnlGrid" runat="server">
+                <ContentTemplate>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox float-e-margins">
+                                <asp:Panel ID="pnlSearch" runat="server">
+                                    <div class="ibox-title">
+                                        <h5>("Search Filters")%></h5>
+                                    </div>
+
+                                    <div class="ibox-content">
+                                        <div class="row search-filter" id="">
+                                            <div class="form-group col-md-3">
+                                                <label>
+                                                </label>
+                                                Form Field
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label>
+                                                </label>
+                                                Form Field
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label>
+                                                </label>
+
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label></label>
+                                                Form Field
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label>
+                                                </label>
+                                                Form Field
+                                            </div>
+
+                                            <div class="form-group col-md-3">
+                                                <label>
+                                                </label>
+                                                Form Field
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                Buttons
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Grid Heading</h5>
+                                    <div class="ibox-tools">
+                                        <div class="form-group">
+                                            A Button if One exists like Add Something
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="table-responsive">
+
+                                                <!-- CssClass="table table-bordered epr-sec-table" EmptyDataRowStyle-CssClass="alert alert-danger text-center" -->
+                                                Grid Goes here with the CSS described Above
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <asp:DropDownList runat="server" ID="ddlPageSize" AutoPostBack="true" OnSelectedIndexChanged="ddlPageSize_SelectedIndexChanged">
+                                                <asp:ListItem Text="25" Value="25" Selected="True"></asp:ListItem>
+                                                <asp:ListItem Text="50" Value="50"></asp:ListItem>
+                                                <asp:ListItem Text="75" Value="75"></asp:ListItem>
+                                                <asp:ListItem Text="100" Value="100"></asp:ListItem>
+                                                <asp:ListItem Text="250" Value="250"></asp:ListItem>
+                                                <asp:ListItem Text="500" Value="500"></asp:ListItem>
+                                            </asp:DropDownList>
+                                            <%=ResourceMgr.GetMessage("Records Per Page")%>
+                                            <asp:Label ID="lblPagingLeft" runat="server" CssClass="m-l-sm"></asp:Label>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <asp:Literal ID="ltrlPaging" runat="server"></asp:Literal>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+            <!-- Search Filters end here   -->
+
+            <!-- Modal popup starts here. Copy it as many times as the number of popups required in page -->
+            <div class="modal inmodal" id="dvOrganizationTypes" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content animated bounceInRight">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">Modal Title Goes Here</h4>
+                        </div>
+                        <div class="modal-body">
+                            Modal Body Goes here
+                        </div>
+                        <div class="modal-footer">
+                            Modal Footer Goes here for Close Buttons etc
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup ends here. -->
+        </div>
+        <!-- Contents to be copied end here   -->
+    </form>
+</body>
+</html>

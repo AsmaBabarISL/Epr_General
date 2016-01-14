@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="/dashboard" title="$resources:SiteMapLocalizations,Home" >
+    <siteMapNode url="/dashboardnotfications" title="$resources:SiteMapLocalizations,dashboardnotfications" />
+    <siteMapNode url="/Stakeholders" title="$resources:SiteMapLocalizations,Stakeholders" />
+    <siteMapNode url="/ViewStakeholderDetail" title="$resources:SiteMapLocalizations,ViewStakeholderDetail" />
+    <siteMapNode url="/Applications" title="$resources:SiteMapLocalizations,Applications" />
+    <siteMapNode url="/inventory" title="$resources:SiteMapLocalizations,Inventory" >
+      <siteMapNode url="/lotinfo" title="$resources:SiteMapLocalizations,lotinfo" />
+      <siteMapNode url="/facility" title="$resources:SiteMapLocalizations,facility" >
+        <siteMapNode url="/lots" title="$resources:SiteMapLocalizations,lots" >
+          <siteMapNode url="/addparkinglot" title="$resources:SiteMapLocalizations,addparkinglot" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="/inventory-load" title="$resources:SiteMapLocalizations,inventory-load" >
+        <siteMapNode url="/addload" title="$resources:SiteMapLocalizations,addload" />
+        <siteMapNode url="/editload" title="$resources:SiteMapLocalizations,editload" />
+
+      </siteMapNode>
+      <siteMapNode url="/deliverynotes" title="$resources:SiteMapLocalizations,deliverynotes" >
+        <siteMapNode url="/adddeliverynote" title="$resources:SiteMapLocalizations,adddeliverynote" />
+      </siteMapNode>
+      <siteMapNode url="/deliveryreceipt" title="$resources:SiteMapLocalizations,deliveryreceipt" />
+      <siteMapNode url="/inventory-tire" title="$resources:SiteMapLocalizations,inventory-tire" />
+      <siteMapNode url="/InventoryRevenue" title="$resources:SiteMapLocalizations,InventoryRevenue" />
+      <siteMapNode url="/InventoryTimeLine" title="$resources:SiteMapLocalizations,TimeLine" />
+      <siteMapNode url="/addInventory" title="$resources:SiteMapLocalizations,addInventory" />
+    </siteMapNode>
+
+
+
+    <siteMapNode url="/createload" title="$resources:SiteMapLocalizations,createload" />
+    <siteMapNode url="/Revenue" title="$resources:SiteMapLocalizations,Revenue" />
+    <siteMapNode url="/Reports" title="$resources:SiteMapLocalizations,Reports" />
+    <siteMapNode url="/Users" title="$resources:SiteMapLocalizations,Users" >
+      <siteMapNode url="/editUser" title="$resources:SiteMapLocalizations,editUser" />
+    </siteMapNode>
+    <siteMapNode url="/error" title="$resources:SiteMapLocalizations,ERROR" />
+    <siteMapNode url="/Settings" title="$resources:SiteMapLocalizations,PTE" >
+      <siteMapNode url="/PTEStandard" title="$resources:SiteMapLocalizations,PTEStandard"/>
+
+    </siteMapNode>
+    <siteMapNode url="/profile" title="$resources:SiteMapLocalizations,profile"/>
+    <siteMapNode url="" title="$resources:SiteMapLocalizations,Setting">
+      <siteMapNode url="/logosetting" title="$resources:SiteMapLocalizations,logosetting" />
+      <siteMapNode url="/bankaccount" title="$resources:SiteMapLocalizations,bankaccount">
+
+        <siteMapNode url="/addbankaccount" title="$resources:SiteMapLocalizations,addbankaccount" />
+        <!--<siteMapNode url="/editBankAccount" title="$resources:SiteMapLocalizations,editBankAccount" />-->
+
+      </siteMapNode>
+      <siteMapNode url="/creditcard" title="$resources:SiteMapLocalizations,creditcard">
+        <siteMapNode url="/addcreditcard" title="$resources:SiteMapLocalizations,addcreditcard"/>
+
+
+      </siteMapNode>
+      <siteMapNode url="/productselection" title="$resources:SiteMapLocalizations,productselection"/>
+      <siteMapNode url="/templates" title="$resources:SiteMapLocalizations,Templates">
+        <siteMapNode url="/addtemplate" title="$resources:SiteMapLocalizations,AddTemplate"/>
+      </siteMapNode>
+    </siteMapNode>
+
+
+
+    <siteMapNode url="" title="$resources:SiteMapLocalizations,AccountManagement">
+      <siteMapNode url="/invoices" title="$resources:SiteMapLocalizations,invoices" >
+        <siteMapNode url="/AddInvoice" title="$resources:SiteMapLocalizations,AddInvoice"/>
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

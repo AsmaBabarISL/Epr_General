@@ -1,0 +1,220 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.master" AutoEventWireup="true" CodeFile="Revenue.aspx.cs" Inherits="Revenue_Revenue" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Assembly="TireTraxLib" Namespace="TireTraxLib" TagPrefix="cc1" %>
+<%@ Register Src="~/CommonControls/Pager.ascx" TagName="Pager" TagPrefix="uc2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+ <link href="/Scripts/themes/ui-lightness/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+<script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+     $(document).ready(function () {
+         $('#asearch').toggle(function () {
+             $('#midSearch').slideDown();
+         }, function () {
+             $('#midSearch').slideUp();
+         });
+     });
+     function ClearFields() {
+         $("#<%=txtfrmdate.ClientID%>").val('');
+         $("#<%=txttodate.ClientID%>").val('');
+         $("#<%=btnRevenueSearch.ClientID%>")[0].click();
+     }
+
+  </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+ <script src="/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+ <script src="/Scripts/ui/jquery.ui.datepicker.js" type="text/javascript"></script>
+ <script type="text/javascript">
+     function SetDatePicket() {
+
+         $(".datepicker").datepicker({ minDate: new Date });
+
+     }
+ </script>
+
+
+<%--<div class="grid-contain-outer" style ="display:none;">
+        <div class="txt-main-had" style="height: 25px;">
+            <div class="txt-had-left">
+                <%= ResourceMgr.GetMessage("Revenue")%>
+            </div>
+            <div class="txt-had-right" style="padding-right:0px;">
+                
+                <a class="ico_search" id="asearch" href="javascript:void();">
+                    <%= ResourceMgr.GetMessage("Search")%>
+                </a>
+               
+            </div>
+        </div>
+        <div id="midSearch" style="display: none;">
+            <div class="search-filter-outer">
+               
+            </div>
+        </div>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                
+                
+                </div>
+            </ContentTemplate>
+          
+        </asp:UpdatePanel>
+    </div>--%>
+
+<div class="row">
+    <div class ="col-lg-12">
+        <div class ="ibox float-e-margins">
+            <div class ="ibox-title">
+                 <h5><%= ResourceMgr.GetMessage("Search Filters")%> </h5>
+                <div class ="ibox-tools">
+                    <a class ="collapse-link">
+                        <i class ="fa fa-chevron-up"></i>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class ="ibox-content">
+
+                 <asp:Panel ID="pnlSearch" runat="server" DefaultButton="btnRevenueSearch" CssClass="search-filter_inner">
+
+                <div role="form" class ="row earch-filter">
+                    <div class ="col-md-3 form-group">
+                        <label> 
+                            <%= ResourceMgr.GetMessage("From Date")%>
+                        </label>
+                        <div class ="input-group date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <asp:TextBox ID="txtfrmdate" runat="server" CssClass=" form-control datepicker" ></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class ="col-md-3 form-group">
+                        <label>
+                             <%= ResourceMgr.GetMessage("To Date")%>
+                        </label>
+                        <div class="date input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <asp:TextBox ID="txttodate" runat="server" CssClass="form-control datepicker" ></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class ="col-md-12 form-group mb0">
+                         <cc1:ResourceLinkButton ID="btnRevenueCancel" runat="server" CssClass="btn btn-white"
+                            OnClientClick="ClearFields(); return false;"><%= ResourceMgr.GetMessage("Reset")%></cc1:ResourceLinkButton>
+                        <cc1:ResourceLinkButton ID="btnRevenueSearch" runat="server" 
+                            CssClass="btn btn-primary" onclick="btnRevenueSearch_Click"
+                            > <%= ResourceMgr.GetMessage("Search")%></cc1:ResourceLinkButton>
+                    </div>
+                </div>
+
+                 </asp:Panel>
+            </div>
+        </div>
+    </div>
+</div>
+    <asp:UpdatePanel ID ="upnlGrid" runat ="server" UpdateMode ="Conditional" >
+        <ContentTemplate>
+    <div class="row">
+        <div class ="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class ="ibox-title">
+                    <h5>
+                        <%=ResourceMgr.GetMessage("Revenue") %>
+                    </h5>
+                    <div class ="ibox-tools">
+                        <div class ="form-group">
+                            <a class="btn btn-primary btn-sm" href="Revenue?Revenuedetail=detail">
+                                <i class ="fa fa-clipboard"></i>
+                                <%= ResourceMgr.GetMessage("Detail Revenue")%>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class ="ibox-content">
+                    <div class ="row">
+                        <div class="col-md-12">
+                            <div class ="table-responsive">
+                                <asp:GridView ID="gvRevenue" AutoGenerateColumns="False" GridLines="None"
+                                    CssClass="table epr-sec-table table-bordered" EnableViewState="true" EmptyDataText="No data found"
+                                    wrap="nowrap" runat="server" >
+                                    <Columns>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Organization")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                    <%# Eval("LegalName")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Percentage")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%# Eval("Percentage", "{0:N2}%")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                        
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had" HeaderStyle-HorizontalAlign="Center"
+                                            ItemStyle-HorizontalAlign="Center">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Amount")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%# Convert.ToDecimal(Eval("Amount")).ToString("C")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had" HeaderStyle-HorizontalAlign="Center"
+                                            ItemStyle-HorizontalAlign="Center">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Role")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%#Eval("Roleassigned")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had" HeaderStyle-HorizontalAlign="Center"
+                                            ItemStyle-HorizontalAlign="Center">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Total Amount")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%# Convert.ToDecimal(Eval("TotalAmount")).ToString("C")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Comission Deducted")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%# Convert.ToDecimal(Eval("ComissionDeducted")).ToString("C")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="" HeaderStyle-CssClass="txt-had">
+                                            <HeaderTemplate>
+                                                <%=ResourceMgr.GetMessage("Actual Amount")%>
+                                            </HeaderTemplate>
+                                            <ItemTemplate>
+                                                <%# Convert.ToDecimal(Eval("ActualAmount")).ToString("C")%>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                        
+                        
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </ContentTemplate>
+          <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="btnRevenueSearch" EventName="Click" />
+            </Triggers>
+    </asp:UpdatePanel>
+
+</asp:Content>
+

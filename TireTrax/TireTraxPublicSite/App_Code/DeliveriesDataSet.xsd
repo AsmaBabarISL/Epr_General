@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeliveriesDataSet" targetNamespace="http://tempuri.org/DeliveriesDataSet.xsd" xmlns:mstns="http://tempuri.org/DeliveriesDataSet.xsd" xmlns="http://tempuri.org/DeliveriesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DeliveriesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DeliveriesDataSet" msprop:Generator_UserDSName="DeliveriesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DeliveryName" msprop:Generator_ColumnVarNameInTable="columnDeliveryName" msprop:Generator_ColumnPropNameInRow="DeliveryName" msprop:Generator_ColumnPropNameInTable="DeliveryNameColumn" msprop:Generator_UserColumnName="DeliveryName" type="xs:string" minOccurs="0" />
+              <xs:element name="TireSize" msprop:Generator_ColumnVarNameInTable="columnTireSize" msprop:Generator_ColumnPropNameInRow="TireSize" msprop:Generator_ColumnPropNameInTable="TireSizeColumn" msprop:Generator_UserColumnName="TireSize" type="xs:string" minOccurs="0" />
+              <xs:element name="NoOfTires" msprop:Generator_ColumnVarNameInTable="columnNoOfTires" msprop:Generator_ColumnPropNameInRow="NoOfTires" msprop:Generator_ColumnPropNameInTable="NoOfTiresColumn" msprop:Generator_UserColumnName="NoOfTires" type="xs:string" minOccurs="0" />
+              <xs:element name="AggrAmount" msprop:Generator_ColumnVarNameInTable="columnAggrAmount" msprop:Generator_ColumnPropNameInRow="AggrAmount" msprop:Generator_ColumnPropNameInTable="AggrAmountColumn" msprop:Generator_UserColumnName="AggrAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="FeePerTire" msprop:Generator_ColumnVarNameInTable="columnFeePerTire" msprop:Generator_ColumnPropNameInRow="FeePerTire" msprop:Generator_ColumnPropNameInTable="FeePerTireColumn" msprop:Generator_UserColumnName="FeePerTire" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductCategoy" msprop:Generator_ColumnVarNameInTable="columnProductCategoy" msprop:Generator_ColumnPropNameInRow="ProductCategoy" msprop:Generator_ColumnPropNameInTable="ProductCategoyColumn" msprop:Generator_UserColumnName="ProductCategoy" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductSubCategory" msprop:Generator_ColumnVarNameInTable="columnProductSubCategory" msprop:Generator_ColumnPropNameInRow="ProductSubCategory" msprop:Generator_ColumnPropNameInTable="ProductSubCategoryColumn" msprop:Generator_UserColumnName="ProductSubCategory" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
